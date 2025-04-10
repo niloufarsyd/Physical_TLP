@@ -6,6 +6,7 @@ import math
 import cma
 import numpy as np
 import time
+
 from PUF.XORAPUF import XORArbiterPUF  # Adjust this import according to your project structure
 from typing import Union, Callable
 from numpy.random import default_rng
@@ -15,23 +16,7 @@ from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import padding
 
-# def aes_key_from_seed(seed):
-#     if isinstance(seed, np.ndarray):
-#         # Convert the array to an integer if it's not already
-#         seed = int(''.join(map(str, seed)), 2)
-#     else:
-#         # Ensure the seed is an integer, necessary for subsequent operations
-#         seed = int(seed)
-#     # Assuming seed is an integer, convert it to a binary string first
-#     binary_seed = bin(seed)[2:].zfill(256)  # Ensure it's at least 256 bits long
-#     seed_bytes = bytearray(int(binary_seed[i:i+8], 2) for i in range(0, len(binary_seed), 8))
-
-#     # Ensure the key is 32 bytes (256 bits)
-#     if len(seed_bytes) < 32:
-#         # Pad the seed_bytes to 32 bytes if necessary
-#         seed_bytes += b'\0' * (32 - len(seed_bytes))
-#     return bytes(seed_bytes)
-
+###----AES------------------------------------------------------#
 
 def aes_key_from_seed(seed):
     if isinstance(seed, np.ndarray):
@@ -147,33 +132,72 @@ def opt(t, tc, e, p_min, B_min):
 
 ####-----------PUF: ------------------------------------------------------------------#
 # Function to generate n-bit responses from an n-bit challenge
-def XOR_PUF(chal, puf_parameter):
+### New XOR_APUF to avoid puf re-instantiation:
+def XOR_PUF(chal, puf_parameter, xor_arbiter_puf=None):
+    """
+    Generates an n-bit response from an n-bit challenge using XOR Arbiter PUF.
 
-    n=len(chal)#128
-    m=puf_parameter['n'] #64
-    # Ensure the challenge is a numpy array (convert if it's not)
+    Parameters:
+        chal (np.ndarray or str): n-bit challenge (can be string or numpy array).
+        puf_parameter (dict): Contains PUF configuration including n, k, weights, noise, etc.
+        xor_arbiter_puf (XORArbiterPUF, optional): Reuse an existing instance to avoid re-instantiation.
+
+    Returns:
+        np.ndarray: n-bit response
+    """
+    n = len(chal)
+    m = puf_parameter['n']
+
     if isinstance(chal, str):
-        # Assuming chal is a binary string, convert it
         seed_challenge = np.array(list(chal), dtype=int)
     elif isinstance(chal, np.ndarray):
         seed_challenge = chal
     else:
-        raise ValueError("Challenge format not supported.")
+        raise ValueError("Challenge must be a string or NumPy array.")
 
-    seedd = puf_parameter['seed']
-    #print("len(seed_challenge):",n)
-    num_chunks = n // m  # Each chunk is 64 bits
-
-    # Split the binary string into 64-bit chunks
-    chunks= np.zeros((num_chunks, m), dtype=int)
+    # Split into m-bit chunks
+    num_chunks = n // m
+    chunks = np.zeros((num_chunks, m), dtype=int)
     for i in range(num_chunks):
-         chunks[i,:]=seed_challenge[i * m:(i + 1) * m]
+        chunks[i, :] = seed_challenge[i * m:(i + 1) * m]
+
+    # Instantiate the PUF only if not supplied
+    if xor_arbiter_puf is None:
+        xor_arbiter_puf = XORArbiterPUF(
+            puf_parameter['n'],
+            puf_parameter['k'],
+            puf_parameter['weight_array'],
+            puf_parameter['transform'],
+            puf_parameter['combiner'],
+            puf_parameter['sigma_noise'],
+            puf_parameter['seed'],
+            puf_parameter['vote_count'],
+            puf_parameter['bias']
+        )
 
     responses = np.zeros(n, dtype=int)
-    
-    # Create the PUF instance
+
+    for i in range(1, m):  # Skip index 0 to match your original pattern
+        np.random.seed(puf_parameter['seed'] + i)
+        seed_v = np.random.randint(0, 2, (1, m), dtype=int)
+        for j in range(num_chunks):
+            c = np.bitwise_xor(chunks[j, :], seed_v)
+            responses[j * m + i] = xor_arbiter_puf.eval(c.reshape(1, -1)).flatten()[0]
+
+    return responses
+ 
+####-----------Generate Puzzle: -------------------------------------------------------#
+## new puz_gen to avoid puf re-instantiation:
+def Puz_Gen(N, B, S, lambda_, puf_parameter, xor_arbiter_puf):
+    taps = [128, 127, 1]
+    s0 = generate_random_seed(lambda_)
+    si = s0
+    H = []
+    XORArbiterPUF.instance_count = 0 
+
+    # Create one fixed XORArbiterPUF instance
     xor_arbiter_puf = XORArbiterPUF(
-        m,  # The PUF has 64 stages
+        puf_parameter['n'],
         puf_parameter['k'],
         puf_parameter['weight_array'],
         puf_parameter['transform'],
@@ -183,62 +207,40 @@ def XOR_PUF(chal, puf_parameter):
         puf_parameter['vote_count'],
         puf_parameter['bias']
     )
-    
-    # Evaluate each segment and collect the responses
-    for i in range (1, m):
-        np.random.seed(seedd+i)
-        seed_v=np.random.randint(0, 2, (1,m), dtype=int)
 
-        for j in range (num_chunks):
-
-            c=np.bitwise_xor(chunks[j,:],seed_v)
-            responses[j*m+i,]=xor_arbiter_puf.eval(c)
-    
-    return responses
-
-     
-####-----------Generate Puzzle: ------------------------------------------------------------------#
-def Puz_Gen(N, B, S, lambda_, puf_parameter):
-    taps = [128, 127, 1]
-    s0 = generate_random_seed(lambda_)
-    si=s0
-    H = []
-    
     for i in range(N):
-
-        ss = E3(si, taps, lambda_, B, True) 
+        ss = E3(si, taps, lambda_, B, True)
         si = [integer_to_binary_array(vector, lambda_) for vector in ss]
-        j = random.randint(0, B-1)
+        j = random.randint(0, B - 1)
         si_j = ss[j]
-        t1=time.time()
+
+        t1 = time.time()
         cc = E3(si_j, taps, lambda_, lambda_, True)
-        t2=time.time()
-        
+        t2 = time.time()
+
         ci = [integer_to_binary_array(vector, lambda_) for vector in cc]
         si_plus1 = generate_random_value(lambda_)
         ri = []
-        #print("s", i, " _G:  ", si_plus1)
+
         for k in range(lambda_):
             if si_plus1[k] == 0:
                 ri_k = generate_random_value(lambda_)
             else:
-                tt=time.time()
-                ri_k = XOR_PUF(ci[k], puf_parameter)
-                ttt=time.time()
+                tt = time.time()
+                ri_k = XOR_PUF(ci[k], puf_parameter, xor_arbiter_puf=xor_arbiter_puf)
+                ttt = time.time()
             ri.append(ri_k)
             H.append(ri_k)
 
         s1 = si_plus1
-        si=binary_array_to_int(s1)
-    
-    print("E2 duration:", t2-t1)
-    key = aes_key_from_seed(s1)
-    #print("s1 in the key = aes_key_from_seed(s1):", s1)
-    print("key(of encrypt):", key)
-    Z = aes_encrypt(S, key)  # Encrypt each binary string in S individually
-    print("PUF duration: ", ttt-tt)
-    return s0, Z, H, key
+        si = binary_array_to_int(s1)
 
+    print("E2 duration:", t2 - t1)
+    key = aes_key_from_seed(s1)
+    print("key(of encrypt):", key)
+    Z = aes_encrypt(S, key)
+    print("PUF duration: ", ttt - tt)
+    return s0, Z, H, key
 
 
 def generate_random_seed(lambda_):
@@ -338,7 +340,7 @@ def encrypt(solution, seed):
         encrypted_solution.append(encrypted_string)   
     return encrypted_solution
 
-####-----------Comapring the results:----------------------------------------------------------------#
+####-----------Comapring the results:--------------------------------------------------#
 def solution_equality(s1, s2):
     
     if len(s1) != len(s2):
@@ -347,8 +349,7 @@ def solution_equality(s1, s2):
         if v1 != v2:
             return False
     return True
-####------------Puzzle solving---Row-wise------------------------------------------------------------#
-
+####------------Puzzle solving---Row-wise----------------------------------------------#
 def Puz_Sol_Noisy_PUF_modified(N, B, lambda_, taps, initial_seed, puf_parameter, Z, helper_data, T_threshold):
 
     bound=((lambda_**2)/2)*0.75
@@ -437,195 +438,80 @@ def Puz_Sol_Noisy_PUF_modified(N, B, lambda_, taps, initial_seed, puf_parameter,
 
     return S_sol, count_puf
 
-####-------Puzzle solving---Column-wise----------------------------------------------------#
+####-------Puzzle solving---Column-wise------------------------------------------------#
 ### Both Puz_Sol_Noisy_PUF_ColumnWise and Puz_Sol_Noisy_PUF_ColumnWise2 works correctly. They're almost the same.
-def Puz_Sol_Noisy_PUF_ColumnWise(N, B, lambda_, taps, initial_seed, puf_parameter, Z, helper_data, T_threshold):
 
-    bound=((lambda_**2)/2)*0.75
+def Puz_Sol_Noisy_PUF_ColumnWise(N, B, lambda_, taps, initial_seed, puf_parameter, Z, helper_data, T_threshold, xor_arbiter_puf):
+    #  Construct one PUF instance for reuse
+    # xor_arbiter_puf = XORArbiterPUF(
+    #     puf_parameter['n'],
+    #     puf_parameter['k'],
+    #     puf_parameter['weight_array'],
+    #     puf_parameter['transform'],
+    #     puf_parameter['combiner'],
+    #     puf_parameter['sigma_noise'],
+    #     puf_parameter['seed'],
+    #     puf_parameter['vote_count'],
+    #     puf_parameter['bias']
+    # )
+
+    bound = ((lambda_ ** 2) / 2) * 0.75
     si = np.array(list(bin(initial_seed)[2:].zfill(lambda_)), dtype=int)
-    count_puf=0
+    count_puf = 0
+
     for i in range(N):
-        ss = E3(initial_seed, taps, lambda_, B, True) 
+        ss = E3(initial_seed, taps, lambda_, B, True)
         si_subseeds = [integer_to_binary_array(vector, lambda_) for vector in ss]
-        B_value=0
-        B_found=False
+        B_value = 0
+        B_found = False
         print(f"Iteration {i}: Computing column-wise solving...")
 
         for k in range(lambda_):
             valid_found = False
-            #print("current k is ", k)
-            if B_found==True:
-                ci_k=E3(ss[B_value], taps, lambda_, k, False)
+
+            if B_found:
+                ci_k = E3(ss[B_value], taps, lambda_, k, False)
                 ci_k_bin = integer_to_binary_array(ci_k, lambda_)
-                hd=Hamming_Distance(XOR_PUF(ci_k_bin, puf_parameter), helper_data[i*(lambda_)+k])
-                count_puf+=1
-                if hd<=(T_threshold*lambda_):
-                    si[k]=1
-                else:
-                    si[k]=0
-                
-            if B_found==False:
+                hd = Hamming_Distance(XOR_PUF(ci_k_bin, puf_parameter, xor_arbiter_puf), helper_data[i * lambda_ + k])
+                count_puf += 1
+                si[k] = 1 if hd <= (T_threshold * lambda_) else 0
+
+            if not B_found:
                 for j in range(B):
-                    ci_k=E3(ss[j], taps, lambda_, k, False)
+                    ci_k = E3(ss[j], taps, lambda_, k, False)
                     ci_k_bin = integer_to_binary_array(ci_k, lambda_)
-                    hd=Hamming_Distance(XOR_PUF(ci_k_bin, puf_parameter), helper_data[i*(lambda_)+k])
-                    count_puf+=1
-                    # print("helper_data ", i*(lambda_)+k, ": ", helper_data[i*(lambda_)+k])
-                    #print("j is ", j)   
-                    if hd<=(T_threshold*lambda_):                      
-                        si[k]=1
-                        valid_found=True
-                        B_value=j
-                        B_found=True
+                    hd = Hamming_Distance(XOR_PUF(ci_k_bin, puf_parameter, xor_arbiter_puf), helper_data[i * lambda_ + k])
+                    count_puf += 1
+
+                    if hd <= (T_threshold * lambda_):
+                        si[k] = 1
+                        valid_found = True
+                        B_value = j
+                        B_found = True
                         print("valid found! j is ", j)
                         break
 
-                if not valid_found:  # If no valid 1 found, assign 0
+                if not valid_found:
                     print("valid not found!!!")
                     si[k] = 0
-            
 
         initial_seed = int(''.join(map(str, si)), 2)
 
-    # Decrypt the solution using the last valid seed
-
+    # Final decryption using si
     key = aes_key_from_seed(si)
     decrypted_solution = aes_decrypt(Z, key)
-    
+
     print("si in the key = aes_key_from_seed(si):", si)
     print("key(of decrypt):", key)
 
-
     if isinstance(decrypted_solution, bytes):
-        # If the output is bytes, convert it into a format similar to `S`
-        # Assuming each 'si' in `S` is a binary string of length `n`, split the decrypted bytes accordingly
-        decrypted_solution = ''.join(format(byte, '08b') for byte in decrypted_solution)  # Convert bytes to binary string
-        
-        S_sol = [decrypted_solution[i:i+n] for i in range(0, len(decrypted_solution), n)]
+        decrypted_solution = ''.join(format(byte, '08b') for byte in decrypted_solution)
+        S_sol = [decrypted_solution[i:i + lambda_] for i in range(0, len(decrypted_solution), lambda_)]
     else:
-        # If it's already a string, split it into list if needed
         print("No!, it's already a string ")
         S_sol = decrypted_solution
 
     return S_sol, count_puf
-
-def Puz_Sol_Noisy_PUF_ColumnWise2(N, B, lambda_, taps, initial_seed, puf_parameter, Z, helper_data, T_threshold):
-
-    bound=((lambda_**2)/2)*0.75
-    si = np.array(list(bin(initial_seed)[2:].zfill(lambda_)), dtype=int)
-
-    for i in range(N):
-        ss = E3(initial_seed, taps, lambda_, B, True) 
-        si_subseeds = [integer_to_binary_array(vector, lambda_) for vector in ss]
-        B_value=0
-        B_found=False
-        print(f"Iteration {i}: Computing column-wise solving...")
-
-        for k in range(lambda_):
-            valid_found = False
-            # print("current k is ", k)
-            if B_found==True:
-                ci_k=E3(ss[B_value], taps, lambda_, k, False)
-                ci_k_bin = integer_to_binary_array(ci_k, lambda_)
-                hd=Hamming_Distance(XOR_PUF(ci_k_bin, puf_parameter), helper_data[i*(lambda_)+k])
-                if hd<=(T_threshold*lambda_):
-                    si[k]=1
-                    # print(f"Reusing B_value={B_value} for k={k}, valid")
-                    continue
-                else:
-                    si[k]=0
-                    continue
-                          
-            for j in range(B):
-                ci_k=E3(ss[j], taps, lambda_, k, False)
-                ci_k_bin = integer_to_binary_array(ci_k, lambda_)
-                hd=Hamming_Distance(XOR_PUF(ci_k_bin, puf_parameter), helper_data[i*(lambda_)+k])
-                # print("helper_data ", i*(lambda_)+k, ": ", helper_data[i*(lambda_)+k])
-                #print("j is ", j)   
-                if hd<=(T_threshold*lambda_):                      
-                    si[k]=1
-                    valid_found=True
-                    B_value=j
-                    B_found=True
-                    # print("valid found! j is ", j)
-                    break
-
-            if not valid_found:  # If no valid 1 found, assign 0
-                # print(f"Valid not found for k={k}, assigning 0")
-                si[k] = 0
-                B_found=False
-            
-
-        initial_seed = int(''.join(map(str, si)), 2)
-
-    # Decrypt the solution using the last valid seed
-
-    key = aes_key_from_seed(si)
-    decrypted_solution = aes_decrypt(Z, key)
-    
-    print("si in the key = aes_key_from_seed(si):", si)
-    print("key(of decrypt):", key)
-
-
-    if isinstance(decrypted_solution, bytes):
-        # If the output is bytes, convert it into a format similar to `S`
-        # Assuming each 'si' in `S` is a binary string of length `n`, split the decrypted bytes accordingly
-        decrypted_solution = ''.join(format(byte, '08b') for byte in decrypted_solution)  # Convert bytes to binary string
-        
-        S_sol = [decrypted_solution[i:i+n] for i in range(0, len(decrypted_solution), n)]
-    else:
-        # If it's already a string, split it into list if needed
-        print("No!, it's already a string ")
-        S_sol = decrypted_solution
-
-    return S_sol
-
-
-def Puz_Sol_Noisy_PUF_ColumnWise_Slow(N, B, lambda_, taps, initial_seed, puf_parameter, Z, helper_data, T_threshold):
-
-    si = np.array(list(bin(initial_seed)[2:].zfill(lambda_)), dtype=int)
-    for i in range(N):
-        ss = E3(initial_seed, taps, lambda_, B, True) 
-        si_subseeds = [integer_to_binary_array(vector, lambda_) for vector in ss]
-        print(f"Iteration {i}: Computing column-wise solving...")
-
-        for k in range(lambda_):  # Iterate over columns first
-            valid_found = False
-            for j in range(B):  # Iterate over sub-seeds
-                ci_k = E3(ss[j], taps, lambda_, k,False)  # Compute only required c_{i,k}
-                ci_k_bin = integer_to_binary_array(ci_k, lambda_)
-                hd = Hamming_Distance(XOR_PUF(ci_k_bin, puf_parameter), helper_data[i * lambda_ + k])
-                if hd <= (T_threshold * lambda_):  # If within threshold, assign 1
-                    si[k] = 1
-                    valid_found = True
-                    print("valid found! j is ", j)
-                    break  # Early exit when valid j is found
-
-            if not valid_found:  # If no valid 1 found, assign 0
-                si[k] = 0
-            
-        initial_seed = int(''.join(map(str, si)), 2)
-
-    # Decrypt the solution using the last valid seed
-
-    key = aes_key_from_seed(si)
-    decrypted_solution = aes_decrypt(Z, key)
-    
-    print("si in the key = aes_key_from_seed(si):", si)
-    print("key(of decrypt):", key)
-
-    if isinstance(decrypted_solution, bytes):
-        # If the output is bytes, convert it into a format similar to `S`
-        # Assuming each 'si' in `S` is a binary string of length `n`, split the decrypted bytes accordingly
-        decrypted_solution = ''.join(format(byte, '08b') for byte in decrypted_solution)  # Convert bytes to binary string
-        
-        S_sol = [decrypted_solution[i:i+n] for i in range(0, len(decrypted_solution), n)]
-    else:
-        # If it's already a string, split it into list if needed
-        print("No!, it's already a string ")
-        S_sol = decrypted_solution
-    return S_sol
-
 
 def Hamming_Distance(bitstring1, bitstring2):
     # Ensure both inputs are in binary string format if they are integers
@@ -660,7 +546,7 @@ def decrypt(encrypted_solution, seed):
 
     return decrypted_solution
 
-####-----------Run the Puzzle generator and solver--------------------------------------------#
+####-----------Run the Puzzle generator and solver-------------------------------------#
 #### Parameters:
 t=150*100
 #tc=0.0000019941329956054688 #seconds
@@ -689,10 +575,20 @@ puf_parameter = {
     'vote_count': 1,
     'bias': None
 }
-
+xor_arbiter_puf = XORArbiterPUF(
+    puf_parameter['n'],
+    puf_parameter['k'],
+    puf_parameter['weight_array'],
+    puf_parameter['transform'],
+    puf_parameter['combiner'],
+    puf_parameter['sigma_noise'],
+    puf_parameter['seed'],
+    puf_parameter['vote_count'],
+    puf_parameter['bias']
+)
 # Initialize the solution set S
 S = []
-####------------------------------------------------------------------------------
+####------------------------------------------------------------------------------#
 start_time = time.time()
 h, N, B, p_real, sig_real, mu, best_value, e_verification=opt(t, tc, e, p, B_min)
 if isinstance(h, np.ndarray) and h.size == 1:
@@ -730,13 +626,13 @@ print("lambda_:",lambda_)
 for k in range (evaluations):
     time1 = time.time()
     #GENERATE PUZZLE:
-    c0, Z, helper_data, key = Puz_Gen(N2, B2, S, lambda_, puf_parameter)
+    c0, Z, helper_data, key = Puz_Gen(N2, B2, S, lambda_, puf_parameter, xor_arbiter_puf)
     #print("helper_data:",helper_data)
     time2 = time.time()
     gen_duration+=(time2-time1)
     print("Z:",Z)
     time3 = time.time()
-    S_sol, count_puf=Puz_Sol_Noisy_PUF_ColumnWise(N2, B2, lambda_, taps, c0, puf_parameter, Z, helper_data, T_threshold)
+    S_sol, count_puf=Puz_Sol_Noisy_PUF_ColumnWise(N2, B2, lambda_, taps, c0, puf_parameter, Z, helper_data, T_threshold, xor_arbiter_puf)
     #S_sol, count_puf=Puz_Sol_Noisy_PUF_modified(N2, B2, lambda_, taps, c0, puf_parameter, Z, helper_data, T_threshold)
     time4 = time.time()
     print("Puz_Gen function duration:", time2-time1)
