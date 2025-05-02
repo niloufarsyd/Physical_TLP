@@ -213,6 +213,7 @@ def Puz_Gen(N, B, S, lambda_, puf_parameter, xor_arbiter_puf):
         si = [integer_to_binary_array(vector, lambda_) for vector in ss]
         j = random.randint(0, B - 1)
         si_j = ss[j]
+        print("In the round N:", i,", random generated j (0 to B-1) is ",j)
 
         t1 = time.time()
         cc = E3(si_j, taps, lambda_, lambda_, True)
@@ -233,6 +234,8 @@ def Puz_Gen(N, B, S, lambda_, puf_parameter, xor_arbiter_puf):
             H.append(ri_k)
 
         s1 = si_plus1
+        print("for i: ", i)
+        print(" si: ", s1)
         si = binary_array_to_int(s1)
 
     print("E2 duration:", t2 - t1)
@@ -350,7 +353,7 @@ def solution_equality(s1, s2):
             return False
     return True
 ####------------Puzzle solving---Row-wise----------------------------------------------#
-def Puz_Sol_Noisy_PUF_modified(N, B, lambda_, taps, initial_seed, puf_parameter, Z, helper_data, T_threshold):
+def Puz_Sol_Noisy_PUF_modified(N, B, lambda_, taps, initial_seed, puf_parameter, Z, helper_data, T_threshold, xor_arbiter_puf):
 
     bound=((lambda_**2)/2)*0.75
     si = np.array(list(bin(initial_seed)[2:].zfill(lambda_)), dtype=int)
@@ -384,20 +387,21 @@ def Puz_Sol_Noisy_PUF_modified(N, B, lambda_, taps, initial_seed, puf_parameter,
             #print("Li : ",Li)
             bound_Li=Li*lambda_*0.75/2
             #print("bound_Li : ", bound_Li)
+            print("j: ",j)
 
             for k in range(Li):
-                count+=Hamming_Distance(XOR_PUF(ci[k], puf_parameter), helper_data[i*(lambda_)+k])
+                count+=Hamming_Distance(XOR_PUF(ci[k], puf_parameter, xor_arbiter_puf), helper_data[i*(lambda_)+k])
                 count_puf+=1
                 # print("helper_data ", i*(lambda_)+k, ": ", helper_data[i*(lambda_)+k])
             hdd=[]
-            #print("count:", count)
+            print("count:", count)
             if count < bound_Li and count<min_count:
-                #print("yes!")
+                print("yes!")
                 
                 min_count=count
                 #for k in range (0,lambda_,1):
                 for k in range (lambda_):
-                    hd=Hamming_Distance(XOR_PUF(ci[k], puf_parameter), helper_data[i*(lambda_)+k])
+                    hd=Hamming_Distance(XOR_PUF(ci[k], puf_parameter, xor_arbiter_puf), helper_data[i*(lambda_)+k])
                     count_puf+=1
                     
                     if hd<=(T_threshold*lambda_):                      
@@ -496,6 +500,7 @@ def Puz_Sol_Noisy_PUF_ColumnWise(N, B, lambda_, taps, initial_seed, puf_paramete
                     si[k] = 0
 
         initial_seed = int(''.join(map(str, si)), 2)
+        print("si (solve) ",i ,": ",si)
 
     # Final decryption using si
     key = aes_key_from_seed(si)
@@ -548,13 +553,13 @@ def decrypt(encrypted_solution, seed):
 
 ####-----------Run the Puzzle generator and solver-------------------------------------#
 #### Parameters:
-t=150*100
+t=300000
 #tc=0.0000019941329956054688 #seconds
 #tc=0.000004681343203978919
 tc=0.0000042812264110301671
 tc=0.022
 # tc=1.4
-evaluations=1
+evaluations=1000 
 e=t*0.1
 p=0.95
 B_min=5
@@ -619,9 +624,12 @@ for i in range(L):
 gen_duration=0
 sol_duration=0
 x=0
-N2=5
-B2=500
+N2=6
+B2=1000
 print("lambda_:",lambda_)
+failure_count=0
+success_count=0
+puf_count_all=[]
 
 for k in range (evaluations):
     time1 = time.time()
@@ -633,18 +641,24 @@ for k in range (evaluations):
     print("Z:",Z)
     time3 = time.time()
     S_sol, count_puf=Puz_Sol_Noisy_PUF_ColumnWise(N2, B2, lambda_, taps, c0, puf_parameter, Z, helper_data, T_threshold, xor_arbiter_puf)
-    #S_sol, count_puf=Puz_Sol_Noisy_PUF_modified(N2, B2, lambda_, taps, c0, puf_parameter, Z, helper_data, T_threshold)
+    #S_sol, count_puf=Puz_Sol_Noisy_PUF_modified(N2, B2, lambda_, taps, c0, puf_parameter, Z, helper_data, T_threshold, xor_arbiter_puf)
     time4 = time.time()
-    print("Puz_Gen function duration:", time2-time1)
-    print("Puz_Sol_Noisy_PUF function duration:", time4-time3)
-    print("count_puf: ", count_puf)
-    print("tc*(L+2+2*N2): ", tc*(L+2+2*N2))
-print("S  : ", S)
-print("S_Sol: ", S_sol)
-if solution_equality(S, S_sol):
-    print("The solved solution is the same as locked solution.")
-else:
-    print("The solved solution is not the same as locked solution!!")
+    #print("Puz_Gen function duration:", time2-time1)
+    #print("Puz_Sol_Noisy_PUF function duration:", time4-time3)
+    puf_count_all.append(count_puf)
+    #print("count_puf: ", count_puf)
+    #print("tc*(L+2+2*N2): ", tc*(L+2+2*N2))
+    if solution_equality(S, S_sol):
+        print("The solved solution is the same as locked solution.")
+        success_count+=1       
+    else:
+        print("The solved solution is not the same as locked solution!!")
+        failure_count+=1
+        print("S  : ", S)
+        print("S_Sol: ", S_sol)
+
+print("puf_count_all:",puf_count_all)
+ 
 
 ###=====Start Reliability evaluation=================================>
 ### Measures robustness of the PUF to challenge corruption: 
@@ -756,10 +770,10 @@ def puf_instance(challenge, puf_parameters):
 # For evaluationg the reliability of XORArbiterPUF over different sigma_noise values, 
 # we can add the noises to the sigma_list and run the test_reliability func:
 sigma_list = np.linspace(0.01, 0.2, 3)
-reliability_results1 = test_reliability(puf_parameters['n'], sigma_list, puf_parameters)
+#reliability_results1 = test_reliability(puf_parameters['n'], sigma_list, puf_parameters)
 
-for sigma, reliability in reliability_results1.items():
-    print(f"σ = {sigma:.3f} → Reliability = {reliability:.4f}")
+# for sigma, reliability in reliability_results1.items():
+#     print(f"σ = {sigma:.3f} → Reliability = {reliability:.4f}")
 
 #challenge_robustness_results = test_robustness (puf_instance, puf_parameters)
 
