@@ -1,2 +1,4 @@
-/outcmaes/ 
+*
+!/.gitignore
+!/outcmaes/
 
