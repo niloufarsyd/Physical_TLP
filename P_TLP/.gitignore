@@ -1,26 +1,6 @@
-*
-!/.gitignore
-!/outcmaes/
-
-# Python
 __pycache__/
 *.pyc
-.venv/
 venv/
-
-# C++ / Build files
-build/
-*.exe
-*.obj
-*.o
-
-# LaTeX temporary files
-*.aux
-*.log
-*.out
-*.toc
-*.synctex.gz
-
-# VS Code / OS files
-.vscode/
+.venv/
 .DS_Store
+.vscode/
