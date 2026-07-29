@@ -1,0 +1,1201 @@
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/puf_saeidboard_new design/PUF/PUF_TOP.xst" -ofn "E:/new codes/puf_saeidboard_new design/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/puf_saeidboard_new design/PUF/PUF_TOP.xst" -ofn "E:/new codes/puf_saeidboard_new design/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/puf_saeidboard_new design/PUF/PUF_TOP.xst" -ofn "E:/new codes/puf_saeidboard_new design/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+xpwr -intstyle ise -ol std PUF_TOP.ncd PUF_TOP.pcf -o PUF_TOP.pwr 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+xpwr -intstyle ise -ol std PUF_TOP.ncd PUF_TOP.pcf -o PUF_TOP.pwr 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/PUF/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version3/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 PUF_TOP_cs.ngc PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+bitgen -intstyle ise -f PUF_TOP.ut PUF_TOP.ncd 
+xst -intstyle ise -ifn "E:/payan name/Sent/puf_4_3_version4/PUF_TOP.xst" -ofn "E:/payan name/Sent/puf_4_3_version4/PUF_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_PUF_TOP.ucf -p xc6slx9-tqg144-3 "PUF_TOP.ngc" PUF_TOP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TOP_map.ncd PUF_TOP.ngd PUF_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TOP_map.ncd PUF_TOP.ncd PUF_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TOP.twx PUF_TOP.ncd -o PUF_TOP.twr PUF_TOP.pcf -ucf UCFof_PUF_TOP.ucf 

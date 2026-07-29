@@ -1,0 +1,49 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - A core named 'DCM2' already exists in the project. Output products
+   for this core may be overwritten.
+Resolving generics for 'DCM2'...
+WARNING:sim - A core named 'DCM2' already exists in the project. Output products
+   for this core may be overwritten.
+Applying external generics to 'DCM2'...
+Delivering associated files for 'DCM2'...
+WARNING:sim - Component clk_wiz_v3_6 does not have a valid model name for VHDL
+   synthesis
+Delivering EJava files for 'DCM2'...
+Delivered 3 files into directory E:/new
+codes/SCRO_DCU_(4_3)/puf_4_3_version2/ipcore_dir/tmp/_cg/DCM2
+Delivered 1 file into directory E:/new
+codes/SCRO_DCU_(4_3)/puf_4_3_version2/ipcore_dir/tmp/_cg/DCM2
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx9.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'DCM2'...
+Generating ISE project...
+XCO file found: DCM2.xco
+XMDF file found: DCM2_xmdf.tcl
+Adding E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/ipcore_dir/tmp/_cg/DCM2.asy
+-view all -origin_type imported
+Adding E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/ipcore_dir/tmp/_cg/DCM2.ucf
+-view all -origin_type created
+Adding E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/ipcore_dir/tmp/_cg/DCM2.vhd
+-view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file "E:/new
+   codes/SCRO_DCU_(4_3)/puf_4_3_version2/ipcore_dir/tmp/_cg/DCM2.vhd" into
+   library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/ipcore_dir/tmp/_cg/DCM2.vho
+-view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/DCM2"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'DCM2'.

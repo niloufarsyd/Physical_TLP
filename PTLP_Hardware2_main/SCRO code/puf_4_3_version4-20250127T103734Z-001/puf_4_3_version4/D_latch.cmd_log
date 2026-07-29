@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/D_latch.xst" -ofn "E:/new codes/PUF/D_latch.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "D_latch.ngc" D_latch.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o D_latch_map.ncd D_latch.ngd D_latch.pcf 
+par -w -intstyle ise -ol high -mt off D_latch_map.ncd D_latch.ncd D_latch.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml D_latch.twx D_latch.ncd -o D_latch.twr D_latch.pcf 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/D_latch.vhi" -module D_latch -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work D_Latch.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 

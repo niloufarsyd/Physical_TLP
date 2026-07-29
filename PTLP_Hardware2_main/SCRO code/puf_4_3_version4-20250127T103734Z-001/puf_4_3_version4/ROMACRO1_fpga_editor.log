@@ -1,0 +1,45 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Xilinx\14.7\ISE_DS\ISE
+#Date/Time:
+#:T   Sun Jun 28 03:11:52 2020
+#------------------------------
+	#Reading E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\ROMACRO1.nmc...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "ROMACRO1" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2020.06.27.22.41.55
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+select -k comp 'Os_OBUF'
+	#2
+unselect comp 'Os_OBUF'
+	#3
+select -k comp 'c<3>'
+	#4
+unselect -all
+	#5
+select comp 'c<3>'
+	#comp "c<3>",  site "SLICE_X10Y2",  type = SLICEX  (RPM grid X33Y8)
+	#6
+unselect -all
+	#7
+unselect -all
+	#8
+unselect -all
+	#9
+select comp 'c<3>'
+	#comp "c<3>",  site "SLICE_X10Y2",  type = SLICEX  (RPM grid X33Y8)
+	#10
+unselect -all
+	#11
+select comp 'c<3>'
+	#comp "c<3>",  site "SLICE_X10Y2",  type = SLICEX  (RPM grid X33Y8)
+	#12
+setattr main refcomp c<3>
+	#Reference component has been set to "c<3>".
+	#13
+unselect -all

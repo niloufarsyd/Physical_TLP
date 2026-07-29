@@ -1,0 +1,113 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml my_counter.twx my_counter.ncd -o my_counter.twr my_counter.pcf
+
+Design file:              my_counter.ncd
+Physical constraint file: my_counter.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock PULSE_IN
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CE          |    2.501(F)|      SLOW  |    3.821(F)|      SLOW  |A6_BUFG           |   0.000|
+CLR         |    2.250(F)|      SLOW  |    3.920(F)|      SLOW  |A6_BUFG           |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock PULSE_IN to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Q<0>        |        10.430(F)|      SLOW  |         5.078(F)|      FAST  |A6_BUFG           |   0.000|
+Q<1>        |        10.430(F)|      SLOW  |         5.078(F)|      FAST  |A6_BUFG           |   0.000|
+Q<2>        |        10.481(F)|      SLOW  |         5.129(F)|      FAST  |A6_BUFG           |   0.000|
+Q<3>        |        10.481(F)|      SLOW  |         5.129(F)|      FAST  |A6_BUFG           |   0.000|
+Q<4>        |        10.430(F)|      SLOW  |         5.078(F)|      FAST  |A6_BUFG           |   0.000|
+Q<5>        |        10.430(F)|      SLOW  |         5.078(F)|      FAST  |A6_BUFG           |   0.000|
+Q<6>        |        10.480(F)|      SLOW  |         5.128(F)|      FAST  |A6_BUFG           |   0.000|
+Q<7>        |        10.480(F)|      SLOW  |         5.128(F)|      FAST  |A6_BUFG           |   0.000|
+Q<8>        |        10.414(F)|      SLOW  |         5.062(F)|      FAST  |A6_BUFG           |   0.000|
+Q<9>        |        10.414(F)|      SLOW  |         5.062(F)|      FAST  |A6_BUFG           |   0.000|
+Q<10>       |        10.464(F)|      SLOW  |         5.112(F)|      FAST  |A6_BUFG           |   0.000|
+Q<11>       |        10.464(F)|      SLOW  |         5.112(F)|      FAST  |A6_BUFG           |   0.000|
+Q<12>       |        10.388(F)|      SLOW  |         5.036(F)|      FAST  |A6_BUFG           |   0.000|
+Q<13>       |        10.388(F)|      SLOW  |         5.036(F)|      FAST  |A6_BUFG           |   0.000|
+Q<14>       |        10.438(F)|      SLOW  |         5.086(F)|      FAST  |A6_BUFG           |   0.000|
+Q<15>       |        10.438(F)|      SLOW  |         5.086(F)|      FAST  |A6_BUFG           |   0.000|
+Q<16>       |        10.437(F)|      SLOW  |         5.085(F)|      FAST  |A6_BUFG           |   0.000|
+Q<17>       |        10.437(F)|      SLOW  |         5.085(F)|      FAST  |A6_BUFG           |   0.000|
+Q<18>       |        10.392(F)|      SLOW  |         5.040(F)|      FAST  |A6_BUFG           |   0.000|
+Q<19>       |        10.392(F)|      SLOW  |         5.040(F)|      FAST  |A6_BUFG           |   0.000|
+Q<20>       |        10.442(F)|      SLOW  |         5.090(F)|      FAST  |A6_BUFG           |   0.000|
+Q<21>       |        10.442(F)|      SLOW  |         5.090(F)|      FAST  |A6_BUFG           |   0.000|
+Q<22>       |        10.392(F)|      SLOW  |         5.040(F)|      FAST  |A6_BUFG           |   0.000|
+Q<23>       |        10.392(F)|      SLOW  |         5.040(F)|      FAST  |A6_BUFG           |   0.000|
+Q<24>       |        10.442(F)|      SLOW  |         5.090(F)|      FAST  |A6_BUFG           |   0.000|
+Q<25>       |        10.442(F)|      SLOW  |         5.090(F)|      FAST  |A6_BUFG           |   0.000|
+Q<26>       |        10.303(F)|      SLOW  |         4.951(F)|      FAST  |A6_BUFG           |   0.000|
+Q<27>       |        10.303(F)|      SLOW  |         4.951(F)|      FAST  |A6_BUFG           |   0.000|
+Q<28>       |        10.301(F)|      SLOW  |         4.949(F)|      FAST  |A6_BUFG           |   0.000|
+Q<29>       |        10.301(F)|      SLOW  |         4.949(F)|      FAST  |A6_BUFG           |   0.000|
+Q<30>       |        10.312(F)|      SLOW  |         4.960(F)|      FAST  |A6_BUFG           |   0.000|
+Q<31>       |        10.312(F)|      SLOW  |         4.960(F)|      FAST  |A6_BUFG           |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock PULSE_IN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PULSE_IN       |         |         |         |    3.957|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+PULSE_IN       |A11            |    5.528|
+PULSE_IN       |A22            |    6.416|
+PULSE_IN       |A33            |    6.736|
+PULSE_IN       |A44            |    8.540|
+PULSE_IN       |A55            |    7.766|
+PULSE_IN       |A66            |    9.150|
+---------------+---------------+---------+
+
+
+Analysis completed Thu May 28 16:42:15 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4549 MB
+
+
+

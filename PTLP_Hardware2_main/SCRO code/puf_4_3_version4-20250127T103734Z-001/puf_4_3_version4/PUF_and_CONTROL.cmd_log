@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/PUF_and_CONTROL.xst" -ofn "E:/new codes/PUF/PUF_and_CONTROL.syr" 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/PUF_and_CONTROL.vhi" -module PUF_and_CONTROL -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_counter.vhd -lib work my_compare.vhd -lib work Multiplexer_D.vhd -lib work Multiplexer_2to1.vhd -lib work D_Latch.vhd -lib work Decoder_D.vhd -lib work RO_DCU_MACRO_instantiate.vhd -lib work CONTROLLER.vhd -lib work TOP_D.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_and_CONTROL.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF_and_CONTROL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF_and_CONTROL.ngc" PUF_and_CONTROL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_and_CONTROL_map.ncd PUF_and_CONTROL.ngd PUF_and_CONTROL.pcf 
+par -w -intstyle ise -ol high -mt off PUF_and_CONTROL_map.ncd PUF_and_CONTROL.ncd PUF_and_CONTROL.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_and_CONTROL.twx PUF_and_CONTROL.ncd -o PUF_and_CONTROL.twr PUF_and_CONTROL.pcf 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_and_CONTROL.vhi" -module PUF_and_CONTROL -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PUF_OUT_REGISTER.vhd -lib work my_counter.vhd -lib work my_compare.vhd -lib work Multiplexer_D.vhd -lib work Multiplexer_2to1.vhd -lib work D_Latch.vhd -lib work Decoder_D.vhd -lib work RO_DCU_MACRO_instantiate.vhd -lib work CONTROLLER.vhd -lib work TOP_D.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/payan name/Sent/puf_4_3_version4/PUF_and_CONTROL.xst" -ofn "E:/payan name/Sent/puf_4_3_version4/PUF_and_CONTROL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF_and_CONTROL.ngc" PUF_and_CONTROL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_and_CONTROL_map.ncd PUF_and_CONTROL.ngd PUF_and_CONTROL.pcf 
+par -w -intstyle ise -ol high -mt off PUF_and_CONTROL_map.ncd PUF_and_CONTROL.ncd PUF_and_CONTROL.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_and_CONTROL.twx PUF_and_CONTROL.ncd -o PUF_and_CONTROL.twr PUF_and_CONTROL.pcf 

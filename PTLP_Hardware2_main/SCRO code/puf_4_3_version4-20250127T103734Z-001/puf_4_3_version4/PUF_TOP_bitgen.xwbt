@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\new codes\SCRO_DCU_(4_3)\puf_4_3_version4\PUF_TOP.ncd
+OUTFILE=E:\new codes\SCRO_DCU_(4_3)\puf_4_3_version4\PUF_TOP.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\new codes\SCRO_DCU_(4_3)\puf_4_3_version4
+LICENSE=WebPack
+USER_INFO=__0_0_0

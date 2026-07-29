@@ -1,0 +1,309 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.96 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.96 secs
+ 
+--> Reading design: RO.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RO.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RO"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : RO
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+WARNING:UtilitiesC:240 - The message file "E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir/_xmsgs/xst.xmsgs" is corrupt, therefore all message will be marked as new.
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\RO.vhd" into library work
+Parsing entity <RO>.
+Parsing architecture <Behavioral> of entity <ro>.
+Parsing VHDL file "E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\ipcore_dir\DCM1\example_design\DCM1_exdes.vhd" into library work
+Parsing entity <DCM1_exdes>.
+Parsing architecture <xilinx> of entity <dcm1_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <RO> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RO>.
+    Related source file is "E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\RO.vhd".
+    Set property "RLOC = X7Y8" for instance <inst_nand>.
+    Set property "RLOC = X7Y8" for instance <inst_Inv1>.
+    Set property "RLOC = X7Y8" for instance <inst_Inv2>.
+    Set property "RLOC = X7Y8" for instance <inst_Inv3>.
+    Set property "RLOC = X5Y8" for instance <inst_Inv4>.
+    Set property "KEEP = TRUE" for signal <c<3>>.
+    Set property "KEEP =  TRUE " for signal <c<2>>.
+    Set property "KEEP =  TRUE " for signal <c<1>>.
+    Set property "KEEP =  TRUE " for signal <c<0>>.
+    Summary:
+	no macro.
+Unit <RO> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit RO : the following signal(s) form a combinatorial loop: c<3>, c<1>, Os, c<2>, c<0>.
+
+Optimizing unit <RO> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RO, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RO.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 5
+#      LUT1                        : 4
+#      LUT2                        : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                    5  out of   5720     0%  
+    Number used as Logic:                 5  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      5
+   Number with an unused Flip Flop:       5  out of      5   100%  
+   Number with an unused LUT:             0  out of      5     0%  
+   Number of fully used LUT-FF pairs:     0  out of      5     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   2  out of    102     1%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.144ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               10.144ns (Levels of Logic = 7)
+  Source:            En (PAD)
+  Destination:       Os (PAD)
+
+  Data Path: En to Os
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.684  En_IBUF (En_IBUF)
+     LUT2:I0->O            1   0.463   0.580  inst_nand (c<3>)
+     LUT1:I0->O            1   0.567   0.580  inst_Inv1 (c<2>)
+     LUT1:I0->O            1   0.567   0.580  inst_Inv2 (c<1>)
+     LUT1:I0->O            1   0.567   0.580  inst_Inv3 (c<0>)
+     LUT1:I0->O            2   0.567   0.616  inst_Inv4 (Os_OBUF)
+     OBUF:I->O                 2.571          Os_OBUF (Os)
+    ----------------------------------------
+    Total                     10.144ns (6.524ns logic, 3.620ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.50 secs
+ 
+--> 
+
+Total memory usage is 4521176 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

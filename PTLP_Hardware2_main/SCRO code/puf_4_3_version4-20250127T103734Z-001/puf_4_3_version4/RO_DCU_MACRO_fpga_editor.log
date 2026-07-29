@@ -1,0 +1,61 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Xilinx\14.7\ISE_DS\ISE
+#Date/Time:
+#:T   Tue Dec 22 12:05:58 2020
+#------------------------------
+	#Reading E:\iot\puf\saeid fpga board\code\ex2_puf\PUF\RO_DCU_MACRO.nmc...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "RO_DCU_MACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2020.12.22.08.36.00
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+select -k comp 'S<1>'
+	#2
+unselect comp 'S<1>'
+	#3
+select -k comp 'S<5>'
+	#4
+unselect -all
+	#5
+select comp 'S<5>'
+	#comp "S<5>",  site "SLICE_X4Y2",  type = SLICEX  (RPM grid X17Y8)
+	#6
+unselect -all
+	#7
+select comp 'S<5>'
+	#comp "S<5>",  site "SLICE_X4Y2",  type = SLICEX  (RPM grid X17Y8)
+	#8
+post block
+	#9
+unselect comp 'S<5>'
+	#10
+select -k comp 'S<1>'
+	#11
+unselect -all
+	#12
+select comp 'S<1>'
+	#comp "S<1>",  site "SLICE_X5Y2",  type = SLICEX  (RPM grid X19Y8)
+	#13
+post block
+	#<D5LUT>=(A3+A5); bel <inst_or_DCU3>.
+	#14
+unselect comp 'S<1>'
+	#15
+select -k comp 'S<5>'
+	#16
+unselect -all
+	#17
+select comp 'S<5>'
+	#comp "S<5>",  site "SLICE_X4Y2",  type = SLICEX  (RPM grid X17Y8)
+	#18
+unselect -all
+	#19
+select comp 'S<5>'
+	#comp "S<5>",  site "SLICE_X4Y2",  type = SLICEX  (RPM grid X17Y8)
+	#20
+post block

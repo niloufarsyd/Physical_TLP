@@ -1,0 +1,244 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml RO_DCU_MACROs_part2.twx RO_DCU_MACROs_part2.ncd -o
+RO_DCU_MACROs_part2.twr RO_DCU_MACROs_part2.pcf -ucf RO_DCU_MACRO_LOCATION2.ucf
+
+Design file:              RO_DCU_MACROs_part2.ncd
+Physical constraint file: RO_DCU_MACROs_part2.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CI<0>          |RO_F<0>        |   16.878|
+CI<0>          |RO_F<1>        |   16.896|
+CI<0>          |RO_F<2>        |   16.616|
+CI<0>          |RO_F<3>        |   16.774|
+CI<0>          |RO_F<4>        |   16.261|
+CI<0>          |RO_F<5>        |   16.401|
+CI<0>          |RO_F<6>        |   15.978|
+CI<0>          |RO_F<7>        |   16.379|
+CI<0>          |RO_F<8>        |   15.950|
+CI<0>          |RO_F<9>        |   16.092|
+CI<0>          |RO_F<10>       |   15.668|
+CI<0>          |RO_F<11>       |   15.681|
+CI<0>          |RO_F<12>       |   15.799|
+CI<0>          |RO_F<13>       |   16.198|
+CI<0>          |RO_F<14>       |   16.068|
+CI<0>          |RO_F<15>       |   16.732|
+CI<0>          |RO_F<16>       |   16.604|
+CI<0>          |RO_F<17>       |   17.069|
+CI<0>          |RO_F<18>       |   17.072|
+CI<0>          |RO_F<19>       |   17.689|
+CI<0>          |RO_F<20>       |   17.177|
+CI<0>          |RO_F<21>       |   17.810|
+CI<0>          |RO_F<22>       |   17.702|
+CI<0>          |RO_F<23>       |   18.405|
+CI<0>          |RO_F<24>       |   18.169|
+CI<0>          |RO_F<25>       |   18.836|
+CI<0>          |RO_F<26>       |   18.242|
+CI<0>          |RO_F<27>       |   18.901|
+CI<0>          |RO_F<28>       |   18.607|
+CI<0>          |RO_F<29>       |   18.881|
+CI<0>          |RO_F<30>       |   18.623|
+CI<0>          |RO_F<31>       |   19.166|
+CI<1>          |RO_F<0>        |   15.077|
+CI<1>          |RO_F<1>        |   14.456|
+CI<1>          |RO_F<2>        |   14.955|
+CI<1>          |RO_F<3>        |   14.465|
+CI<1>          |RO_F<4>        |   14.731|
+CI<1>          |RO_F<5>        |   14.223|
+CI<1>          |RO_F<6>        |   14.579|
+CI<1>          |RO_F<7>        |   14.332|
+CI<1>          |RO_F<8>        |   14.709|
+CI<1>          |RO_F<9>        |   14.162|
+CI<1>          |RO_F<10>       |   14.517|
+CI<1>          |RO_F<11>       |   13.881|
+CI<1>          |RO_F<12>       |   13.996|
+CI<1>          |RO_F<13>       |   14.823|
+CI<1>          |RO_F<14>       |   14.267|
+CI<1>          |RO_F<15>       |   14.671|
+CI<1>          |RO_F<16>       |   14.897|
+CI<1>          |RO_F<17>       |   15.250|
+CI<1>          |RO_F<18>       |   15.546|
+CI<1>          |RO_F<19>       |   16.001|
+CI<1>          |RO_F<20>       |   15.782|
+CI<1>          |RO_F<21>       |   16.253|
+CI<1>          |RO_F<22>       |   16.440|
+CI<1>          |RO_F<23>       |   16.981|
+CI<1>          |RO_F<24>       |   16.998|
+CI<1>          |RO_F<25>       |   17.550|
+CI<1>          |RO_F<26>       |   17.249|
+CI<1>          |RO_F<27>       |   17.746|
+CI<1>          |RO_F<28>       |   17.746|
+CI<1>          |RO_F<29>       |   17.858|
+CI<1>          |RO_F<30>       |   17.903|
+CI<1>          |RO_F<31>       |   18.278|
+CI<2>          |RO_F<0>        |   12.101|
+CI<2>          |RO_F<1>        |   11.980|
+CI<2>          |RO_F<2>        |   12.498|
+CI<2>          |RO_F<3>        |   12.504|
+CI<2>          |RO_F<4>        |   12.807|
+CI<2>          |RO_F<5>        |   12.796|
+CI<2>          |RO_F<6>        |   13.190|
+CI<2>          |RO_F<7>        |   13.439|
+CI<2>          |RO_F<8>        |   13.880|
+CI<2>          |RO_F<9>        |   13.870|
+CI<2>          |RO_F<10>       |   14.262|
+CI<2>          |RO_F<11>       |   14.123|
+CI<2>          |RO_F<12>       |   14.573|
+CI<2>          |RO_F<13>       |   15.437|
+CI<2>          |RO_F<14>       |   14.980|
+CI<2>          |RO_F<15>       |   15.515|
+CI<2>          |RO_F<16>       |   15.609|
+CI<2>          |RO_F<17>       |   15.962|
+CI<2>          |RO_F<18>       |   16.258|
+CI<2>          |RO_F<19>       |   16.713|
+CI<2>          |RO_F<20>       |   16.495|
+CI<2>          |RO_F<21>       |   16.966|
+CI<2>          |RO_F<22>       |   17.152|
+CI<2>          |RO_F<23>       |   17.693|
+CI<2>          |RO_F<24>       |   17.710|
+CI<2>          |RO_F<25>       |   18.262|
+CI<2>          |RO_F<26>       |   17.961|
+CI<2>          |RO_F<27>       |   18.459|
+CI<2>          |RO_F<28>       |   18.459|
+CI<2>          |RO_F<29>       |   18.571|
+CI<2>          |RO_F<30>       |   18.615|
+CI<2>          |RO_F<31>       |   18.991|
+CI<3>          |RO_F<0>        |   10.676|
+CI<3>          |RO_F<1>        |   10.308|
+CI<3>          |RO_F<2>        |   11.091|
+CI<3>          |RO_F<3>        |   10.961|
+CI<3>          |RO_F<4>        |   11.421|
+CI<3>          |RO_F<5>        |   11.123|
+CI<3>          |RO_F<6>        |   11.672|
+CI<3>          |RO_F<7>        |   11.634|
+CI<3>          |RO_F<8>        |   12.225|
+CI<3>          |RO_F<9>        |   11.928|
+CI<3>          |RO_F<10>       |   12.476|
+CI<3>          |RO_F<11>       |   12.050|
+CI<3>          |RO_F<12>       |   12.656|
+CI<3>          |RO_F<13>       |   13.233|
+CI<3>          |RO_F<14>       |   12.932|
+CI<3>          |RO_F<15>       |   13.180|
+CI<3>          |RO_F<16>       |   13.419|
+CI<3>          |RO_F<17>       |   13.485|
+CI<3>          |RO_F<18>       |   13.937|
+CI<3>          |RO_F<19>       |   14.105|
+CI<3>          |RO_F<20>       |   14.043|
+CI<3>          |RO_F<21>       |   14.227|
+CI<3>          |RO_F<22>       |   14.569|
+CI<3>          |RO_F<23>       |   14.823|
+CI<3>          |RO_F<24>       |   14.990|
+CI<3>          |RO_F<25>       |   15.255|
+CI<3>          |RO_F<26>       |   15.110|
+CI<3>          |RO_F<27>       |   15.320|
+CI<3>          |RO_F<28>       |   15.477|
+CI<3>          |RO_F<29>       |   15.302|
+CI<3>          |RO_F<30>       |   15.494|
+CI<3>          |RO_F<31>       |   15.588|
+CI<4>          |RO_F<0>        |    8.604|
+CI<4>          |RO_F<1>        |    8.959|
+CI<4>          |RO_F<2>        |    9.083|
+CI<4>          |RO_F<3>        |    9.671|
+CI<4>          |RO_F<4>        |    9.260|
+CI<4>          |RO_F<5>        |    9.831|
+CI<4>          |RO_F<6>        |    9.511|
+CI<4>          |RO_F<7>        |   10.350|
+CI<4>          |RO_F<8>        |    9.913|
+CI<4>          |RO_F<9>        |   10.638|
+CI<4>          |RO_F<10>       |   10.158|
+CI<4>          |RO_F<11>       |   10.754|
+CI<4>          |RO_F<12>       |   10.870|
+CI<4>          |RO_F<13>       |   11.467|
+CI<4>          |RO_F<14>       |   11.145|
+CI<4>          |RO_F<15>       |   11.869|
+CI<4>          |RO_F<16>       |   11.558|
+CI<4>          |RO_F<17>       |   12.032|
+CI<4>          |RO_F<18>       |   12.495|
+CI<4>          |RO_F<19>       |   12.660|
+CI<4>          |RO_F<20>       |   12.753|
+CI<4>          |RO_F<21>       |   12.782|
+CI<4>          |RO_F<22>       |   13.280|
+CI<4>          |RO_F<23>       |   13.410|
+CI<4>          |RO_F<24>       |   13.658|
+CI<4>          |RO_F<25>       |   13.607|
+CI<4>          |RO_F<26>       |   13.618|
+CI<4>          |RO_F<27>       |   13.672|
+CI<4>          |RO_F<28>       |   13.984|
+CI<4>          |RO_F<29>       |   13.654|
+CI<4>          |RO_F<30>       |   14.010|
+CI<4>          |RO_F<31>       |   13.934|
+RO_EN<0>       |RO_F<0>        |   16.200|
+RO_EN<1>       |RO_F<1>        |   16.453|
+RO_EN<2>       |RO_F<2>        |   16.637|
+RO_EN<3>       |RO_F<3>        |   16.572|
+RO_EN<4>       |RO_F<4>        |   16.291|
+RO_EN<5>       |RO_F<5>        |   16.875|
+RO_EN<6>       |RO_F<6>        |   16.530|
+RO_EN<7>       |RO_F<7>        |   16.903|
+RO_EN<8>       |RO_F<8>        |   16.858|
+RO_EN<9>       |RO_F<9>        |   17.286|
+RO_EN<10>      |RO_F<10>       |   17.080|
+RO_EN<11>      |RO_F<11>       |   17.219|
+RO_EN<12>      |RO_F<12>       |   17.613|
+RO_EN<13>      |RO_F<13>       |   17.686|
+RO_EN<14>      |RO_F<14>       |   17.541|
+RO_EN<15>      |RO_F<15>       |   18.134|
+RO_EN<16>      |RO_F<16>       |   18.800|
+RO_EN<17>      |RO_F<17>       |   19.062|
+RO_EN<18>      |RO_F<18>       |   18.669|
+RO_EN<19>      |RO_F<19>       |   18.654|
+RO_EN<20>      |RO_F<20>       |   18.544|
+RO_EN<21>      |RO_F<21>       |   18.508|
+RO_EN<22>      |RO_F<22>       |   18.008|
+RO_EN<23>      |RO_F<23>       |   17.896|
+RO_EN<24>      |RO_F<24>       |   17.727|
+RO_EN<25>      |RO_F<25>       |   18.079|
+RO_EN<26>      |RO_F<26>       |   17.684|
+RO_EN<27>      |RO_F<27>       |   18.283|
+RO_EN<28>      |RO_F<28>       |   18.090|
+RO_EN<29>      |RO_F<29>       |   17.948|
+RO_EN<30>      |RO_F<30>       |   18.517|
+RO_EN<31>      |RO_F<31>       |   18.506|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Dec 05 15:05:21 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4575 MB
+
+
+

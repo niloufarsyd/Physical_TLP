@@ -1,0 +1,259 @@
+#:C99    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\new codes\PUF
+#Date/Time:
+#:T   Sun Dec 06 16:37:13 2020
+#------------------------------
+	#Reading E:\new codes\PUF\RO_MACRO.nmc...
+	#   "RO_MACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2020.12.06.13.07.13
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+select -k comp 'S<1>'
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+select pin 'SLICE_X4Y2.D'
+	#site.pin = SLICE_X4Y2.D, comp.pin = S<5>.D, delay = driver on net "S<5>"
+	#5
+add extpin
+	#6
+post attr pin SLICE_X4Y2.D
+	#7
+setattr pin SLICE_X4Y2.D  external_name RO_F
+	#8
+unpost pin "SLICE_X4Y2.D"
+	#9
+unselect -all
+	#10
+select net 'GLOBAL_LOGIC1'
+	#net "GLOBAL_LOGIC1"
+	#11
+unselect -all
+	#12
+select pin 'SLICE_X4Y2.DQ'
+	#site.pin = SLICE_X4Y2.DQ, comp.pin = S<5>.DQ
+	#13
+unselect -all
+	#14
+select pin 'SLICE_X4Y2.D'
+	#site.pin = SLICE_X4Y2.D, comp.pin = S<5>.D, hard macro.pin = RO_F, delay = driver on net "S<5>"
+	#15
+unselect -all
+	#16
+select pin 'SLICE_X4Y2.C6'
+	#site.pin = SLICE_X4Y2.C6, comp.pin = S<5>.C6, hard macro.pin = RO_F, delay = ~0.119ns on net "S<5>"
+	#17
+unselect -all
+	#18
+select pin 'SLICE_X4Y2.C6'
+	#site.pin = SLICE_X4Y2.C6, comp.pin = S<5>.C6, hard macro.pin = RO_F, delay = ~0.119ns on net "S<5>"
+	#19
+unselect -all
+	#20
+select net 'GLOBAL_LOGIC1'
+	#net "GLOBAL_LOGIC1"
+	#21
+unselect -all
+	#22
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, delay = ~0.000ns on net "GLOBAL_LOGIC1"
+	#23
+unselect -all
+	#24
+save
+	#   "RO_MACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#25
+unselect -all
+	#26
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, delay = ~0.000ns on net "GLOBAL_LOGIC1"
+	#27
+unselect -all
+	#28
+select net 'GLOBAL_LOGIC1'
+	#net "GLOBAL_LOGIC1"
+	#29
+unselect -all
+	#30
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, delay = ~0.000ns on net "GLOBAL_LOGIC1"
+	#31
+add extpin
+	#32
+post attr pin SLICE_X5Y2.A6
+	#33
+setattr pin SLICE_X5Y2.A6  external_name VCCPIN
+	#34
+unpost pin "SLICE_X5Y2.A6"
+	#35
+unselect -all
+	#36
+select net 'GLOBAL_LOGIC1'
+	#net "GLOBAL_LOGIC1"
+	#37
+add
+	#38
+unselect -all
+	#39
+select pin 'SLICE_X5Y2.B6'
+	#site.pin = SLICE_X5Y2.B6, comp.pin = S<1>.B6, hard macro.pin = VCCPIN, delay = ~0.000ns on net "GLOBAL_LOGIC1"
+	#40
+unselect -all
+	#41
+select pin 'SLICE_X5Y2.D6'
+	#site.pin = SLICE_X5Y2.D6, comp.pin = S<1>.D6, hard macro.pin = VCCPIN, delay = ~0.000ns on net "GLOBAL_LOGIC1"
+	#42
+unselect pin 'SLICE_X5Y2.D6'
+	#43
+select -k net 'GLOBAL_LOGIC1'
+	#44
+delete
+	#ERROR:FPGAEditor:3 - You cannot make logic changes in the current edit mode.
+	#WARNING:FPGAEditor:140 - Nothing found to delete.
+	#45
+unselect -all
+	#46
+select -k net 'GLOBAL_LOGIC1'
+	#47
+delete
+	#ERROR:FPGAEditor:3 - You cannot make logic changes in the current edit mode.
+	#WARNING:FPGAEditor:140 - Nothing found to delete.
+	#48
+unselect -all
+	#49
+select net 'GLOBAL_LOGIC1'
+	#net "GLOBAL_LOGIC1"
+	#50
+post attr
+	#51
+unpost net "GLOBAL_LOGIC1"
+	#52
+post attr main
+	#Getting available speed grades of the device...
+	#53
+setattr main edit-mode Read-Write
+	#54
+setattr main case_sensitive off
+	#55
+unpost main
+	#56
+unselect -all
+	#57
+select pin 'SLICE_X4Y2.D'
+	#site.pin = SLICE_X4Y2.D, comp.pin = S<5>.D, hard macro.pin = RO_F, delay = driver on net "S<5>"
+	#58
+unselect -all
+	#59
+select pin 'SLICE_X4Y2.D6'
+	#site.pin = SLICE_X4Y2.D6, comp.pin = S<5>.D6, hard macro.pin = VCCPIN, delay = ~0.000ns on net "GLOBAL_LOGIC1"
+	#60
+unselect -all
+	#61
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, hard macro.pin = VCCPIN, delay = ~0.000ns on net "GLOBAL_LOGIC1"
+	#62
+unselect -all
+	#63
+select net 'GLOBAL_LOGIC1'
+	#net "GLOBAL_LOGIC1"
+	#64
+unselect -all
+	#65
+select -k net 'GLOBAL_LOGIC1'
+	#66
+delete
+	#67
+unselect -all
+	#68
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, hard macro.pin = VCCPIN
+	#69
+unselect -all
+	#70
+select pin 'SLICE_X5Y2.B6'
+	#site.pin = SLICE_X5Y2.B6, comp.pin = S<1>.B6, hard macro.pin = VCCPIN
+	#71
+unselect -all
+	#72
+select pin 'SLICE_X5Y2.A4'
+	#site.pin = SLICE_X5Y2.A4, comp.pin = S<1>.A4, hard macro.pin = CI(2), delay = ~0.000ns on net "CI_2_IBUF"
+	#73
+unselect -all
+	#74
+select pin 'SLICE_X5Y2.D6'
+	#site.pin = SLICE_X5Y2.D6, comp.pin = S<1>.D6, hard macro.pin = VCCPIN
+	#75
+unselect -all
+	#76
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, hard macro.pin = VCCPIN
+	#77
+unselect -all
+	#78
+unselect -all
+	#79
+select pin 'SLICE_X4Y2.D6'
+	#site.pin = SLICE_X4Y2.D6, comp.pin = S<5>.D6, hard macro.pin = VCCPIN
+	#80
+unselect -all
+	#81
+unselect -all
+	#82
+select comp 'S<5>'
+	#comp "S<5>",  site "SLICE_X4Y2",  type = SLICEX  (RPM grid X17Y8)
+	#83
+setattr main refcomp S<5>
+	#Reference component has been set to "S<5>".
+	#84
+unselect -all
+	#85
+unselect -all
+	#86
+select comp 'S<5>'
+	#comp "S<5>",  site "SLICE_X4Y2",  type = SLICEX  (RPM grid X17Y8)
+	#87
+unselect -all
+	#88
+unselect -all
+	#89
+select pin 'SLICE_X5Y2.A4'
+	#site.pin = SLICE_X5Y2.A4, comp.pin = S<1>.A4, hard macro.pin = CI(2), delay = ~0.000ns on net "CI_2_IBUF"
+	#90
+unselect -all
+	#91
+select pin 'SLICE_X5Y2.B4'
+	#site.pin = SLICE_X5Y2.B4, comp.pin = S<1>.B4, hard macro.pin = CI(3), delay = ~0.000ns on net "CI_3_IBUF"
+	#92
+unselect -all
+	#93
+select pin 'SLICE_X5Y2.C3'
+	#site.pin = SLICE_X5Y2.C3, comp.pin = S<1>.C3, hard macro.pin = CI(1), delay = ~0.000ns on net "CI_1_IBUF"
+	#94
+unselect -all
+	#95
+select pin 'SLICE_X5Y2.D3'
+	#site.pin = SLICE_X5Y2.D3, comp.pin = S<1>.D3, hard macro.pin = CI(0), delay = ~0.000ns on net "CI_0_IBUF"
+	#96
+unselect -all
+	#97
+select pin 'SLICE_X4Y2.C5'
+	#site.pin = SLICE_X4Y2.C5, comp.pin = S<5>.C5, hard macro.pin = RO_EN, delay = ~0.000ns on net "RO_EN_IBUF"
+	#98
+unselect -all
+	#99
+select pin 'SLICE_X4Y2.D3'
+	#site.pin = SLICE_X4Y2.D3, comp.pin = S<5>.D3, hard macro.pin = CI(4), delay = ~0.000ns on net "CI_4_IBUF"
+	#100
+unselect -all
+	#101
+select pin 'SLICE_X4Y2.D'
+	#site.pin = SLICE_X4Y2.D, comp.pin = S<5>.D, hard macro.pin = RO_F, delay = driver on net "S<5>"
+	#102
+save

@@ -1,0 +1,41 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc
+RO_DCU_MACRO_LOCATION2.ucf -p xc6slx9-tqg144-3 RO_DCU_MACROs_part2.ngc
+RO_DCU_MACROs_part2.ngd
+
+Reading NGO file "E:/new codes/PUF/RO_DCU_MACROs_part2.ngc" ...
+Loading device for application Rf_Device from file '6slx9.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+   "RO_DCU_MACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed
+-3
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "RO_DCU_MACRO_LOCATION2.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 4513692 kilobytes
+
+Writing NGD file "RO_DCU_MACROs_part2.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+Writing NGDBUILD log file "RO_DCU_MACROs_part2.bld"...

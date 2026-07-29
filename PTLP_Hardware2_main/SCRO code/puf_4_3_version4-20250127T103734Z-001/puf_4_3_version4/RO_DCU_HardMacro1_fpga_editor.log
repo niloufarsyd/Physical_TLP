@@ -1,0 +1,28 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   G:\iot\puf\new codes\TESTOF_RO_MACRO
+#Date/Time:
+#:T   Sun Nov 28 13:41:41 2021
+#------------------------------
+	#Reading E:\payan name\Sent\puf_4_3_version4\RO_DCU_HardMacro1.nmc...
+	#   "RO_DCU_HardMacro1" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.11.28.10.11.42
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+select -k comp 'S<1>'
+	#2
+unselect -all
+	#3
+select net 'S<4>'
+	#net "S<4>"
+	#4
+unselect -all
+	#5
+select net 'S<0>'
+	#net "S<0>"
+	#6
+post open

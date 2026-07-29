@@ -1,0 +1,9 @@
+vhdtdtfi -prj AVA6STest -o "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/my_COMPARE.vhi" -module my_COMPARE -template F:/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_compare.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+vhdtdtfi -prj AVA6STest -o F:/iot/puf/PUF/code/mine/ex24/my_COMPARE.vhi -module my_COMPARE -template F:/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_compare.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+vhdtdtfi -prj AVA6STest -o F:/iot/puf/PUF/code/mine/ex24/my_COMPARE.vhi -module my_COMPARE -template F:/ISE/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_compare.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/new codes/PUF/my_COMPARE.xst" -ofn "E:/new codes/PUF/my_COMPARE.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "my_COMPARE.ngc" my_COMPARE.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o my_COMPARE_map.ncd my_COMPARE.ngd my_COMPARE.pcf 
+par -w -intstyle ise -ol high -mt off my_COMPARE_map.ncd my_COMPARE.ncd my_COMPARE.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml my_COMPARE.twx my_COMPARE.ncd -o my_COMPARE.twr my_COMPARE.pcf 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/my_COMPARE.vhi" -module my_COMPARE -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_compare.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 

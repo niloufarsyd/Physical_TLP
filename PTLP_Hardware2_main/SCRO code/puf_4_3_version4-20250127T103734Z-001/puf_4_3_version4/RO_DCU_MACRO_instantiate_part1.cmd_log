@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate_part1.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate_part1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate_part1.ngc" RO_DCU_MACRO_instantiate_part1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_part1_map.ncd RO_DCU_MACRO_instantiate_part1.ngd RO_DCU_MACRO_instantiate_part1.pcf 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_part1_map.ncd RO_DCU_MACRO_instantiate_part1.ngd RO_DCU_MACRO_instantiate_part1.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/PUF_TopModule.xst" -ofn "E:/new codes/PUF/PUF_TopModule.syr" 

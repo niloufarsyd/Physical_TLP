@@ -1,0 +1,67 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\iot\puf\saeid fpga board\code\ex2_puf\PUF
+#Date/Time:
+#:T   Mon Jan 04 00:31:05 2021
+#------------------------------
+	#Reading TEST_led_RO_DCU_HardMacro2_map.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "TEST_led_RO_DCU_HardMacro2" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.01.03.20.58.43
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'Inst_RO_DCU_MACRO_1/D<4>'
+	#3
+unselect comp 'Inst_RO_DCU_MACRO_1/D<4>'
+	#4
+select -k comp 'Inst_RO_DCU_MACRO_1/S<3>'
+	#5
+select site 'SLICE_X0Y20'
+	#site "SLICE_X0Y20",  type = SLICEM  (RPM grid X5Y80)
+	#6
+unselect comp 'Inst_RO_DCU_MACRO_1/S<3>'
+	#7
+unselect site 'SLICE_X0Y20'
+	#8
+select -k comp 'Inst_RO_DCU_MACRO_1/D<4>'
+	#9
+select comp 'Inst_RO_DCU_MACRO_1/S<3>'
+	#10
+unselect -all
+	#11
+unselect -all
+	#12
+select site 'SLICE_X0Y20'
+	#site "SLICE_X0Y20",  type = SLICEM  (RPM grid X5Y80)
+	#13
+unselect -all
+	#14
+select site 'SLICE_X0Y20'
+	#site "SLICE_X0Y20",  type = SLICEM  (RPM grid X5Y80)
+	#15
+post block
+	#WARNING:FPGAEditor:3 - You cannot make logic changes in the current edit mode.
+	#16
+post attr main
+	#Getting available speed grades of the device...
+	#17
+setattr main edit-mode Read-Write
+	#18
+setattr main case_sensitive off
+	#19
+unpost main
+	#20
+end block
+	#21
+unselect -all
+	#22
+select site 'SLICE_X1Y20'
+	#site "SLICE_X1Y20",  type = SLICEX  (RPM grid X7Y80)
+	#23
+post block

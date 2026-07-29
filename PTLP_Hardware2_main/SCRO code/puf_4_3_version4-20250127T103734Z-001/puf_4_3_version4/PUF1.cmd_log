@@ -1,0 +1,83 @@
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf 
+bitgen -intstyle ise -f PUF1.ut PUF1.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf 
+bitgen -intstyle ise -f PUF1.ut PUF1.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf -ucf ucf_of_PUF1.ucf 
+bitgen -intstyle ise -f PUF1.ut PUF1.ncd 
+bitgen -intstyle ise -f PUF1.ut PUF1.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf -ucf ucf_of_PUF1.ucf 
+bitgen -intstyle ise -f PUF1.ut PUF1.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf -ucf ucf_of_PUF1.ucf 
+bitgen -intstyle ise -f PUF1.ut PUF1.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf -ucf ucf_of_PUF1.ucf 
+bitgen -intstyle ise -f PUF1.ut PUF1.ncd 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/puf_saeidboard_new design/PUF/PUF1.vhi" -module PUF1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_counter.vhd -lib work my_compare.vhd -lib work Multiplexer_D.vhd -lib work Multiplexer_2to1.vhd -lib work D_Latch.vhd -lib work Decoder_D.vhd -lib work RO_DCU_MACRO_instantiate.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/PUF1.xst" -ofn "E:/new codes/SCRO_DCU/PUF/PUF1.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_PUF1.ucf -p xc6slx9-tqg144-3 "PUF1.ngc" PUF1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF1_map.ncd PUF1.ngd PUF1.pcf 
+par -w -intstyle ise -ol high -mt off PUF1_map.ncd PUF1.ncd PUF1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF1.twx PUF1.ncd -o PUF1.twr PUF1.pcf -ucf ucf_of_PUF1.ucf 

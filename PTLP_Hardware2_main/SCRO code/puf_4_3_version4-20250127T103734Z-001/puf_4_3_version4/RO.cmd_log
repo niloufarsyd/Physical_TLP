@@ -1,0 +1,3 @@
+vhdtdtfi -lib work RO.vhd -prj AVA6STest -o RO.spl -module RO -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 RO.spl E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/RO.sym 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/RO.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/RO.syr" 

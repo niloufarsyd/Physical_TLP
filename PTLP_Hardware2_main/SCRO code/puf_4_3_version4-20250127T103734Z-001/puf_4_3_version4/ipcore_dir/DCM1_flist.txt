@@ -1,0 +1,3 @@
+# Output products list for <DCM1>
+DCM1.xco
+DCM1_flist.txt

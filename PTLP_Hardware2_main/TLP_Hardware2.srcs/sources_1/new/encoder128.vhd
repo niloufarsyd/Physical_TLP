@@ -1,0 +1,143 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity encoder128 is
+  port(
+    x : in  std_logic_vector(127 downto 0);
+    y : out std_logic_vector(7 downto 0)
+  );
+end encoder128;
+
+architecture DataFlow of encoder128 is
+begin
+  y <=
+    "01111111" when x(127) = '1' else
+    "01111110" when x(126) = '1' else
+    "01111101" when x(125) = '1' else
+    "01111100" when x(124) = '1' else
+    "01111011" when x(123) = '1' else
+    "01111010" when x(122) = '1' else
+    "01111001" when x(121) = '1' else
+    "01111000" when x(120) = '1' else
+    "01110111" when x(119) = '1' else
+    "01110110" when x(118) = '1' else
+    "01110101" when x(117) = '1' else
+    "01110100" when x(116) = '1' else
+    "01110011" when x(115) = '1' else
+    "01110010" when x(114) = '1' else
+    "01110001" when x(113) = '1' else
+    "01110000" when x(112) = '1' else
+    "01101111" when x(111) = '1' else
+    "01101110" when x(110) = '1' else
+    "01101101" when x(109) = '1' else
+    "01101100" when x(108) = '1' else
+    "01101011" when x(107) = '1' else
+    "01101010" when x(106) = '1' else
+    "01101001" when x(105) = '1' else
+    "01101000" when x(104) = '1' else
+    "01100111" when x(103) = '1' else
+    "01100110" when x(102) = '1' else
+    "01100101" when x(101) = '1' else
+    "01100100" when x(100) = '1' else
+    "01100011" when x(99) = '1' else
+    "01100010" when x(98) = '1' else
+    "01100001" when x(97) = '1' else
+    "01100000" when x(96) = '1' else
+    "01011111" when x(95) = '1' else
+    "01011110" when x(94) = '1' else
+    "01011101" when x(93) = '1' else
+    "01011100" when x(92) = '1' else
+    "01011011" when x(91) = '1' else
+    "01011010" when x(90) = '1' else
+    "01011001" when x(89) = '1' else
+    "01011000" when x(88) = '1' else
+    "01010111" when x(87) = '1' else
+    "01010110" when x(86) = '1' else
+    "01010101" when x(85) = '1' else
+    "01010100" when x(84) = '1' else
+    "01010011" when x(83) = '1' else
+    "01010010" when x(82) = '1' else
+    "01010001" when x(81) = '1' else
+    "01010000" when x(80) = '1' else
+    "01001111" when x(79) = '1' else
+    "01001110" when x(78) = '1' else
+    "01001101" when x(77) = '1' else
+    "01001100" when x(76) = '1' else
+    "01001011" when x(75) = '1' else
+    "01001010" when x(74) = '1' else
+    "01001001" when x(73) = '1' else
+    "01001000" when x(72) = '1' else
+    "01000111" when x(71) = '1' else
+    "01000110" when x(70) = '1' else
+    "01000101" when x(69) = '1' else
+    "01000100" when x(68) = '1' else
+    "01000011" when x(67) = '1' else
+    "01000010" when x(66) = '1' else
+    "01000001" when x(65) = '1' else
+    "01000000" when x(64) = '1' else
+    "00111111" when x(63) = '1' else
+    "00111110" when x(62) = '1' else
+    "00111101" when x(61) = '1' else
+    "00111100" when x(60) = '1' else
+    "00111011" when x(59) = '1' else
+    "00111010" when x(58) = '1' else
+    "00111001" when x(57) = '1' else
+    "00111000" when x(56) = '1' else
+    "00110111" when x(55) = '1' else
+    "00110110" when x(54) = '1' else
+    "00110101" when x(53) = '1' else
+    "00110100" when x(52) = '1' else
+    "00110011" when x(51) = '1' else
+    "00110010" when x(50) = '1' else
+    "00110001" when x(49) = '1' else
+    "00110000" when x(48) = '1' else
+    "00101111" when x(47) = '1' else
+    "00101110" when x(46) = '1' else
+    "00101101" when x(45) = '1' else
+    "00101100" when x(44) = '1' else
+    "00101011" when x(43) = '1' else
+    "00101010" when x(42) = '1' else
+    "00101001" when x(41) = '1' else
+    "00101000" when x(40) = '1' else
+    "00100111" when x(39) = '1' else
+    "00100110" when x(38) = '1' else
+    "00100101" when x(37) = '1' else
+    "00100100" when x(36) = '1' else
+    "00100011" when x(35) = '1' else
+    "00100010" when x(34) = '1' else
+    "00100001" when x(33) = '1' else
+    "00100000" when x(32) = '1' else
+    "00011111" when x(31) = '1' else
+    "00011110" when x(30) = '1' else
+    "00011101" when x(29) = '1' else
+    "00011100" when x(28) = '1' else
+    "00011011" when x(27) = '1' else
+    "00011010" when x(26) = '1' else
+    "00011001" when x(25) = '1' else
+    "00011000" when x(24) = '1' else
+    "00010111" when x(23) = '1' else
+    "00010110" when x(22) = '1' else
+    "00010101" when x(21) = '1' else
+    "00010100" when x(20) = '1' else
+    "00010011" when x(19) = '1' else
+    "00010010" when x(18) = '1' else
+    "00010001" when x(17) = '1' else
+    "00010000" when x(16) = '1' else
+    "00001111" when x(15) = '1' else
+    "00001110" when x(14) = '1' else
+    "00001101" when x(13) = '1' else
+    "00001100" when x(12) = '1' else
+    "00001011" when x(11) = '1' else
+    "00001010" when x(10) = '1' else
+    "00001001" when x(9)  = '1' else
+    "00001000" when x(8)  = '1' else
+    "00000111" when x(7)  = '1' else
+    "00000110" when x(6)  = '1' else
+    "00000101" when x(5)  = '1' else
+    "00000100" when x(4)  = '1' else
+    "00000011" when x(3)  = '1' else
+    "00000010" when x(2)  = '1' else
+    "00000001" when x(1)  = '1' else
+    "00000000" when x(0)  = '1' else
+    (others => 'Z');
+end DataFlow;

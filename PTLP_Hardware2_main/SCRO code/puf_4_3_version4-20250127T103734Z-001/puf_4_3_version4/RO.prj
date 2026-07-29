@@ -1,0 +1,2 @@
+vhdl work "RO.vhd"
+vhdl work "ipcore_dir/DCM1/example_design/DCM1_exdes.vhd"

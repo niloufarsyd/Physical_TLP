@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/COUNTER_OF_TEST.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/COUNTER_OF_TEST.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/COUNTER_OF_TEST.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/COUNTER_OF_TEST.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "COUNTER_OF_TEST.ngc" COUNTER_OF_TEST.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o COUNTER_OF_TEST_map.ncd COUNTER_OF_TEST.ngd COUNTER_OF_TEST.pcf 
+par -w -intstyle ise -ol high -mt off COUNTER_OF_TEST_map.ncd COUNTER_OF_TEST.ncd COUNTER_OF_TEST.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml COUNTER_OF_TEST.twx COUNTER_OF_TEST.ncd -o COUNTER_OF_TEST.twr COUNTER_OF_TEST.pcf 
+vhdtdtfi -prj AVA6STest -o "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/COUNTER_OF_TEST.vhi" -module COUNTER_OF_TEST -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work COUNTER_OF_TEST.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 

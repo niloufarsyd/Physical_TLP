@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/DCU2.xst" -ofn "E:/new codes/PUF/DCU2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "DCU2.ngc" DCU2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DCU2_map.ncd DCU2.ngd DCU2.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/DCU2.xst" -ofn "E:/new codes/PUF/DCU2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "DCU2.ngc" DCU2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DCU2_map.ncd DCU2.ngd DCU2.pcf 
+par -w -intstyle ise -ol high -mt off DCU2_map.ncd DCU2.ncd DCU2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DCU2.twx DCU2.ncd -o DCU2.twr DCU2.pcf 

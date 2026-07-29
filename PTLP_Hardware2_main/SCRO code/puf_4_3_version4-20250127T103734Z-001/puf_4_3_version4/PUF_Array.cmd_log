@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_Array.ngc PUF_Array.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_Array_map.ncd PUF_Array.ngd PUF_Array.pcf 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_Array.ngc PUF_Array.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_Array_map.ncd PUF_Array.ngd PUF_Array.pcf 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_Array.ngc PUF_Array.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_Array_map.ncd PUF_Array.ngd PUF_Array.pcf 
+par -w -intstyle ise -ol high -mt off PUF_Array_map.ncd PUF_Array.ncd PUF_Array.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_Array.twx PUF_Array.ncd -o PUF_Array.twr PUF_Array.pcf 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_Array.ngc PUF_Array.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_Array_map.ncd PUF_Array.ngd PUF_Array.pcf 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_Array.ngc PUF_Array.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_Array_map.ncd PUF_Array.ngd PUF_Array.pcf 
+par -w -intstyle ise -ol high -mt off PUF_Array_map.ncd PUF_Array.ncd PUF_Array.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_Array.twx PUF_Array.ncd -o PUF_Array.twr PUF_Array.pcf 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_Array.syr" 

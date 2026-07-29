@@ -1,0 +1,648 @@
+#:C289   
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\new codes\PUF
+#Date/Time:
+#:T   Mon Dec 07 07:12:43 2020
+#------------------------------
+	#Reading RO_DCU_MACRO_instantiate_map.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "RO_DCU_MACRO_instantiate" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#   "RO_DCU_MACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2020.12.07.03.42.10
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k hm 'Inst_RO_DCU_MACRO_1'
+	#3
+unselect -all
+	#4
+unselect -all
+	#5
+select hm 'Inst_RO_DCU_MACRO_1'
+	#Hard Macro Inst "Inst_RO_DCU_MACRO_1", type "RO_DCU_MACRO", refcomp "Inst_RO_DCU_MACRO_1/S<5>"
+	#6
+unselect -all
+	#7
+select hm 'Inst_RO_DCU_MACRO_1'
+	#Hard Macro Inst "Inst_RO_DCU_MACRO_1", type "RO_DCU_MACRO", refcomp "Inst_RO_DCU_MACRO_1/S<5>"
+	#8
+unselect -all
+	#9
+select comp 'Inst_RO_DCU_MACRO_1/S<5>'
+	#comp "Inst_RO_DCU_MACRO_1/S<5>" in hard macro "Inst_RO_DCU_MACRO_1",  site "SLICE_X2Y2",  type = SLICEX  (RPM grid X9Y8)
+	#10
+post block
+	#11
+unselect comp 'Inst_RO_DCU_MACRO_1/S<5>'
+	#12
+select -k hm 'Inst_RO_DCU_MACRO_2'
+	#13
+unselect hm 'Inst_RO_DCU_MACRO_2'
+	#14
+select -k hm 'Inst_RO_DCU_MACRO_3'
+	#15
+unselect hm 'Inst_RO_DCU_MACRO_3'
+	#16
+select -k hm 'Inst_RO_DCU_MACRO_14'
+	#17
+unselect hm 'Inst_RO_DCU_MACRO_14'
+	#18
+select -k hm 'Inst_RO_DCU_MACRO_15'
+	#19
+unselect hm 'Inst_RO_DCU_MACRO_15'
+	#20
+select -k hm 'Inst_RO_DCU_MACRO_29'
+	#21
+unselect hm 'Inst_RO_DCU_MACRO_29'
+	#22
+select -k hm 'Inst_RO_DCU_MACRO_28'
+	#23
+unselect hm 'Inst_RO_DCU_MACRO_28'
+	#24
+select -k hm 'Inst_RO_DCU_MACRO_30'
+	#25
+unselect hm 'Inst_RO_DCU_MACRO_30'
+	#26
+select -k hm 'Inst_RO_DCU_MACRO_31'
+	#27
+unselect hm 'Inst_RO_DCU_MACRO_31'
+	#28
+select -k hm 'Inst_RO_DCU_MACRO_39'
+	#29
+unselect hm 'Inst_RO_DCU_MACRO_39'
+	#30
+select -k hm 'Inst_RO_DCU_MACRO_48'
+	#31
+unselect hm 'Inst_RO_DCU_MACRO_48'
+	#32
+select -k hm 'Inst_RO_DCU_MACRO_47'
+	#33
+unselect hm 'Inst_RO_DCU_MACRO_47'
+	#34
+select -k hm 'Inst_RO_DCU_MACRO_48'
+	#35
+unselect hm 'Inst_RO_DCU_MACRO_48'
+	#36
+select -k hm 'Inst_RO_DCU_MACRO_50'
+	#37
+unselect hm 'Inst_RO_DCU_MACRO_50'
+	#38
+select -k hm 'Inst_RO_DCU_MACRO_51'
+	#39
+unselect hm 'Inst_RO_DCU_MACRO_51'
+	#40
+select -k hm 'Inst_RO_DCU_MACRO_52'
+	#41
+unselect hm 'Inst_RO_DCU_MACRO_52'
+	#42
+select -k hm 'Inst_RO_DCU_MACRO_57'
+	#43
+unselect hm 'Inst_RO_DCU_MACRO_57'
+	#44
+select -k hm 'Inst_RO_DCU_MACRO_58'
+	#45
+unselect hm 'Inst_RO_DCU_MACRO_58'
+	#46
+select -k hm 'Inst_RO_DCU_MACRO_64'
+	#47
+unselect hm 'Inst_RO_DCU_MACRO_64'
+	#48
+select -k hm 'Inst_RO_DCU_MACRO_63'
+	#49
+unselect hm 'Inst_RO_DCU_MACRO_63'
+	#50
+select -k hm 'Inst_RO_DCU_MACRO_62'
+	#51
+select hm 'Inst_RO_DCU_MACRO_64'
+	#52
+select hm 'Inst_RO_DCU_MACRO_63'
+	#53
+select hm 'Inst_RO_DCU_MACRO_61'
+	#54
+select hm 'Inst_RO_DCU_MACRO_60'
+	#55
+select hm 'Inst_RO_DCU_MACRO_59'
+	#56
+select hm 'Inst_RO_DCU_MACRO_58'
+	#57
+select hm 'Inst_RO_DCU_MACRO_57'
+	#58
+select hm 'Inst_RO_DCU_MACRO_56'
+	#59
+select hm 'Inst_RO_DCU_MACRO_55'
+	#60
+select hm 'Inst_RO_DCU_MACRO_54'
+	#61
+select hm 'Inst_RO_DCU_MACRO_53'
+	#62
+select hm 'Inst_RO_DCU_MACRO_52'
+	#63
+select hm 'Inst_RO_DCU_MACRO_51'
+	#64
+select hm 'Inst_RO_DCU_MACRO_50'
+	#65
+select hm 'Inst_RO_DCU_MACRO_50'
+	#66
+select hm 'Inst_RO_DCU_MACRO_49'
+	#67
+select hm 'Inst_RO_DCU_MACRO_50'
+	#68
+select hm 'Inst_RO_DCU_MACRO_48'
+	#69
+select hm 'Inst_RO_DCU_MACRO_47'
+	#70
+select hm 'Inst_RO_DCU_MACRO_46'
+	#71
+select hm 'Inst_RO_DCU_MACRO_45'
+	#72
+select hm 'Inst_RO_DCU_MACRO_44'
+	#73
+select hm 'Inst_RO_DCU_MACRO_43'
+	#74
+select hm 'Inst_RO_DCU_MACRO_39'
+	#75
+select hm 'Inst_RO_DCU_MACRO_29'
+	#76
+select hm 'Inst_RO_DCU_MACRO_28'
+	#77
+select hm 'Inst_RO_DCU_MACRO_17'
+	#78
+select hm 'Inst_RO_DCU_MACRO_11'
+	#79
+select hm 'Inst_RO_DCU_MACRO_2'
+	#80
+select hm 'Inst_RO_DCU_MACRO_1'
+	#81
+select hm 'Inst_RO_DCU_MACRO_3'
+	#82
+unselect hm 'Inst_RO_DCU_MACRO_62'
+	#83
+unselect hm 'Inst_RO_DCU_MACRO_64'
+	#84
+unselect hm 'Inst_RO_DCU_MACRO_63'
+	#85
+unselect hm 'Inst_RO_DCU_MACRO_61'
+	#86
+unselect hm 'Inst_RO_DCU_MACRO_60'
+	#87
+unselect hm 'Inst_RO_DCU_MACRO_59'
+	#88
+unselect hm 'Inst_RO_DCU_MACRO_58'
+	#89
+unselect hm 'Inst_RO_DCU_MACRO_57'
+	#90
+unselect hm 'Inst_RO_DCU_MACRO_56'
+	#91
+unselect hm 'Inst_RO_DCU_MACRO_55'
+	#92
+unselect hm 'Inst_RO_DCU_MACRO_54'
+	#93
+unselect hm 'Inst_RO_DCU_MACRO_53'
+	#94
+unselect hm 'Inst_RO_DCU_MACRO_52'
+	#95
+unselect hm 'Inst_RO_DCU_MACRO_51'
+	#96
+unselect hm 'Inst_RO_DCU_MACRO_49'
+	#97
+unselect hm 'Inst_RO_DCU_MACRO_50'
+	#98
+unselect hm 'Inst_RO_DCU_MACRO_48'
+	#99
+unselect hm 'Inst_RO_DCU_MACRO_47'
+	#100
+unselect hm 'Inst_RO_DCU_MACRO_46'
+	#101
+unselect hm 'Inst_RO_DCU_MACRO_45'
+	#102
+unselect hm 'Inst_RO_DCU_MACRO_44'
+	#103
+unselect hm 'Inst_RO_DCU_MACRO_43'
+	#104
+unselect hm 'Inst_RO_DCU_MACRO_39'
+	#105
+unselect hm 'Inst_RO_DCU_MACRO_29'
+	#106
+unselect hm 'Inst_RO_DCU_MACRO_28'
+	#107
+unselect hm 'Inst_RO_DCU_MACRO_17'
+	#108
+unselect hm 'Inst_RO_DCU_MACRO_11'
+	#109
+unselect hm 'Inst_RO_DCU_MACRO_2'
+	#110
+unselect hm 'Inst_RO_DCU_MACRO_3'
+	#111
+select hm 'Inst_RO_DCU_MACRO_8'
+	#112
+select hm 'Inst_RO_DCU_MACRO_44'
+	#113
+select hm 'Inst_RO_DCU_MACRO_48'
+	#114
+select hm 'Inst_RO_DCU_MACRO_55'
+	#115
+unselect hm 'Inst_RO_DCU_MACRO_1'
+	#116
+unselect hm 'Inst_RO_DCU_MACRO_8'
+	#117
+unselect hm 'Inst_RO_DCU_MACRO_44'
+	#118
+unselect hm 'Inst_RO_DCU_MACRO_48'
+	#119
+unselect hm 'Inst_RO_DCU_MACRO_55'
+	#120
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<11><5>1'
+	#121
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#122
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#123
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#124
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#125
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#126
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#127
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2'
+	#128
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#129
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#130
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1'
+	#131
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1'
+	#132
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1'
+	#133
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1'
+	#134
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1'
+	#135
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#136
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#137
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#138
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#139
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#140
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#141
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2'
+	#142
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#143
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#144
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1'
+	#145
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1'
+	#146
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1'
+	#147
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1'
+	#148
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1'
+	#149
+unselect -all
+	#150
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<11><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<11><5>1",  site "SLICE_X5Y24",  type = SLICEX  (RPM grid X19Y96)
+	#151
+post block
+	#152
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<11><5>1'
+	#153
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#154
+unselect -all
+	#155
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2",  site "SLICE_X7Y15",  type = SLICEX  (RPM grid X23Y60)
+	#156
+post block
+	#157
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#158
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#159
+unselect -all
+	#160
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1",  site "SLICE_X0Y29",  type = SLICEX  (RPM grid X5Y116)
+	#161
+post block
+	#162
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#163
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#164
+unselect -all
+	#165
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1",  site "SLICE_X5Y26",  type = SLICEX  (RPM grid X19Y104)
+	#166
+post block
+	#167
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#168
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#169
+unselect -all
+	#170
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1",  site "SLICE_X7Y26",  type = SLICEX  (RPM grid X23Y104)
+	#171
+post block
+	#172
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#173
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#174
+unselect -all
+	#175
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1",  site "SLICE_X7Y21",  type = SLICEX  (RPM grid X23Y84)
+	#176
+post block
+	#177
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#178
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#179
+unselect -all
+	#180
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1",  site "SLICE_X6Y26",  type = SLICEX  (RPM grid X21Y104)
+	#181
+post block
+	#182
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#183
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2'
+	#184
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2'
+	#185
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#186
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#187
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#188
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#189
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1'
+	#190
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1'
+	#191
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1'
+	#192
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1'
+	#193
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1'
+	#194
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1'
+	#195
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1'
+	#196
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1'
+	#197
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1'
+	#198
+unselect -all
+	#199
+select net 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>1'
+	#net "Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>1"
+	#200
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#201
+unselect -all
+	#202
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1",  site "SLICE_X4Y34",  type = SLICEX  (RPM grid X17Y136)
+	#203
+unselect -all
+	#204
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1",  site "SLICE_X4Y34",  type = SLICEX  (RPM grid X17Y136)
+	#205
+post block
+	#206
+unselect -all
+	#207
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1",  site "SLICE_X4Y34",  type = SLICEX  (RPM grid X17Y136)
+	#208
+post block
+	#209
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<56><5>1'
+	#210
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1'
+	#211
+unselect -all
+	#212
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1",  site "SLICE_X5Y34",  type = SLICEX  (RPM grid X19Y136)
+	#213
+post block
+	#214
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<48><5>1'
+	#215
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1'
+	#216
+unselect -all
+	#217
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1",  site "SLICE_X4Y26",  type = SLICEX  (RPM grid X17Y104)
+	#218
+post block
+	#219
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<24><5>1'
+	#220
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1'
+	#221
+unselect -all
+	#222
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1",  site "SLICE_X5Y13",  type = SLICEX  (RPM grid X19Y52)
+	#223
+post block
+	#224
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<17><5>1'
+	#225
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1'
+	#226
+unselect -all
+	#227
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1",  site "SLICE_X4Y17",  type = SLICEX  (RPM grid X17Y68)
+	#228
+post block
+	#229
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<16><5>1'
+	#230
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#231
+unselect -all
+	#232
+select net 'en_IBUF'
+	#net "en_IBUF"
+	#233
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#234
+unselect -all
+	#235
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1",  site "SLICE_X4Y13",  type = SLICEX  (RPM grid X17Y52)
+	#236
+unselect -all
+	#237
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1",  site "SLICE_X4Y13",  type = SLICEX  (RPM grid X17Y52)
+	#238
+post block
+	#239
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<15><5>1'
+	#240
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#241
+unselect -all
+	#242
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1",  site "SLICE_X4Y14",  type = SLICEX  (RPM grid X17Y56)
+	#243
+post block
+	#244
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#245
+select -k comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2'
+	#246
+unselect -all
+	#247
+select comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2'
+	#comp "Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2",  site "SLICE_X7Y13",  type = SLICEX  (RPM grid X23Y52)
+	#248
+post block
+	#249
+unselect comp 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<10><5>2'
+	#250
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#251
+unselect -all
+	#252
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1",  site "SLICE_X6Y26",  type = SLICEX  (RPM grid X21Y104)
+	#253
+post block
+	#254
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<52><5>1'
+	#255
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#256
+unselect -all
+	#257
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1",  site "SLICE_X7Y21",  type = SLICEX  (RPM grid X23Y84)
+	#258
+post block
+	#259
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<48><5>1'
+	#260
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#261
+unselect -all
+	#262
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1",  site "SLICE_X7Y26",  type = SLICEX  (RPM grid X23Y104)
+	#263
+post block
+	#264
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<36><5>1'
+	#265
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#266
+unselect -all
+	#267
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1",  site "SLICE_X5Y26",  type = SLICEX  (RPM grid X19Y104)
+	#268
+post block
+	#269
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<19><5>1'
+	#270
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#271
+unselect -all
+	#272
+select net 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<13><5>1'
+	#net "Inst_Decoder_D/inB[5]_Decoder_1_OUT<13><5>1"
+	#273
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#274
+unselect -all
+	#275
+select net 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#net "Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1"
+	#276
+unselect -all
+	#277
+select net 'Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1'
+	#net "Inst_Decoder_D/inB[5]_Decoder_1_OUT<11><5>1"
+	#278
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#279
+unselect -all
+	#280
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1",  site "SLICE_X0Y29",  type = SLICEX  (RPM grid X5Y116)
+	#281
+unselect -all
+	#282
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1",  site "SLICE_X0Y29",  type = SLICEX  (RPM grid X5Y116)
+	#283
+post block
+	#284
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<18><5>1'
+	#285
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#286
+unselect -all
+	#287
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2",  site "SLICE_X7Y15",  type = SLICEX  (RPM grid X23Y60)
+	#288
+post block
+	#289
+unselect comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<12><5>2'
+	#290
+select -k comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<11><5>1'
+	#291
+unselect -all
+	#292
+select comp 'Inst_Decoder_D/inA[5]_Decoder_0_OUT<11><5>1'
+	#comp "Inst_Decoder_D/inA[5]_Decoder_0_OUT<11><5>1",  site "SLICE_X5Y24",  type = SLICEX  (RPM grid X19Y96)
+	#293
+post block

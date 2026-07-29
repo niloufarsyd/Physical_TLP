@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml CONTROLLER.twx CONTROLLER.ncd -o CONTROLLER.twr
+CONTROLLER.pcf
+
+Design file:              CONTROLLER.ncd
+Physical constraint file: CONTROLLER.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Difference
+------------+------------+------------+------------+------------+------------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                    | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                   | Phase  |
+------------+------------+------------+------------+------------+------------------------------------+--------+
+XOR_OUT     |   -0.203(F)|      FAST  |    1.381(F)|      SLOW  |current_state[1]_Difference_Mux_19_o|   0.000|
+w           |    0.597(F)|      SLOW  |    0.572(F)|      SLOW  |current_state[1]_Difference_Mux_15_o|   0.000|
+------------+------------+------------+------------+------------+------------------------------------+--------+
+
+Setup/Hold to clock clock
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Reset       |    1.077(R)|      SLOW  |   -0.154(R)|      SLOW  |clock_BUFGP       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Difference to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                    | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                   | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+mux_sel     |         6.419(F)|      SLOW  |         3.567(F)|      FAST  |current_state[1]_Difference_Mux_19_o|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+
+Clock clock to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+a_clr       |         8.500(R)|      SLOW  |         4.277(R)|      FAST  |clock_BUFGP       |   0.000|
+cnt_en_ar   |         8.846(R)|      SLOW  |         4.642(R)|      FAST  |clock_BUFGP       |   0.000|
+en          |         8.320(R)|      SLOW  |         4.292(R)|      FAST  |clock_BUFGP       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Difference
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Difference     |         |         |    0.274|    0.274|
+clock          |         |         |    3.594|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Difference     |         |    3.111|         |         |
+clock          |    3.479|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Dec 12 15:38:00 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

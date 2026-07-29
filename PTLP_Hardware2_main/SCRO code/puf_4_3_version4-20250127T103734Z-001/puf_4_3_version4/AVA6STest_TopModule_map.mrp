@@ -1,0 +1,672 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'AVA6STest_TopModule'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
+high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir
+off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd
+AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sun Jun 28 04:27:20 2020
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   27
+Slice Logic Utilization:
+  Number of Slice Registers:                   520 out of  11,440    4%
+    Number used as Flip Flops:                 519
+    Number used as Latches:                      1
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      2,185 out of   5,720   38%
+    Number used as logic:                    2,050 out of   5,720   35%
+      Number using O6 output only:           1,817
+      Number using O5 output only:             119
+      Number using O5 and O6:                  114
+      Number used as ROM:                        0
+    Number used as Memory:                      82 out of   1,440    5%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            82
+        Number using O6 output only:            52
+        Number using O5 output only:             1
+        Number using O5 and O6:                 29
+    Number used exclusively as route-thrus:     53
+      Number with same-slice register load:     44
+      Number with same-slice carry load:         9
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   868 out of   1,430   60%
+  Number of MUXCYs used:                       232 out of   2,860    8%
+  Number of LUT Flip Flop pairs used:        2,287
+    Number with an unused Flip Flop:         1,838 out of   2,287   80%
+    Number with an unused LUT:                 102 out of   2,287    4%
+    Number of fully used LUT-FF pairs:         347 out of   2,287   15%
+    Number of unique control sets:              67
+    Number of slice register sites lost
+      to control set restrictions:             305 out of  11,440    2%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        30 out of     102   29%
+    Number of LOCed IOBs:                       30 out of      30  100%
+    IOB Flip Flops:                              4
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         2 out of      32    6%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
+    Number used as BUFIO2FBs:                    1
+    Number used as BUFIO2FB_2CLKs:               0
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   1 out of     200    1%
+    Number used as ILOGIC2s:                     1
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   3 out of     200    1%
+    Number used as OLOGIC2s:                     3
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+  Number of hard macros:         256
+  Number of RPM macros:           10
+Average Fanout of Non-Clock Nets:                2.50
+
+Peak Memory Usage:  4563 MB
+Total REAL time to MAP completion:  50 secs 
+Total CPU time to MAP completion:   50 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal o_SEGData connected to top level port o_SEGData has
+   been removed.
+WARNING:MapLib:701 - Signal o_SEGLatch connected to top level port o_SEGLatch
+   has been removed.
+WARNING:MapLib:701 - Signal o_LCDData connected to top level port o_LCDData has
+   been removed.
+WARNING:MapLib:701 - Signal o_LCDLatch connected to top level port o_LCDLatch
+   has been removed.
+WARNING:MapLib:701 - Signal o_Eth_RST connected to top level port o_Eth_RST has
+   been removed.
+WARNING:MapLib:701 - Signal o_Eth_CS connected to top level port o_Eth_CS has
+   been removed.
+WARNING:MapLib:701 - Signal o_Eth_RD connected to top level port o_Eth_RD has
+   been removed.
+WARNING:MapLib:701 - Signal o_Eth_WR connected to top level port o_Eth_WR has
+   been removed.
+WARNING:MapLib:701 - Signal o_USB_SLOE connected to top level port o_USB_SLOE
+   has been removed.
+WARNING:MapLib:701 - Signal o_USB_SLRD connected to top level port o_USB_SLRD
+   has been removed.
+WARNING:MapLib:701 - Signal o_USB_SLWR connected to top level port o_USB_SLWR
+   has been removed.
+WARNING:MapLib:701 - Signal o_VGA_blue0 connected to top level port o_VGA_blue0
+   has been removed.
+WARNING:MapLib:701 - Signal o_VGA_blue1 connected to top level port o_VGA_blue1
+   has been removed.
+WARNING:MapLib:701 - Signal o_VGA_green0 connected to top level port
+   o_VGA_green0 has been removed.
+WARNING:MapLib:701 - Signal o_VGA_green1 connected to top level port
+   o_VGA_green1 has been removed.
+WARNING:MapLib:701 - Signal o_VGA_red0 connected to top level port o_VGA_red0
+   has been removed.
+WARNING:MapLib:701 - Signal o_VGA_red1 connected to top level port o_VGA_red1
+   has been removed.
+WARNING:MapLib:701 - Signal o_VGA_vsync connected to top level port o_VGA_vsync
+   has been removed.
+WARNING:MapLib:701 - Signal o_VGA_hsync connected to top level port o_VGA_hsync
+   has been removed.
+WARNING:MapLib:701 - Signal o_TXD1 connected to top level port o_TXD1 has been
+   removed.
+WARNING:MapLib:701 - Signal o_TXD2 connected to top level port o_TXD2 has been
+   removed.
+WARNING:MapLib:701 - Signal o_MMC_SCK connected to top level port o_MMC_SCK has
+   been removed.
+WARNING:MapLib:701 - Signal o_MMC_DI connected to top level port o_MMC_DI has
+   been removed.
+WARNING:MapLib:701 - Signal o_MMC_CS connected to top level port o_MMC_CS has
+   been removed.
+WARNING:Pack:1653 - At least one timing constraint is impossible to meet because component delays alone exceed the constraint. A timing
+   constraint summary below shows the failing constraints (preceded with an Asterisk (*)). Please use the Timing Analyzer (GUI) or TRCE
+   (command line) with the Mapped NCD and PCF files to identify which constraints and paths are failing because of the component delays
+   alone. If the failing path(s) is mapped to Xilinx components as expected, consider relaxing the constraint. If it is not mapped to
+   components as expected, re-evaluate your HDL and how synthesis is optimizing the path. To allow the tools to bypass this error, set the
+   environment variable XIL_TIMING_ALLOW_IMPOSSIBLE to 1.
+
+
+   For more information about the Timing Analyzer, consult the Xilinx Timing Analyzer Reference manual; for more information on TRCE,
+   consult the Xilinx Command Line Tools User Guide "TRACE" chapter.
+WARNING:Place:1137 - This design is not guaranteed to be routable! This design
+   contains a global buffer instance, <second_DCM/clkout1_buf>, driving the net,
+   <s_CLK_5M>, that is driving the following (first 30) non-clock load pins.
+   < PIN: o_PSCLK1_INV_0.A6; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. Please pay extra attention to the timing and routing of this path to
+   ensure the design goals are met. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN
+   <second_DCM/clkout1_buf.O> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:Map:91 - puf_bit symbol "puf_ar/pufX1" has an RLOC attribute but the
+   attribute will be ignored because the hierarchy contains no symbols with RLOC
+   attributes.
+INFO:LIT:243 - Logical network icon_control0<35> has no load.
+INFO:LIT:395 - The above info message is repeated 50 more times for the
+   following (max. 5 shown):
+   icon_control0<34>,
+   icon_control0<33>,
+   icon_control0<32>,
+   icon_control0<31>,
+   icon_control0<30>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  94 block(s) removed
+  45 block(s) optimized away
+  54 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[1].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[2].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "U_icon_pro/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSR" (ROM) removed.
+Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
+(ROM) removed.
+Loadless block "second_DCM/clkout2_buf" (CKBUF) removed.
+ The signal "second_DCM/clkout1" is loadless and has been removed.
+Loadless block "second_DCM/clkout4_buf" (CKBUF) removed.
+ The signal "second_DCM/clkout3" is loadless and has been removed.
+The signal "icon_control0<35>" is sourceless and has been removed.
+The signal "icon_control0<34>" is sourceless and has been removed.
+The signal "icon_control0<33>" is sourceless and has been removed.
+The signal "icon_control0<32>" is sourceless and has been removed.
+The signal "icon_control0<31>" is sourceless and has been removed.
+The signal "icon_control0<30>" is sourceless and has been removed.
+The signal "icon_control0<29>" is sourceless and has been removed.
+The signal "icon_control0<28>" is sourceless and has been removed.
+The signal "icon_control0<27>" is sourceless and has been removed.
+The signal "icon_control0<26>" is sourceless and has been removed.
+The signal "icon_control0<25>" is sourceless and has been removed.
+The signal "icon_control0<24>" is sourceless and has been removed.
+The signal "icon_control0<23>" is sourceless and has been removed.
+The signal "icon_control0<22>" is sourceless and has been removed.
+The signal "icon_control0<18>" is sourceless and has been removed.
+The signal "icon_control0<17>" is sourceless and has been removed.
+The signal "icon_control0<16>" is sourceless and has been removed.
+The signal "icon_control0<15>" is sourceless and has been removed.
+The signal "icon_control0<11>" is sourceless and has been removed.
+The signal "icon_control0<10>" is sourceless and has been removed.
+The signal "icon_control0<7>" is sourceless and has been removed.
+The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<14>" is sourceless and has been
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE"
+(ROM) removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE"
+(ROM) removed.
+The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<13>" is sourceless and has been
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE"
+(ROM) removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE"
+(ROM) removed.
+The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<12>" is sourceless and has been
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE"
+(ROM) removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE"
+(ROM) removed.
+The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<11>" is sourceless and has been
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE"
+(ROM) removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE"
+(ROM) removed.
+The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<7>" is sourceless and has been
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM)
+removed.
+The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<6>" is sourceless and has been
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM)
+removed.
+The signal "U_icon_pro/U0/U_ICON/iCOMMAND_SEL<3>" is sourceless and has been
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
+removed.
+ Sourceless block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_LCE" (ROM)
+removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "o_MMC_SCK" is unused and has been removed.
+ Unused block "o_MMC_SCK_OBUFT" (TRI) removed.
+The signal "o_MMC_DI" is unused and has been removed.
+ Unused block "o_MMC_DI_OBUFT" (TRI) removed.
+The signal "o_MMC_CS" is unused and has been removed.
+ Unused block "o_MMC_CS_OBUFT" (TRI) removed.
+The signal "o_VGA_blue0" is unused and has been removed.
+ Unused block "o_VGA_blue0_OBUFT" (TRI) removed.
+The signal "o_VGA_blue1" is unused and has been removed.
+ Unused block "o_VGA_blue1_OBUFT" (TRI) removed.
+The signal "o_VGA_green0" is unused and has been removed.
+ Unused block "o_VGA_green0_OBUFT" (TRI) removed.
+The signal "o_VGA_green1" is unused and has been removed.
+ Unused block "o_VGA_green1_OBUFT" (TRI) removed.
+The signal "o_VGA_red0" is unused and has been removed.
+ Unused block "o_VGA_red0_OBUFT" (TRI) removed.
+The signal "o_VGA_red1" is unused and has been removed.
+ Unused block "o_VGA_red1_OBUFT" (TRI) removed.
+The signal "o_VGA_vsync" is unused and has been removed.
+ Unused block "o_VGA_vsync_OBUFT" (TRI) removed.
+The signal "o_VGA_hsync" is unused and has been removed.
+ Unused block "o_VGA_hsync_OBUFT" (TRI) removed.
+The signal "o_Eth_RST" is unused and has been removed.
+ Unused block "o_Eth_RST_OBUFT" (TRI) removed.
+The signal "o_Eth_CS" is unused and has been removed.
+ Unused block "o_Eth_CS_OBUFT" (TRI) removed.
+The signal "o_Eth_RD" is unused and has been removed.
+ Unused block "o_Eth_RD_OBUFT" (TRI) removed.
+The signal "o_Eth_WR" is unused and has been removed.
+ Unused block "o_Eth_WR_OBUFT" (TRI) removed.
+The signal "o_USB_SLOE" is unused and has been removed.
+ Unused block "o_USB_SLOE_OBUFT" (TRI) removed.
+The signal "o_USB_SLRD" is unused and has been removed.
+ Unused block "o_USB_SLRD_OBUFT" (TRI) removed.
+The signal "o_USB_SLWR" is unused and has been removed.
+ Unused block "o_USB_SLWR_OBUFT" (TRI) removed.
+The signal "o_TXD1" is unused and has been removed.
+ Unused block "o_TXD1_OBUFT" (TRI) removed.
+The signal "o_TXD2" is unused and has been removed.
+ Unused block "o_TXD2_OBUFT" (TRI) removed.
+The signal "o_SEGData" is unused and has been removed.
+ Unused block "o_SEGData_OBUFT" (TRI) removed.
+The signal "o_SEGLatch" is unused and has been removed.
+ Unused block "o_SEGLatch_OBUFT" (TRI) removed.
+The signal "o_LCDData" is unused and has been removed.
+ Unused block "o_LCDData_OBUFT" (TRI) removed.
+The signal "o_LCDLatch" is unused and has been removed.
+ Unused block "o_LCDLatch_OBUFT" (TRI) removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
+removed.
+Unused block "U_icon_pro/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+Unused block "o_Eth_CS" (PAD) removed.
+Unused block "o_Eth_RD" (PAD) removed.
+Unused block "o_Eth_RST" (PAD) removed.
+Unused block "o_Eth_WR" (PAD) removed.
+Unused block "o_LCDData" (PAD) removed.
+Unused block "o_LCDLatch" (PAD) removed.
+Unused block "o_MMC_CS" (PAD) removed.
+Unused block "o_MMC_DI" (PAD) removed.
+Unused block "o_MMC_SCK" (PAD) removed.
+Unused block "o_SEGData" (PAD) removed.
+Unused block "o_SEGLatch" (PAD) removed.
+Unused block "o_TXD1" (PAD) removed.
+Unused block "o_TXD2" (PAD) removed.
+Unused block "o_USB_SLOE" (PAD) removed.
+Unused block "o_USB_SLRD" (PAD) removed.
+Unused block "o_USB_SLWR" (PAD) removed.
+Unused block "o_VGA_blue0" (PAD) removed.
+Unused block "o_VGA_blue1" (PAD) removed.
+Unused block "o_VGA_green0" (PAD) removed.
+Unused block "o_VGA_green1" (PAD) removed.
+Unused block "o_VGA_hsync" (PAD) removed.
+Unused block "o_VGA_red0" (PAD) removed.
+Unused block "o_VGA_red1" (PAD) removed.
+Unused block "o_VGA_vsync" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		U_icon_pro/XST_GND
+VCC 		U_icon_pro/XST_VCC
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GA
+ND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SL
+ICE.U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GA
+ND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_SL
+ICE.U_GAND_SRL_SLICE/XST_VCC
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GA
+ND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_G
+AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_S
+LICE.U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_G
+AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_S
+LICE.U_GAND_SRL_SLICE/XST_VCC
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_G
+AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_G
+AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_S
+LICE.U_GAND_SRL_SLICE/XST_GND
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_G
+AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/I_PARTIAL_S
+LICE.U_GAND_SRL_SLICE/XST_VCC
+VCC
+		U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_G
+AND.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/XST_VCC
+GND 		U_ila_pro_0/XST_GND
+VCC 		U_ila_pro_0/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		puf_ar/pufX1/XST_GND
+VCC 		puf_ar/pufX1/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 11 - Timing Report
+--------------------------
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Number of Timing Constraints that were not applied: 3
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_second_DCM_clkout2 = PERIOD TIMEGRP "s | SETUP       |    -3.453ns| 434216.160ns|     254|      407223
+  econd_DCM_clkout2" TS_i_CLK * 0.159090909 | HOLD        |     0.060ns|            |       0|           0
+   HIGH 50%                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_second_DCM_clkout0 = PERIOD TIMEGRP "s | SETUP       |     3.769ns|    68.078ns|       0|           0
+  econd_DCM_clkout0" TS_i_CLK * 0.1 HIGH 50 | HOLD        |     0.216ns|            |       0|           0
+  %                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_CLK = PERIOD TIMEGRP "i_CLK" 50 MHz  | MINLOWPULSE |    15.000ns|     5.000ns|       0|           0
+  HIGH 50%                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.869ns|     1.131ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.192ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.252ns|     0.748ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.413ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    26.878ns|     3.122ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.071ns|            |       0|           0
+                                            | MINPERIOD   |    26.876ns|     3.124ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     1.576ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     0.963ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     1.710ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     1.404ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_i_CLK
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_i_CLK                       |     20.000ns|      5.000ns|  69079.844ns|            0|          254|            0|        17064|
+| TS_second_DCM_clkout0         |    200.000ns|     68.078ns|          N/A|            0|            0|         2861|            0|
+| TS_second_DCM_clkout2         |    125.714ns| 434216.160ns|          N/A|          254|            0|        14203|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+1 constraint not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| i_CLK                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| i_DIPData                          | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| i_Eth_INT                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| i_MMC_DO                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| i_RXD1                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| i_RXD2                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| i_SYS_RESET                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<0>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<1>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<2>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<3>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<4>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<5>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<6>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_Data<7>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<0>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<1>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<2>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<3>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<4>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<5>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<6>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<7>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<8>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_MuxEthUSB<9>                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| io_USB_IFCLK                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| o_DIPLatch                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| o_LEDData                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| o_LEDLatch                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| o_PSCLK                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_CS_GAND
+.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_CS_GAN
+D.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_CS_GAN
+D.U_CS_GAND_SRL/I_S6.U_CS_GAND_SRL_S6/I_USE_RPM_NE0.U_GAND_SRL_SET/MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CDONE_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_CMPRESET_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS0_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_NS1_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL_I_SRLT_NE_1.U_SCRST_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_VARX.U_match/I_S
+RL32.U_VARX_SRL32/U_G_MSET
+U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_VARX.U_match/I_S
+RL32.U_VARX_SRL32/U_G_MSET
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,966 @@
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex17_harmacro_board_64array/ex16_board_256arr/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex17_harmacro_board_64array/ex16_board_256arr/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex20/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 "AVA6STest_TopModule.ngc" AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex23/ex20_ba taghir/ex17 with chipS/AVA6SV2_DIPLED/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex24/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "F:/iot/puf/PUF/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc uuccff.ucf -p xc6slx9-tqg144-3 AVA6STest_TopModule_cs.ngc AVA6STest_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ngd AVA6STest_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off AVA6STest_TopModule_map.ncd AVA6STest_TopModule.ncd AVA6STest_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml AVA6STest_TopModule.twx AVA6STest_TopModule.ncd -o AVA6STest_TopModule.twr AVA6STest_TopModule.pcf -ucf uuccff.ucf 
+bitgen -intstyle ise -f AVA6STest_TopModule.ut AVA6STest_TopModule.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/AVA6STest_TopModule.syr" 

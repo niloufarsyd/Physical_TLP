@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/new/my_constants.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/SHA-256-master/sha_256_pkg.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/SHA-256-master/sha_256_core.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sha_256_core'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/new/Gen_Sol_withTW.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Gen_Sol_withTw'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/new/Top_Gen_Sol_Tw.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top_Gen_Sol_Tw'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/new/compare_solutions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'compare_solutions'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSolTw.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_GenSolTw'

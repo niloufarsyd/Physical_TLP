@@ -1,0 +1,82 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   G:\iot\puf\new codes\TESTOF_RO_MACRO
+#Date/Time:
+#:T   Sun Nov 28 13:40:14 2021
+#------------------------------
+	#Reading E:\payan name\Sent\puf_4_3_version4\RO_DCU_HardMacro.nmc...
+	#   "RO_DCU_HardMacro" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.11.28.10.10.14
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+select -k comp 'S<1>'
+	#2
+unselect -all
+	#3
+select site 'SLICE_X5Y2'
+	#site "SLICE_X5Y2",  type = SLICEX  (RPM grid X19Y8)
+	#4
+unselect -all
+	#5
+select site 'SLICE_X5Y2'
+	#site "SLICE_X5Y2",  type = SLICEX  (RPM grid X19Y8)
+	#6
+post block
+	#7
+unselect -all
+	#8
+select wire 'LUTINPUT(-19632,-96568)'
+	#node = LUTINPUT(-19632,-96568)
+	#9
+unselect -all
+	#10
+select net 'S<0>'
+	#net "S<0>"
+	#11
+unselect -all
+	#12
+select net 'S<0>'
+	#net "S<0>"
+	#13
+unselect -all
+	#14
+unselect -all
+	#15
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, hard macro.pin = i_vccpin, delay = ~0.000ns on net "vccpin"
+	#16
+unselect -all
+	#17
+select pin 'SLICE_X5Y2.A4'
+	#site.pin = SLICE_X5Y2.A4, comp.pin = S<1>.A4, hard macro.pin = CI(2), delay = ~0.000ns on net "CI_2_IBUF"
+	#18
+unselect -all
+	#19
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, hard macro.pin = i_vccpin, delay = ~0.000ns on net "vccpin"
+	#20
+unselect -all
+	#21
+select pin 'SLICE_X5Y2.BMUX'
+	#site.pin = SLICE_X5Y2.BMUX, comp.pin = S<1>.BMUX, delay = driver on net "S<4>"
+	#22
+unselect -all
+	#23
+select net 'S<4>'
+	#net "S<4>"
+	#24
+unselect -all
+	#25
+select net 'S<0>'
+	#net "S<0>"
+	#26
+unselect -all
+	#27
+select net 'vccpin'
+	#net "vccpin"
+	#28
+post open

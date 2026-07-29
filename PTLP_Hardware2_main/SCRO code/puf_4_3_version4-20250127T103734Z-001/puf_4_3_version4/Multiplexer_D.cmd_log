@@ -1,0 +1,1 @@
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/Multiplexer_D.vhi" -module Multiplexer_D -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Multiplexer_D.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 

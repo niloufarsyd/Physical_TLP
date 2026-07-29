@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO2.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO2.ngc" SCRO2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO2_map.ncd SCRO2.ngd SCRO2.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_SCRO2.ucf -p xc6slx9-tqg144-3 "SCRO2.ngc" SCRO2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO2_map.ncd SCRO2.ngd SCRO2.pcf 

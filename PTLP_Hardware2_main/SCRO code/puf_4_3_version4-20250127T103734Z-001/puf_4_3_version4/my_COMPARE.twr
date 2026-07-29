@@ -1,0 +1,180 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml my_COMPARE.twx my_COMPARE.ncd -o my_COMPARE.twr
+my_COMPARE.pcf
+
+Design file:              my_COMPARE.ncd
+Physical constraint file: my_COMPARE.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |GTh            |   11.104|
+A<0>           |diff           |   12.653|
+A<1>           |GTh            |   11.361|
+A<1>           |diff           |   12.940|
+A<2>           |GTh            |   10.762|
+A<2>           |diff           |   11.980|
+A<3>           |GTh            |   11.393|
+A<3>           |diff           |   12.580|
+A<4>           |GTh            |   11.165|
+A<4>           |diff           |   12.591|
+A<5>           |GTh            |   11.165|
+A<5>           |diff           |   12.431|
+A<6>           |GTh            |   10.872|
+A<6>           |diff           |   12.001|
+A<7>           |GTh            |   11.207|
+A<7>           |diff           |   12.535|
+A<8>           |GTh            |   10.900|
+A<8>           |diff           |   12.174|
+A<9>           |GTh            |   11.015|
+A<9>           |diff           |   12.413|
+A<10>          |GTh            |   11.016|
+A<10>          |diff           |   12.366|
+A<11>          |GTh            |   11.173|
+A<11>          |diff           |   12.175|
+A<12>          |GTh            |   11.049|
+A<12>          |diff           |   13.064|
+A<13>          |GTh            |   10.813|
+A<13>          |diff           |   13.252|
+A<14>          |GTh            |   12.195|
+A<14>          |diff           |   13.849|
+A<15>          |GTh            |   12.047|
+A<15>          |diff           |   14.146|
+A<16>          |GTh            |   11.648|
+A<16>          |diff           |   13.841|
+A<17>          |GTh            |   11.607|
+A<17>          |diff           |   13.267|
+A<18>          |GTh            |   11.670|
+A<18>          |diff           |   13.227|
+A<19>          |GTh            |   11.476|
+A<19>          |diff           |   13.513|
+A<20>          |GTh            |   10.828|
+A<20>          |diff           |   12.546|
+A<21>          |GTh            |   10.632|
+A<21>          |diff           |   12.293|
+A<22>          |GTh            |   10.356|
+A<22>          |diff           |   12.425|
+A<23>          |GTh            |   10.937|
+A<23>          |diff           |   12.211|
+A<24>          |GTh            |   10.117|
+A<24>          |diff           |   11.267|
+A<25>          |GTh            |   10.392|
+A<25>          |diff           |   11.455|
+A<26>          |GTh            |    9.908|
+A<26>          |diff           |   11.331|
+A<27>          |GTh            |    9.789|
+A<27>          |diff           |   11.195|
+A<28>          |GTh            |   10.247|
+A<28>          |diff           |   11.124|
+A<29>          |GTh            |    9.482|
+A<29>          |diff           |   11.005|
+A<30>          |GTh            |    8.863|
+A<30>          |diff           |   11.268|
+A<31>          |GTh            |    9.376|
+A<31>          |diff           |   11.191|
+B<0>           |GTh            |   13.035|
+B<0>           |diff           |   14.398|
+B<1>           |GTh            |   12.714|
+B<1>           |diff           |   13.922|
+B<2>           |GTh            |   12.877|
+B<2>           |diff           |   14.319|
+B<3>           |GTh            |   11.777|
+B<3>           |diff           |   13.581|
+B<4>           |GTh            |   12.856|
+B<4>           |diff           |   13.885|
+B<5>           |GTh            |   12.749|
+B<5>           |diff           |   13.697|
+B<6>           |GTh            |   11.544|
+B<6>           |diff           |   13.185|
+B<7>           |GTh            |   11.570|
+B<7>           |diff           |   13.172|
+B<8>           |GTh            |   12.096|
+B<8>           |diff           |   13.447|
+B<9>           |GTh            |   11.822|
+B<9>           |diff           |   13.010|
+B<10>          |GTh            |   11.893|
+B<10>          |diff           |   13.030|
+B<11>          |GTh            |   12.001|
+B<11>          |diff           |   13.097|
+B<12>          |GTh            |   11.939|
+B<12>          |diff           |   13.124|
+B<13>          |GTh            |   11.493|
+B<13>          |diff           |   12.895|
+B<14>          |GTh            |   11.602|
+B<14>          |diff           |   13.045|
+B<15>          |GTh            |   11.649|
+B<15>          |diff           |   12.870|
+B<16>          |GTh            |   11.846|
+B<16>          |diff           |   12.737|
+B<17>          |GTh            |   11.489|
+B<17>          |diff           |   12.723|
+B<18>          |GTh            |   11.850|
+B<18>          |diff           |   13.103|
+B<19>          |GTh            |   11.680|
+B<19>          |diff           |   12.883|
+B<20>          |GTh            |   11.920|
+B<20>          |diff           |   13.362|
+B<21>          |GTh            |   12.028|
+B<21>          |diff           |   13.041|
+B<22>          |GTh            |   11.927|
+B<22>          |diff           |   12.977|
+B<23>          |GTh            |   11.984|
+B<23>          |diff           |   13.103|
+B<24>          |GTh            |   12.473|
+B<24>          |diff           |   12.894|
+B<25>          |GTh            |   11.879|
+B<25>          |diff           |   12.620|
+B<26>          |GTh            |   12.234|
+B<26>          |diff           |   12.894|
+B<27>          |GTh            |   11.431|
+B<27>          |diff           |   12.227|
+B<28>          |GTh            |   11.384|
+B<28>          |diff           |   11.867|
+B<29>          |GTh            |   11.573|
+B<29>          |diff           |   11.954|
+B<30>          |GTh            |   10.570|
+B<30>          |diff           |   11.983|
+B<31>          |GTh            |   10.187|
+B<31>          |diff           |   11.510|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Dec 08 03:07:51 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

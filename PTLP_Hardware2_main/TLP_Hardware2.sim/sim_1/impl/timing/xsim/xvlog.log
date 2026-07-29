@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/TLP_Hardware2/TLP_Hardware2.sim/sim_1/impl/timing/xsim/tb_GenSolTw_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Gen_Sol_withTw
+INFO: [VRFC 10-311] analyzing module Top_Gen_Sol_Tw
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module compare_solutions
+INFO: [VRFC 10-311] analyzing module sha_256_core
+INFO: [VRFC 10-311] analyzing module glbl

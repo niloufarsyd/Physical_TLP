@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+par -w -intstyle ise -ol high -mt off TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ncd TEST_RO_DCU_HardMacro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_RO_DCU_HardMacro.twx TEST_RO_DCU_HardMacro.ncd -o TEST_RO_DCU_HardMacro.twr TEST_RO_DCU_HardMacro.pcf -ucf ucf_of_TEST_RO_DCU_HardMacro.ucf 
+bitgen -intstyle ise -f TEST_RO_DCU_HardMacro.ut TEST_RO_DCU_HardMacro.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_RO_DCU_HardMacro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_of_TEST_RO_DCU_HardMacro.ucf -p xc6slx9-tqg144-3 "TEST_RO_DCU_HardMacro.ngc" TEST_RO_DCU_HardMacro.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ngd TEST_RO_DCU_HardMacro.pcf 
+par -w -intstyle ise -ol high -mt off TEST_RO_DCU_HardMacro_map.ncd TEST_RO_DCU_HardMacro.ncd TEST_RO_DCU_HardMacro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_RO_DCU_HardMacro.twx TEST_RO_DCU_HardMacro.ncd -o TEST_RO_DCU_HardMacro.twr TEST_RO_DCU_HardMacro.pcf -ucf ucf_of_TEST_RO_DCU_HardMacro.ucf 
+bitgen -intstyle ise -f TEST_RO_DCU_HardMacro.ut TEST_RO_DCU_HardMacro.ncd 

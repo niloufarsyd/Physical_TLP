@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/DCU3.xst" -ofn "E:/new codes/PUF/DCU3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "DCU3.ngc" DCU3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DCU3_map.ncd DCU3.ngd DCU3.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/DCU3.xst" -ofn "E:/new codes/PUF/DCU3.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "DCU3.ngc" DCU3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DCU3_map.ncd DCU3.ngd DCU3.pcf 
+par -w -intstyle ise -ol high -mt off DCU3_map.ncd DCU3.ncd DCU3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DCU3.twx DCU3.ncd -o DCU3.twr DCU3.pcf 

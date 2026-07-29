@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_GenSolTw_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="my_constants" />
+            <top_module name="tb_GenSolTw" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="152.238707 us"></ZoomStartTime>
+      <ZoomEndTime time="500.689348 us"></ZoomEndTime>
+      <Cursor1Time time="26.506672 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="172"></NameColumnWidth>
+      <ValueColumnWidth column_width="370"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/tb_GenSolTw/B_tb" type="array">
+      <obj_property name="ElementShortName">B_tb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_tb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/N_tb" type="array">
+      <obj_property name="ElementShortName">N_tb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N_tb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/clk_tb" type="logic">
+      <obj_property name="ElementShortName">clk_tb</obj_property>
+      <obj_property name="ObjectShortName">clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/comparison_done_tb" type="logic">
+      <obj_property name="ElementShortName">comparison_done_tb</obj_property>
+      <obj_property name="ObjectShortName">comparison_done_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/comparison_result_tb" type="logic">
+      <obj_property name="ElementShortName">comparison_result_tb</obj_property>
+      <obj_property name="ObjectShortName">comparison_result_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/gen_done_tb" type="logic">
+      <obj_property name="ElementShortName">gen_done_tb</obj_property>
+      <obj_property name="ObjectShortName">gen_done_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/reset_clk_tb" type="logic">
+      <obj_property name="ElementShortName">reset_clk_tb</obj_property>
+      <obj_property name="ObjectShortName">reset_clk_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/reset_tb" type="logic">
+      <obj_property name="ElementShortName">reset_tb</obj_property>
+      <obj_property name="ObjectShortName">reset_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/sol_done_tb" type="logic">
+      <obj_property name="ElementShortName">sol_done_tb</obj_property>
+      <obj_property name="ObjectShortName">sol_done_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/sol_time_counter_tb" type="array">
+      <obj_property name="ElementShortName">sol_time_counter_tb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sol_time_counter_tb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/start_gen_tb" type="logic">
+      <obj_property name="ElementShortName">start_gen_tb</obj_property>
+      <obj_property name="ObjectShortName">start_gen_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/start_sol_tb" type="logic">
+      <obj_property name="ElementShortName">start_sol_tb</obj_property>
+      <obj_property name="ObjectShortName">start_sol_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/current_state1" type="array">
+      <obj_property name="ElementShortName">current_state1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/next_state1" type="array">
+      <obj_property name="ElementShortName">next_state1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/r" type="array">
+      <obj_property name="ElementShortName">r[255:0]</obj_property>
+      <obj_property name="ObjectShortName">r[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/current_state2" type="array">
+      <obj_property name="ElementShortName">current_state2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/next_state2" type="array">
+      <obj_property name="ElementShortName">next_state2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/counterN" type="array">
+      <obj_property name="ElementShortName">counterN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counterN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/counterB" type="array">
+      <obj_property name="ElementShortName">counterB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counterB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/ri_1" type="array">
+      <obj_property name="ElementShortName">ri_1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">ri_1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/rN_i" type="array">
+      <obj_property name="ElementShortName">rN_i[255:0]</obj_property>
+      <obj_property name="ObjectShortName">rN_i[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/hash_output_signal" type="array">
+      <obj_property name="ElementShortName">hash_output_signal[255:0]</obj_property>
+      <obj_property name="ObjectShortName">hash_output_signal[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/sha256_core_inst/msg_block" type="array">
+      <obj_property name="ElementShortName">msg_block[271:0]</obj_property>
+      <obj_property name="ObjectShortName">msg_block[271:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/s_solved1" type="array">
+      <obj_property name="ElementShortName">s_solved1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">s_solved1[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/match_lib_reg_n_0" type="logic">
+      <obj_property name="ElementShortName">match_lib_reg_n_0</obj_property>
+      <obj_property name="ObjectShortName">match_lib_reg_n_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/sha256_core_inst/hash_finished" type="logic">
+      <obj_property name="ElementShortName">hash_finished</obj_property>
+      <obj_property name="ObjectShortName">hash_finished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/sha256_core_inst/data_ready" type="logic">
+      <obj_property name="ElementShortName">data_ready</obj_property>
+      <obj_property name="ObjectShortName">data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/sha256_core_inst/HASH_02_COUNTER" type="array">
+      <obj_property name="ElementShortName">HASH_02_COUNTER[30:0]</obj_property>
+      <obj_property name="ObjectShortName">HASH_02_COUNTER[30:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/lib_input" type="array">
+      <obj_property name="ElementShortName">lib_input[255:0]</obj_property>
+      <obj_property name="ObjectShortName">lib_input[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/lib_index1" type="array">
+      <obj_property name="ElementShortName">lib_index1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">lib_index1[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/lib_output" type="array">
+      <obj_property name="ElementShortName">lib_output[255:0]</obj_property>
+      <obj_property name="ObjectShortName">lib_output[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_GenSolTw/uut/inst_gen_sol/lib_output_flag" type="logic">
+      <obj_property name="ElementShortName">lib_output_flag</obj_property>
+      <obj_property name="ObjectShortName">lib_output_flag</obj_property>
+   </wvobject>
+</wave_config>

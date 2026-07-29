@@ -1,0 +1,7 @@
+vhdl work "my_or.vhd"
+vhdl work "my_nor.vhd"
+vhdl work "my_nand.vhd"
+vhdl work "my_and.vhd"
+vhdl work "Multiplexer_2to1.vhd"
+vhdl work "SCRO2.vhd"
+vhdl work "ipcore_dir/DCM1/example_design/DCM1_exdes.vhd"

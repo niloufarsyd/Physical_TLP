@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jan 19 06:07:49 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "S<0>" LOCATE = SITE "SLICE_X2Y2" LEVEL 1;
+COMP "S<1>" LOCATE = SITE "SLICE_X3Y2" LEVEL 1;
+SCHEMATIC END;
+

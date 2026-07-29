@@ -1,0 +1,2 @@
+vhdl work "my_counter.vhd"
+vhdl work "tb_counter.vhd"

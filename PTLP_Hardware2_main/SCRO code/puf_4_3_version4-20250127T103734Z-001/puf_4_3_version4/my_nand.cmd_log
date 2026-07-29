@@ -1,0 +1,4 @@
+vhdtdtfi -lib work DCU1.vhd -prj AVA6STest -o my_nand.spl -module my_nand -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 my_nand.spl {E:/new codes/PUF/my_nand.sym} 
+xst -intstyle ise -ifn "E:/new codes/PUF/my_nand.xst" -ofn "E:/new codes/PUF/my_nand.syr" 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/my_nand.vhi" -module my_nand -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DCU1.vhd -lib work DCU2.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 

@@ -1,0 +1,56 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'PUF_TopModule'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
+high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir
+off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd
+PUF_TopModule.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sat Dec 05 14:43:36 2020
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+   "ROMACRO1" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 7 secs 
+Total CPU  time at the beginning of Placer: 7 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:930bdc4c) REAL time: 15 secs 
+
+Phase 2.7  Design Feasibility Check
+ERROR:Place:1136 - This design contains a global buffer instance,
+   <second_DCM/clkout1_buf>, driving the net, <s_CLK_5M>, that is driving the
+   following (first 30) non-clock load pins.
+   < PIN: o_PSCLK1_INV_0.A6; >
+   This is not a recommended design practice in Spartan-6 due to limitations in
+   the global routing that may cause excessive delay, skew or unroutable
+   situations.  It is recommended to only use a BUFG resource to drive clock
+   loads. If you wish to override this recommendation, you may use the
+   CLOCK_DEDICATED_ROUTE constraint (given below) in the .ucf file to demote
+   this message to a WARNING and allow your design to continue.
+   < PIN "second_DCM/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 2.7  Design Feasibility Check (Checksum:930bdc4c) REAL time: 15 secs 
+
+Total REAL time to Placer completion: 19 secs 
+Total CPU  time to Placer completion: 19 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "PUF_TopModule_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

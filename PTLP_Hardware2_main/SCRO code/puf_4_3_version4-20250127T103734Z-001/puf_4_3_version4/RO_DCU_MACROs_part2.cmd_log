@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACROs_part2.xst" -ofn "E:/new codes/PUF/RO_DCU_MACROs_part2.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACROs_part2.xst" -ofn "E:/new codes/PUF/RO_DCU_MACROs_part2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACROs_part2.ngc" RO_DCU_MACROs_part2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACROs_part2_map.ncd RO_DCU_MACROs_part2.ngd RO_DCU_MACROs_part2.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCATION2.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACROs_part2.ngc" RO_DCU_MACROs_part2.ngd  
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACROs_part2.xst" -ofn "E:/new codes/PUF/RO_DCU_MACROs_part2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCATION2.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACROs_part2.ngc" RO_DCU_MACROs_part2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACROs_part2_map.ncd RO_DCU_MACROs_part2.ngd RO_DCU_MACROs_part2.pcf 
+par -w -intstyle ise -ol high -mt off RO_DCU_MACROs_part2_map.ncd RO_DCU_MACROs_part2.ncd RO_DCU_MACROs_part2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RO_DCU_MACROs_part2.twx RO_DCU_MACROs_part2.ncd -o RO_DCU_MACROs_part2.twr RO_DCU_MACROs_part2.pcf -ucf RO_DCU_MACRO_LOCATION2.ucf 

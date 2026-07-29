@@ -1,0 +1,1021 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: AVA6STest_TopModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "AVA6STest_TopModule.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "AVA6STest_TopModule"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : AVA6STest_TopModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+WARNING:UtilitiesC:240 - The message file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir/_xmsgs/xst.xmsgs" is corrupt, therefore all message will be marked as new.
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\ipcore_dir\DCM2.vhd" into library work
+Parsing entity <DCM2>.
+Parsing architecture <xilinx> of entity <dcm2>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\RO_Array.vhd" into library work
+Parsing entity <RO_Array>.
+Parsing architecture <block_diagram> of entity <ro_array>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\my_counter.vhd" into library work
+Parsing entity <my_counter>.
+Parsing architecture <arch_count> of entity <my_counter>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\my_compare.vhd" into library work
+Parsing entity <my_COMPARE>.
+Parsing architecture <arch_comp> of entity <my_compare>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\mux_gen.vhd" into library work
+Parsing entity <mux_gen>.
+Parsing architecture <archmux> of entity <mux_gen>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\decoder.vhd" into library work
+Parsing entity <Decoder>.
+Parsing architecture <block_diagram> of entity <decoder>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\puf_bit.vhd" into library work
+Parsing entity <puf_bit>.
+Parsing architecture <Behavioral> of entity <puf_bit>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\SIPO.vhd" into library work
+Parsing entity <SIPO>.
+Parsing architecture <Behavioral> of entity <sipo>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\PISO.vhd" into library work
+Parsing entity <PISO>.
+Parsing architecture <Behavioral> of entity <piso>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\PUF_MACHINE.vhd" into library work
+Parsing entity <Machine>.
+Parsing architecture <Behavior> of entity <machine>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\puf_array.vhd" into library work
+Parsing entity <PUF>.
+Parsing architecture <block_diagram> of entity <puf>.
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" into library work
+Parsing entity <AVA6STest_TopModule>.
+Parsing architecture <Behavioral> of entity <ava6stest_topmodule>.
+WARNING:HDLCompiler:701 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" Line 243: Partially associated formal o_data cannot have actual OPEN
+WARNING:HDLCompiler:701 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" Line 244: Partially associated formal o_data cannot have actual OPEN
+WARNING:HDLCompiler:701 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" Line 245: Partially associated formal o_data cannot have actual OPEN
+WARNING:HDLCompiler:701 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" Line 246: Partially associated formal o_data cannot have actual OPEN
+Parsing VHDL file "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\ipcore_dir\DCM1\example_design\DCM1_exdes.vhd" into library work
+Parsing entity <DCM1_exdes>.
+Parsing architecture <xilinx> of entity <dcm1_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <AVA6STest_TopModule> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <DCM2> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <SIPO> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <PISO> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <PUF> (architecture <block_diagram>) with generics from library <work>.
+
+Elaborating entity <puf_bit> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Decoder> (architecture <block_diagram>) with generics from library <work>.
+
+Elaborating entity <RO_Array> (architecture <block_diagram>) from library <work>.
+WARNING:HDLCompiler:89 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\RO_Array.vhd" Line 45: <romacro1> remains a black-box since it has no binding entity.
+
+Elaborating entity <mux_gen> (architecture <archmux>) with generics from library <work>.
+
+Elaborating entity <my_counter> (architecture <arch_count>) from library <work>.
+
+Elaborating entity <my_COMPARE> (architecture <arch_comp>) from library <work>.
+
+Elaborating entity <Machine> (architecture <Behavior>) with generics from library <work>.
+WARNING:HDLCompiler:634 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" Line 195: Net <s_LEDs[0]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <AVA6STest_TopModule>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd".
+        ro_PUF_width = 8
+        RO_sel = 8
+WARNING:Xst:647 - Input <i_SYS_RESET> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" line 228: Output port <CLK_OUT2> of the instance <second_DCM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" line 228: Output port <CLK_OUT4> of the instance <second_DCM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" line 239: Output port <o_CLK> of the instance <Inst_SIPO_DIP> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\AVA6STest_TopModule.vhd" line 254: Output port <o_CLK> of the instance <Inst_PISO_LED> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <s_LEDs<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <AVA6STest_TopModule> synthesized.
+
+Synthesizing Unit <DCM2>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\ipcore_dir\DCM2.vhd".
+    Summary:
+	no macro.
+Unit <DCM2> synthesized.
+
+Synthesizing Unit <SIPO>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\SIPO.vhd".
+        g_DataWidth = 24
+    Found 24-bit register for signal <o_Data>.
+    Found 5-bit register for signal <s_Counter>.
+    Found 24-bit register for signal <s_Reg>.
+    Found 1-bit register for signal <o_Latch>.
+    Found 5-bit adder for signal <s_Counter[4]_GND_10_o_add_1_OUT> created at line 67.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+Unit <SIPO> synthesized.
+
+Synthesizing Unit <PISO>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\src\PISO.vhd".
+        g_DataWidth = 16
+    Found 16-bit register for signal <s_Reg>.
+    Found 1-bit register for signal <o_Data>.
+    Found 4-bit register for signal <s_Counter>.
+    Found 1-bit register for signal <o_Latch>.
+    Found 4-bit adder for signal <s_Counter[3]_GND_11_o_add_1_OUT> created at line 68.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PISO> synthesized.
+
+Synthesizing Unit <PUF>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\puf_array.vhd".
+        puf_Width = 8
+        sel_width_ar = 8
+    Set property "RLOC = X2Y3" for instance <pufX1>.
+    Summary:
+	no macro.
+Unit <PUF> synthesized.
+
+Synthesizing Unit <puf_bit>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\puf_bit.vhd".
+        Sel_Size_p = 8
+        row = 1
+    Set property "S = YES" for signal <RO_out>.
+    Summary:
+	no macro.
+Unit <puf_bit> synthesized.
+
+Synthesizing Unit <Decoder>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\decoder.vhd".
+        Sel_Width = 8
+    Summary:
+	inferred 512 Multiplexer(s).
+Unit <Decoder> synthesized.
+
+Synthesizing Unit <RO_Array>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\RO_Array.vhd".
+    Set property "LOC = SLICE_X2Y3" for instance <GEN_RO1[0].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y4" for instance <GEN_RO1[1].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y5" for instance <GEN_RO1[2].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y6" for instance <GEN_RO1[3].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y7" for instance <GEN_RO1[4].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y8" for instance <GEN_RO1[5].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y9" for instance <GEN_RO1[6].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y10" for instance <GEN_RO1[7].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y11" for instance <GEN_RO1[8].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y12" for instance <GEN_RO1[9].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y13" for instance <GEN_RO1[10].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y14" for instance <GEN_RO1[11].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y15" for instance <GEN_RO1[12].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y16" for instance <GEN_RO1[13].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y17" for instance <GEN_RO1[14].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y18" for instance <GEN_RO1[15].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y19" for instance <GEN_RO1[16].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y20" for instance <GEN_RO1[17].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y21" for instance <GEN_RO1[18].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y22" for instance <GEN_RO1[19].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y23" for instance <GEN_RO1[20].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y24" for instance <GEN_RO1[21].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y25" for instance <GEN_RO1[22].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y26" for instance <GEN_RO1[23].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y27" for instance <GEN_RO1[24].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y28" for instance <GEN_RO1[25].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y29" for instance <GEN_RO1[26].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y30" for instance <GEN_RO1[27].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y31" for instance <GEN_RO1[28].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y32" for instance <GEN_RO1[29].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y33" for instance <GEN_RO1[30].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y34" for instance <GEN_RO1[31].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y35" for instance <GEN_RO1[32].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y36" for instance <GEN_RO1[33].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y37" for instance <GEN_RO1[34].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y38" for instance <GEN_RO1[35].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y39" for instance <GEN_RO1[36].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y40" for instance <GEN_RO1[37].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y41" for instance <GEN_RO1[38].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y42" for instance <GEN_RO1[39].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y43" for instance <GEN_RO1[40].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y44" for instance <GEN_RO1[41].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y45" for instance <GEN_RO1[42].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y46" for instance <GEN_RO1[43].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y47" for instance <GEN_RO1[44].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y48" for instance <GEN_RO1[45].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y49" for instance <GEN_RO1[46].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y50" for instance <GEN_RO1[47].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y51" for instance <GEN_RO1[48].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y52" for instance <GEN_RO1[49].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X2Y53" for instance <GEN_RO1[50].inst_RO_MACRO1>.
+    Set property "LOC = SLICE_X6Y3" for instance <GEN_RO2[51].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y4" for instance <GEN_RO2[52].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y5" for instance <GEN_RO2[53].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y6" for instance <GEN_RO2[54].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y7" for instance <GEN_RO2[55].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y8" for instance <GEN_RO2[56].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y9" for instance <GEN_RO2[57].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y10" for instance <GEN_RO2[58].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y11" for instance <GEN_RO2[59].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y12" for instance <GEN_RO2[60].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y13" for instance <GEN_RO2[61].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y14" for instance <GEN_RO2[62].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y15" for instance <GEN_RO2[63].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y16" for instance <GEN_RO2[64].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y17" for instance <GEN_RO2[65].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y18" for instance <GEN_RO2[66].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y19" for instance <GEN_RO2[67].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y20" for instance <GEN_RO2[68].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y21" for instance <GEN_RO2[69].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y22" for instance <GEN_RO2[70].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y23" for instance <GEN_RO2[71].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y24" for instance <GEN_RO2[72].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y25" for instance <GEN_RO2[73].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y26" for instance <GEN_RO2[74].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y27" for instance <GEN_RO2[75].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y28" for instance <GEN_RO2[76].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y29" for instance <GEN_RO2[77].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y30" for instance <GEN_RO2[78].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y31" for instance <GEN_RO2[79].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y32" for instance <GEN_RO2[80].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y33" for instance <GEN_RO2[81].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y34" for instance <GEN_RO2[82].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y35" for instance <GEN_RO2[83].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y36" for instance <GEN_RO2[84].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y37" for instance <GEN_RO2[85].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y38" for instance <GEN_RO2[86].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y39" for instance <GEN_RO2[87].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y40" for instance <GEN_RO2[88].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y41" for instance <GEN_RO2[89].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y42" for instance <GEN_RO2[90].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y43" for instance <GEN_RO2[91].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y44" for instance <GEN_RO2[92].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y45" for instance <GEN_RO2[93].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y46" for instance <GEN_RO2[94].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y47" for instance <GEN_RO2[95].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y48" for instance <GEN_RO2[96].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y49" for instance <GEN_RO2[97].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y50" for instance <GEN_RO2[98].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y51" for instance <GEN_RO2[99].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y52" for instance <GEN_RO2[100].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X6Y53" for instance <GEN_RO2[101].inst_RO_MACRO2>.
+    Set property "LOC = SLICE_X14Y4" for instance <GEN_RO3[102].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y5" for instance <GEN_RO3[103].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y6" for instance <GEN_RO3[104].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y7" for instance <GEN_RO3[105].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y8" for instance <GEN_RO3[106].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y9" for instance <GEN_RO3[107].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y10" for instance <GEN_RO3[108].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y11" for instance <GEN_RO3[109].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y12" for instance <GEN_RO3[110].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y13" for instance <GEN_RO3[111].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y14" for instance <GEN_RO3[112].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y15" for instance <GEN_RO3[113].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y16" for instance <GEN_RO3[114].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y17" for instance <GEN_RO3[115].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y18" for instance <GEN_RO3[116].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y19" for instance <GEN_RO3[117].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y20" for instance <GEN_RO3[118].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y21" for instance <GEN_RO3[119].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y22" for instance <GEN_RO3[120].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y23" for instance <GEN_RO3[121].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y24" for instance <GEN_RO3[122].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y25" for instance <GEN_RO3[123].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y26" for instance <GEN_RO3[124].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y27" for instance <GEN_RO3[125].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y28" for instance <GEN_RO3[126].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y29" for instance <GEN_RO3[127].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y30" for instance <GEN_RO3[128].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y31" for instance <GEN_RO3[129].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y32" for instance <GEN_RO3[130].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y33" for instance <GEN_RO3[131].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y34" for instance <GEN_RO3[132].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y35" for instance <GEN_RO3[133].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y36" for instance <GEN_RO3[134].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y37" for instance <GEN_RO3[135].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y38" for instance <GEN_RO3[136].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y39" for instance <GEN_RO3[137].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y40" for instance <GEN_RO3[138].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y41" for instance <GEN_RO3[139].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y42" for instance <GEN_RO3[140].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y43" for instance <GEN_RO3[141].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y44" for instance <GEN_RO3[142].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y45" for instance <GEN_RO3[143].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y46" for instance <GEN_RO3[144].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y47" for instance <GEN_RO3[145].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y48" for instance <GEN_RO3[146].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y49" for instance <GEN_RO3[147].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y50" for instance <GEN_RO3[148].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y51" for instance <GEN_RO3[149].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y52" for instance <GEN_RO3[150].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y53" for instance <GEN_RO3[151].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X14Y54" for instance <GEN_RO3[152].inst_RO_MACRO3>.
+    Set property "LOC = SLICE_X18Y3" for instance <GEN_RO4[153].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y4" for instance <GEN_RO4[154].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y5" for instance <GEN_RO4[155].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y6" for instance <GEN_RO4[156].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y7" for instance <GEN_RO4[157].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y8" for instance <GEN_RO4[158].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y9" for instance <GEN_RO4[159].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y10" for instance <GEN_RO4[160].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y11" for instance <GEN_RO4[161].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y12" for instance <GEN_RO4[162].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y13" for instance <GEN_RO4[163].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y14" for instance <GEN_RO4[164].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y15" for instance <GEN_RO4[165].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y16" for instance <GEN_RO4[166].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y17" for instance <GEN_RO4[167].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y18" for instance <GEN_RO4[168].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y19" for instance <GEN_RO4[169].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y20" for instance <GEN_RO4[170].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y21" for instance <GEN_RO4[171].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y22" for instance <GEN_RO4[172].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y23" for instance <GEN_RO4[173].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y24" for instance <GEN_RO4[174].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y25" for instance <GEN_RO4[175].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y26" for instance <GEN_RO4[176].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y27" for instance <GEN_RO4[177].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y28" for instance <GEN_RO4[178].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y29" for instance <GEN_RO4[179].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y30" for instance <GEN_RO4[180].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y31" for instance <GEN_RO4[181].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y32" for instance <GEN_RO4[182].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y33" for instance <GEN_RO4[183].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y34" for instance <GEN_RO4[184].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y35" for instance <GEN_RO4[185].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y36" for instance <GEN_RO4[186].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y37" for instance <GEN_RO4[187].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y38" for instance <GEN_RO4[188].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y39" for instance <GEN_RO4[189].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y40" for instance <GEN_RO4[190].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y41" for instance <GEN_RO4[191].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y42" for instance <GEN_RO4[192].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y43" for instance <GEN_RO4[193].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y44" for instance <GEN_RO4[194].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y45" for instance <GEN_RO4[195].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y46" for instance <GEN_RO4[196].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y47" for instance <GEN_RO4[197].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y48" for instance <GEN_RO4[198].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y49" for instance <GEN_RO4[199].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y50" for instance <GEN_RO4[200].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y51" for instance <GEN_RO4[201].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y52" for instance <GEN_RO4[202].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X18Y53" for instance <GEN_RO4[203].inst_RO_MACRO4>.
+    Set property "LOC = SLICE_X22Y3" for instance <GEN_RO5[204].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y4" for instance <GEN_RO5[205].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y5" for instance <GEN_RO5[206].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y6" for instance <GEN_RO5[207].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y7" for instance <GEN_RO5[208].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y8" for instance <GEN_RO5[209].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y9" for instance <GEN_RO5[210].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y10" for instance <GEN_RO5[211].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y11" for instance <GEN_RO5[212].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y12" for instance <GEN_RO5[213].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y13" for instance <GEN_RO5[214].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y14" for instance <GEN_RO5[215].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y15" for instance <GEN_RO5[216].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y16" for instance <GEN_RO5[217].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y17" for instance <GEN_RO5[218].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y18" for instance <GEN_RO5[219].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y19" for instance <GEN_RO5[220].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y20" for instance <GEN_RO5[221].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y21" for instance <GEN_RO5[222].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y22" for instance <GEN_RO5[223].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y23" for instance <GEN_RO5[224].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y24" for instance <GEN_RO5[225].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y25" for instance <GEN_RO5[226].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y26" for instance <GEN_RO5[227].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y27" for instance <GEN_RO5[228].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y28" for instance <GEN_RO5[229].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y29" for instance <GEN_RO5[230].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y30" for instance <GEN_RO5[231].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y31" for instance <GEN_RO5[232].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y32" for instance <GEN_RO5[233].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y33" for instance <GEN_RO5[234].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y34" for instance <GEN_RO5[235].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y35" for instance <GEN_RO5[236].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y36" for instance <GEN_RO5[237].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y37" for instance <GEN_RO5[238].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y38" for instance <GEN_RO5[239].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y39" for instance <GEN_RO5[240].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y40" for instance <GEN_RO5[241].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y41" for instance <GEN_RO5[242].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y42" for instance <GEN_RO5[243].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y43" for instance <GEN_RO5[244].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y44" for instance <GEN_RO5[245].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y45" for instance <GEN_RO5[246].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y46" for instance <GEN_RO5[247].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y47" for instance <GEN_RO5[248].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y48" for instance <GEN_RO5[249].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y49" for instance <GEN_RO5[250].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y50" for instance <GEN_RO5[251].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y51" for instance <GEN_RO5[252].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y52" for instance <GEN_RO5[253].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y53" for instance <GEN_RO5[254].inst_RO_MACRO5>.
+    Set property "LOC = SLICE_X22Y54" for instance <GEN_RO5[255].inst_RO_MACRO5>.
+    Summary:
+	no macro.
+Unit <RO_Array> synthesized.
+
+Synthesizing Unit <mux_gen>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\mux_gen.vhd".
+        Sel_Size = 8
+    Found 1-bit 256-to-1 multiplexer for signal <dato> created at line 45.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_gen> synthesized.
+
+Synthesizing Unit <my_counter>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\my_counter.vhd".
+    Found 1-bit register for signal <previous_value>.
+    Found 1-bit register for signal <previous_value2>.
+    Found 32-bit register for signal <COUNT>.
+    Found 32-bit adder for signal <COUNT[31]_GND_17_o_add_0_OUT> created at line 281.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <my_counter> synthesized.
+
+Synthesizing Unit <my_COMPARE>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\my_compare.vhd".
+    Found 32-bit comparator greater for signal <GTh> created at line 72
+    Summary:
+	inferred   1 Comparator(s).
+Unit <my_COMPARE> synthesized.
+
+Synthesizing Unit <Machine>.
+    Related source file is "E:\code\mine\ex30\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\PUF_MACHINE.vhd".
+        delay = 12500000
+    Found 2-bit register for signal <current_state>.
+    Found 24-bit register for signal <counter>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | start                                          |
+    | Power Up State     | start                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit adder for signal <counter[23]_GND_19_o_add_13_OUT> created at line 94.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <Machine> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 24-bit adder                                          : 1
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 15
+ 1-bit register                                        : 7
+ 16-bit register                                       : 1
+ 24-bit register                                       : 3
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 515
+ 1-bit 2-to-1 multiplexer                              : 512
+ 1-bit 256-to-1 multiplexer                            : 2
+ 16-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <s_Reg_23> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_0> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_1> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_2> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_3> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_4> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_5> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_6> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_7> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+
+Synthesizing (advanced) Unit <Machine>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Machine> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PISO>.
+The following registers are absorbed into counter <s_Counter>: 1 register on signal <s_Counter>.
+Unit <PISO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SIPO>.
+The following registers are absorbed into counter <s_Counter>: 1 register on signal <s_Counter>.
+Unit <SIPO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <my_counter>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <my_counter> synthesized (advanced).
+WARNING:Xst:2677 - Node <s_Reg_23> of sequential type is unconnected in block <SIPO>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 5
+ 24-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 515
+ 1-bit 2-to-1 multiplexer                              : 512
+ 1-bit 256-to-1 multiplexer                            : 2
+ 16-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:2]> with gray encoding.
+---------------------
+ State   | Encoding
+---------------------
+ start   | 00
+ clear   | 01
+ enable  | 11
+ disable | 10
+---------------------
+WARNING:Xst:1710 - FF/Latch <s_Reg_8> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_Reg_9> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_Reg_10> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_Reg_11> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_Reg_12> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_Reg_13> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_Reg_14> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_Reg_15> (without init value) has a constant value of 0 in block <PISO>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance second_DCM/pll_base_inst in unit second_DCM/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <puf_bit> ...
+
+Optimizing unit <RO_Array> ...
+
+Optimizing unit <AVA6STest_TopModule> ...
+
+Optimizing unit <SIPO> ...
+
+Optimizing unit <PISO> ...
+
+Optimizing unit <Decoder> ...
+
+Optimizing unit <my_counter> ...
+
+Optimizing unit <my_COMPARE> ...
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_7> of sequential type is unconnected in block <AVA6STest_TopModule>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_6> of sequential type is unconnected in block <AVA6STest_TopModule>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_5> of sequential type is unconnected in block <AVA6STest_TopModule>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_4> of sequential type is unconnected in block <AVA6STest_TopModule>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_3> of sequential type is unconnected in block <AVA6STest_TopModule>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_2> of sequential type is unconnected in block <AVA6STest_TopModule>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_1> of sequential type is unconnected in block <AVA6STest_TopModule>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_0> of sequential type is unconnected in block <AVA6STest_TopModule>.
+INFO:Xst:2261 - The FF/Latch <Inst_SIPO_DIP/s_Counter_0> in Unit <AVA6STest_TopModule> is equivalent to the following FF/Latch, which will be removed : <Inst_PISO_LED/s_Counter_0> 
+INFO:Xst:2261 - The FF/Latch <Inst_SIPO_DIP/s_Counter_1> in Unit <AVA6STest_TopModule> is equivalent to the following FF/Latch, which will be removed : <Inst_PISO_LED/s_Counter_1> 
+INFO:Xst:2261 - The FF/Latch <Inst_SIPO_DIP/s_Counter_2> in Unit <AVA6STest_TopModule> is equivalent to the following FF/Latch, which will be removed : <Inst_PISO_LED/s_Counter_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block AVA6STest_TopModule, actual ratio is 12.
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <AVA6STest_TopModule> :
+	Register(s) Inst_PISO_LED/s_Reg_0 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_0_BRB0 Inst_PISO_LED/s_Reg_0_BRB1 Inst_PISO_LED/s_Reg_0_BRB2 Inst_PISO_LED/s_Reg_0_BRB3 Inst_PISO_LED/s_Reg_0_BRB4.
+	Register(s) Inst_PISO_LED/s_Reg_1 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_1_BRB0 .
+	Register(s) Inst_PISO_LED/s_Reg_2 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_2_BRB0 Inst_PISO_LED/s_Reg_2_BRB5.
+	Register(s) Inst_PISO_LED/s_Reg_3 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_3_BRB0 Inst_PISO_LED/s_Reg_3_BRB5.
+	Register(s) Inst_PISO_LED/s_Reg_4 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_4_BRB0 .
+	Register(s) Inst_PISO_LED/s_Reg_5 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_5_BRB0 .
+	Register(s) Inst_PISO_LED/s_Reg_6 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_6_BRB0 .
+	Register(s) Inst_PISO_LED/s_Reg_7 has(ve) been backward balanced into : Inst_PISO_LED/s_Reg_7_BRB4.
+	Register(s) state_mac/counter_15 has(ve) been backward balanced into : state_mac/counter_15_BRB0 state_mac/counter_15_BRB5.
+	Register(s) state_mac/counter_16 has(ve) been backward balanced into : state_mac/counter_16_BRB0 state_mac/counter_16_BRB5.
+	Register(s) state_mac/counter_17 has(ve) been backward balanced into : state_mac/counter_17_BRB0 state_mac/counter_17_BRB5.
+	Register(s) state_mac/counter_18 has(ve) been backward balanced into : state_mac/counter_18_BRB0 state_mac/counter_18_BRB5.
+	Register(s) state_mac/counter_19 has(ve) been backward balanced into : state_mac/counter_19_BRB0 state_mac/counter_19_BRB5.
+	Register(s) state_mac/counter_20 has(ve) been backward balanced into : state_mac/counter_20_BRB0 state_mac/counter_20_BRB5.
+	Register(s) state_mac/counter_21 has(ve) been backward balanced into : state_mac/counter_21_BRB0 state_mac/counter_21_BRB5.
+	Register(s) state_mac/counter_22 has(ve) been backward balanced into : state_mac/counter_22_BRB0 state_mac/counter_22_BRB5.
+	Register(s) state_mac/counter_23 has(ve) been backward balanced into : state_mac/counter_23_BRB0 state_mac/counter_23_BRB1 state_mac/counter_23_BRB2 state_mac/counter_23_BRB3 state_mac/counter_23_BRB4 state_mac/counter_23_BRB5.
+	Register(s) state_mac/current_state_FSM_FFd2 has(ve) been backward balanced into : state_mac/current_state_FSM_FFd2_BRB0 state_mac/current_state_FSM_FFd2_BRB1 state_mac/current_state_FSM_FFd2_BRB2 state_mac/current_state_FSM_FFd2_BRB3.
+Unit <AVA6STest_TopModule> processed.
+FlipFlop state_mac/current_state_FSM_FFd1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <AVA6STest_TopModule> :
+	Found 6-bit shift register for signal <Inst_SIPO_DIP/s_Reg_7>.
+Unit <AVA6STest_TopModule> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 167
+ Flip-Flops                                            : 167
+# Shift Registers                                      : 1
+ 6-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : AVA6STest_TopModule.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 962
+#      GND                         : 2
+#      INV                         : 6
+#      LUT1                        : 85
+#      LUT2                        : 1
+#      LUT3                        : 29
+#      LUT4                        : 36
+#      LUT5                        : 331
+#      LUT6                        : 180
+#      MUXCY                       : 100
+#      MUXF7                       : 68
+#      MUXF8                       : 34
+#      VCC                         : 2
+#      XORCY                       : 88
+# FlipFlops/Latches                : 168
+#      FD                          : 21
+#      FDC                         : 3
+#      FDCE                        : 25
+#      FDE                         : 46
+#      FDP                         : 1
+#      FDR                         : 8
+#      FDRE                        : 64
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 6
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 4
+# Others                           : 257
+#      PLL_ADV                     : 1
+#      ROMACRO1                    : 256
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             164  out of  11440     1%  
+ Number of Slice LUTs:                  669  out of   5720    11%  
+    Number used as Logic:               668  out of   5720    11%  
+    Number used as Memory:                1  out of   1440     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    710
+   Number with an unused Flip Flop:     546  out of    710    76%  
+   Number with an unused LUT:            41  out of    710     5%  
+   Number of fully used LUT-FF pairs:   123  out of    710    17%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                           7
+ Number of bonded IOBs:                   6  out of    102     5%  
+    IOB Flip Flops/Latches:               4
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+second_DCM/pll_base_inst/CLKOUT0   | BUFG                   | 101   |
+second_DCM/pll_base_inst/CLKOUT2   | BUFG                   | 68    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.412ns (Maximum Frequency: 226.668MHz)
+   Minimum input arrival time before clock: 2.783ns
+   Maximum output required time after clock: 4.638ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'second_DCM/pll_base_inst/CLKOUT0'
+  Clock period: 4.412ns (frequency: 226.668MHz)
+  Total number of paths / destination ports: 2344 / 206
+-------------------------------------------------------------------------
+Delay:               4.412ns (Levels of Logic = 1)
+  Source:            state_mac/current_state_FSM_FFd2_BRB3 (FF)
+  Destination:       state_mac/counter_0 (FF)
+  Source Clock:      second_DCM/pll_base_inst/CLKOUT0 rising
+  Destination Clock: second_DCM/pll_base_inst/CLKOUT0 rising
+
+  Data Path: state_mac/current_state_FSM_FFd2_BRB3 to state_mac/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              17   0.447   1.372  state_mac/current_state_FSM_FFd2_BRB3 (state_mac/current_state_FSM_FFd2_BRB3)
+     LUT5:I0->O          274   0.203   2.068  state_mac/current_state__n0039<0>1 (m_cnt_en)
+     FDCE:CE                   0.322          state_mac/counter_0
+    ----------------------------------------
+    Total                      4.412ns (0.972ns logic, 3.440ns route)
+                                       (22.0% logic, 78.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'second_DCM/pll_base_inst/CLKOUT2'
+  Clock period: 2.984ns (frequency: 335.072MHz)
+  Total number of paths / destination ports: 1186 / 130
+-------------------------------------------------------------------------
+Delay:               2.984ns (Levels of Logic = 1)
+  Source:            puf_ar/pufX1/Inst_my_counter2/previous_value (FF)
+  Destination:       puf_ar/pufX1/Inst_my_counter2/COUNT_31 (FF)
+  Source Clock:      second_DCM/pll_base_inst/CLKOUT2 rising
+  Destination Clock: second_DCM/pll_base_inst/CLKOUT2 rising
+
+  Data Path: puf_ar/pufX1/Inst_my_counter2/previous_value to puf_ar/pufX1/Inst_my_counter2/COUNT_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.721  Inst_my_counter2/previous_value (Inst_my_counter2/previous_value)
+     LUT3:I1->O           32   0.203   1.291  Inst_my_counter2/_n0024_inv1 (Inst_my_counter2/_n0024_inv)
+     FDRE:CE                   0.322          Inst_my_counter2/COUNT_0
+    ----------------------------------------
+    Total                      2.984ns (0.972ns logic, 2.012ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'second_DCM/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            i_DIPData (PAD)
+  Destination:       Inst_SIPO_DIP/s_Reg_0 (FF)
+  Destination Clock: second_DCM/pll_base_inst/CLKOUT0 rising
+
+  Data Path: i_DIPData to Inst_SIPO_DIP/s_Reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  i_DIPData_IBUF (i_DIPData_IBUF)
+     FDE:D                     0.102          Inst_SIPO_DIP/s_Reg_0
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'second_DCM/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 512 / 2
+-------------------------------------------------------------------------
+Offset:              2.783ns (Levels of Logic = 6)
+  Source:            puf_ar/pufX1/ro_Ar/GEN_RO5[238].inst_RO_MACRO5:Os (PAD)
+  Destination:       puf_ar/pufX1/Inst_my_counter2/previous_value (FF)
+  Destination Clock: second_DCM/pll_base_inst/CLKOUT2 rising
+
+  Data Path: puf_ar/pufX1/ro_Ar/GEN_RO5[238].inst_RO_MACRO5:Os to puf_ar/pufX1/Inst_my_counter2/previous_value
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ROMACRO1:Os            2   0.000   0.864  ro_Ar/GEN_RO5[238].inst_RO_MACRO5 (RO_out<238>)
+     LUT6:I2->O            1   0.203   0.000  mux_a/Mmux_dato_113 (mux_a/Mmux_dato_113)
+     MUXF7:I1->O           1   0.140   0.000  mux_a/Mmux_dato_10_f7_1 (mux_a/Mmux_dato_10_f72)
+     MUXF8:I1->O           1   0.152   0.827  mux_a/Mmux_dato_9_f8_0 (mux_a/Mmux_dato_9_f81)
+     LUT6:I2->O            1   0.203   0.000  mux_a/Mmux_dato_4 (mux_a/Mmux_dato_4)
+     MUXF7:I1->O           1   0.140   0.000  mux_a/Mmux_dato_3_f7 (mux_a/Mmux_dato_3_f7)
+     MUXF8:I1->O           1   0.152   0.000  mux_a/Mmux_dato_2_f8 (s_q1)
+     FD:D                      0.102          Inst_my_counter1/previous_value
+    ----------------------------------------
+    Total                      2.783ns (1.092ns logic, 1.691ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'second_DCM/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 5379 / 259
+-------------------------------------------------------------------------
+Offset:              4.638ns (Levels of Logic = 3)
+  Source:            state_mac/current_state_FSM_FFd2_BRB3 (FF)
+  Destination:       puf_ar/pufX1/ro_Ar/GEN_RO5[255].inst_RO_MACRO5:En (PAD)
+  Source Clock:      second_DCM/pll_base_inst/CLKOUT0 rising
+
+  Data Path: state_mac/current_state_FSM_FFd2_BRB3 to puf_ar/pufX1/ro_Ar/GEN_RO5[255].inst_RO_MACRO5:En
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              17   0.447   1.372  state_mac/current_state_FSM_FFd2_BRB3 (state_mac/current_state_FSM_FFd2_BRB3)
+     LUT5:I0->O          274   0.203   2.413  state_mac/current_state__n0039<0>1 (m_cnt_en)
+     begin scope: 'puf_ar/pufX1:en'
+     LUT5:I0->O            0   0.203   0.000  dec/Mmux_output<0>11 (decout<0>)
+    ROMACRO1:En                0.000          ro_Ar/GEN_RO1[0].inst_RO_MACRO1
+    ----------------------------------------
+    Total                      4.638ns (0.853ns logic, 3.785ns route)
+                                       (18.4% logic, 81.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock second_DCM/pll_base_inst/CLKOUT0
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+second_DCM/pll_base_inst/CLKOUT0|    4.412|         |         |         |
+second_DCM/pll_base_inst/CLKOUT2|    3.169|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock second_DCM/pll_base_inst/CLKOUT2
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+second_DCM/pll_base_inst/CLKOUT0|    6.137|         |         |         |
+second_DCM/pll_base_inst/CLKOUT2|    2.984|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.94 secs
+ 
+--> 
+
+Total memory usage is 4529752 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

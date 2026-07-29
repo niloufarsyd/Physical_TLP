@@ -1,0 +1,8 @@
+vhdl work "my_counter.vhd"
+vhdl work "my_compare.vhd"
+vhdl work "Multiplexer_D.vhd"
+vhdl work "Multiplexer_2to1.vhd"
+vhdl work "D_Latch.vhd"
+vhdl work "Decoder_D.vhd"
+vhdl work "RO_DCU_MACRO_instantiate.vhd"
+vhdl work "ipcore_dir/DCM1/example_design/DCM1_exdes.vhd"

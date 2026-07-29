@@ -1,0 +1,4 @@
+vhdl work "src/SIPO.vhd"
+vhdl work "ipcore_dir/DCM1.vhd"
+vhdl work "ipcore_dir/DCM1/example_design/DCM1_exdes.vhd"
+vhdl work "TEST_SHR_dip.vhd"

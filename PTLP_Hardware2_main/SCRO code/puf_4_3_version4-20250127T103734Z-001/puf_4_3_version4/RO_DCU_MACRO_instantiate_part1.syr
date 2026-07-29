@@ -1,0 +1,323 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: RO_DCU_MACRO_instantiate_part1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RO_DCU_MACRO_instantiate_part1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RO_DCU_MACRO_instantiate_part1"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : RO_DCU_MACRO_instantiate_part1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "E:\new codes\PUF\RO_DCU_MACRO_instantiate.vhd" into library work
+Parsing entity <RO_DCU_MACRO_instantiate_part1>.
+Parsing architecture <Behavioral> of entity <ro_dcu_macro_instantiate_part1>.
+Parsing VHDL file "E:\new codes\PUF\ipcore_dir\DCM1\example_design\DCM1_exdes.vhd" into library work
+Parsing entity <DCM1_exdes>.
+Parsing architecture <xilinx> of entity <dcm1_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <RO_DCU_MACRO_instantiate_part1> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:89 - "E:\new codes\PUF\RO_DCU_MACRO_instantiate.vhd" Line 43: <ro_dcu_macro> remains a black-box since it has no binding entity.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RO_DCU_MACRO_instantiate_part1>.
+    Related source file is "E:\new codes\PUF\RO_DCU_MACRO_instantiate.vhd".
+    Summary:
+	no macro.
+Unit <RO_DCU_MACRO_instantiate_part1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RO_DCU_MACRO_instantiate_part1> ...
+
+Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<31>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<30>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<29>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<28>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<27>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<26>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<25>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<24>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<23>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<22>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<21>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<20>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<19>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<18>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<17>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<16>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<15>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<14>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<13>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<12>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<11>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<10>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<9>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<8>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<7>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<6>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<5>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<4>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<3>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<2>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<1>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <RO_F<0>> driven by black box <RO_DCU_MACRO>. Possible simulation mismatch.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RO_DCU_MACRO_instantiate_part1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RO_DCU_MACRO_instantiate_part1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# IO Buffers                       : 69
+#      IBUF                        : 37
+#      OBUF                        : 32
+# Others                           : 32
+#      RO_DCU_MACRO                : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          69
+ Number of bonded IOBs:                  69  out of    102    67%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 3.150ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 224 / 224
+-------------------------------------------------------------------------
+Delay:               3.150ns (Levels of Logic = 1)
+  Source:            Inst_RO_DCU_MACRO_32:RO_F (PAD)
+  Destination:       RO_F<31> (PAD)
+
+  Data Path: Inst_RO_DCU_MACRO_32:RO_F to RO_F<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    RO_DCU_MACRO:RO_F      1   0.000   0.579  Inst_RO_DCU_MACRO_32 (RO_F_31_OBUF)
+     OBUF:I->O                 2.571          RO_F_31_OBUF (RO_F<31>)
+    ----------------------------------------
+    Total                      3.150ns (2.571ns logic, 0.579ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.69 secs
+ 
+--> 
+
+Total memory usage is 4510208 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

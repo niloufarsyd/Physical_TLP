@@ -1,0 +1,12 @@
+ISim log file
+Running: E:\new codes\SCRO_DCU_(4_3)\puf_4_3_version2\testbench_puf_and_control_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/testbench_puf_and_control_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbench_puf_and_control/uut/Inst_PUF/Inst_my_COMPARE/ : Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+Finished circuit initialization process.
+at 0 ps, Instance /testbench_puf_and_control/uut/Inst_PUF/Inst_my_COMPARE/ : Warning: NUMERIC_STD.">": metavalue detected, returning FALSE

@@ -1,0 +1,1104 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.37 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.38 secs
+ 
+--> Reading design: PUF_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PUF_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PUF_TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : PUF_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : Yes
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\payan name\Sent\puf_4_3_version4\SEVEN_SEGENT_4.v" into library work
+Parsing module <SEVEN_SEGMENT_4>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\ipcore_dir\DCM2.vhd" into library work
+Parsing entity <DCM2>.
+Parsing architecture <xilinx> of entity <dcm2>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\PUF_OUT_REGISTER.vhd" into library work
+Parsing entity <PUF_OUT_REGISTER>.
+Parsing architecture <Behavioral> of entity <puf_out_register>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\my_counter.vhd" into library work
+Parsing entity <my_counter>.
+Parsing architecture <arch_count> of entity <my_counter>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\my_compare.vhd" into library work
+Parsing entity <my_COMPARE>.
+Parsing architecture <arch_comp> of entity <my_compare>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\Multiplexer_D.vhd" into library work
+Parsing entity <Multiplexer_D>.
+Parsing architecture <Behavioral> of entity <multiplexer_d>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\Multiplexer_2to1.vhd" into library work
+Parsing entity <Multiplexer_2to1>.
+Parsing architecture <Behavioral> of entity <multiplexer_2to1>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\D_Latch.vhd" into library work
+Parsing entity <D_latch>.
+Parsing architecture <Behavioral> of entity <d_latch>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\Decoder_D.vhd" into library work
+Parsing entity <Decoder_D>.
+Parsing architecture <block_diagram> of entity <decoder_d>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\RO_DCU_MACRO_instantiate.vhd" into library work
+Parsing entity <PUF1>.
+Parsing architecture <Behavioral> of entity <puf1>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\CONTROLLER.vhd" into library work
+Parsing entity <CONTROLLER>.
+Parsing architecture <Behavior> of entity <controller>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\TOP_D.vhd" into library work
+Parsing entity <PUF_and_CONTROL>.
+Parsing architecture <Behavioral> of entity <puf_and_control>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\src\SIPO.vhd" into library work
+Parsing entity <SIPO>.
+Parsing architecture <Behavioral> of entity <sipo>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\PUF_TOP.vhd" into library work
+Parsing entity <PUF_TOP>.
+Parsing architecture <Behavioral> of entity <puf_top>.
+Parsing VHDL file "E:\payan name\Sent\puf_4_3_version4\ipcore_dir\DCM1\example_design\DCM1_exdes.vhd" into library work
+Parsing entity <DCM1_exdes>.
+Parsing architecture <xilinx> of entity <dcm1_exdes>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <PUF_TOP> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DCM2> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <SIPO> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PUF_and_CONTROL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CONTROLLER> (architecture <Behavior>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "E:\payan name\Sent\puf_4_3_version4\CONTROLLER.vhd" Line 93: repeat_cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\payan name\Sent\puf_4_3_version4\CONTROLLER.vhd" Line 96: repeat_cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\payan name\Sent\puf_4_3_version4\CONTROLLER.vhd" Line 97: xor_out should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\payan name\Sent\puf_4_3_version4\CONTROLLER.vhd" Line 111: ci should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\payan name\Sent\puf_4_3_version4\CONTROLLER.vhd" Line 114: ci should be on the sensitivity list of the process
+
+Elaborating entity <PUF1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Decoder_D> (architecture <block_diagram>) from library <work>.
+WARNING:HDLCompiler:89 - "E:\payan name\Sent\puf_4_3_version4\RO_DCU_MACRO_instantiate.vhd" Line 63: <scro_hardmacro> remains a black-box since it has no binding entity.
+
+Elaborating entity <Multiplexer_D> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <my_counter> (architecture <arch_count>) from library <work>.
+
+Elaborating entity <my_COMPARE> (architecture <arch_comp>) from library <work>.
+
+Elaborating entity <D_latch> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Multiplexer_2to1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PUF_OUT_REGISTER> (architecture <Behavioral>) from library <work>.
+Going to verilog side to elaborate module SEVEN_SEGMENT_4
+
+Elaborating module <SEVEN_SEGMENT_4>.
+Back to vhdl to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PUF_TOP>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\PUF_TOP.vhd".
+INFO:Xst:3210 - "E:\payan name\Sent\puf_4_3_version4\PUF_TOP.vhd" line 113: Output port <CLK_OUT_7M> of the instance <second_DCM_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\payan name\Sent\puf_4_3_version4\PUF_TOP.vhd" line 113: Output port <CLK_OUT_8M> of the instance <second_DCM_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\payan name\Sent\puf_4_3_version4\PUF_TOP.vhd" line 113: Output port <CLK_OUT_20M> of the instance <second_DCM_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\payan name\Sent\puf_4_3_version4\PUF_TOP.vhd" line 124: Output port <o_CLK> of the instance <Inst_SIPO_DIP> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <PUF_TOP> synthesized.
+
+Synthesizing Unit <DCM2>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\ipcore_dir\DCM2.vhd".
+    Summary:
+	no macro.
+Unit <DCM2> synthesized.
+
+Synthesizing Unit <SIPO>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\src\SIPO.vhd".
+    Found 16-bit register for signal <o_Data>.
+    Found 4-bit register for signal <s_Counter>.
+    Found 16-bit register for signal <s_Reg>.
+    Found 1-bit register for signal <o_Latch>.
+    Found 4-bit adder for signal <s_Counter[3]_GND_10_o_add_1_OUT> created at line 65.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+Unit <SIPO> synthesized.
+
+Synthesizing Unit <PUF_and_CONTROL>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\TOP_D.vhd".
+INFO:Xst:3210 - "E:\payan name\Sent\puf_4_3_version4\TOP_D.vhd" line 99: Output port <en> of the instance <Inst_CONTROLLER> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <PUF_and_CONTROL> synthesized.
+
+Synthesizing Unit <CONTROLLER>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\CONTROLLER.vhd".
+        delay = 125000
+        CI_MUX = 63
+    Found 3-bit register for signal <current_state>.
+    Found 17-bit register for signal <counter>.
+    Found 6-bit adder for signal <CI[5]_GND_12_o_add_9_OUT> created at line 114.
+    Found 17-bit adder for signal <counter[16]_GND_12_o_add_47_OUT> created at line 147.
+    Found 8x6-bit Read Only RAM for signal <_n0106>
+    Found 4x2-bit Read Only RAM for signal <_n0120>
+    Found 3-bit 6-to-1 multiplexer for signal <next_state> created at line 135.
+WARNING:Xst:737 - Found 1-bit latch for signal <latch_en>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <S_MUX_SEL>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <repeat_cnt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <CI<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <CI<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <CI<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <CI<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <CI<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <CI<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <CI_en>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 17-bit comparator greater for signal <counter[16]_PWR_11_o_LessThan_47_o> created at line 146
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred  10 Latch(s).
+	inferred   1 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <CONTROLLER> synthesized.
+
+Synthesizing Unit <PUF1>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\RO_DCU_MACRO_instantiate.vhd".
+    Set property "LOC = SLICE_X2Y2" for instance <Generate_RO1[0].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y3" for instance <Generate_RO1[1].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y4" for instance <Generate_RO1[2].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y5" for instance <Generate_RO1[3].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y6" for instance <Generate_RO1[4].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y7" for instance <Generate_RO1[5].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y8" for instance <Generate_RO1[6].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y9" for instance <Generate_RO1[7].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y10" for instance <Generate_RO1[8].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y11" for instance <Generate_RO1[9].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y12" for instance <Generate_RO1[10].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y13" for instance <Generate_RO1[11].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y14" for instance <Generate_RO1[12].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y15" for instance <Generate_RO1[13].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y16" for instance <Generate_RO1[14].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y17" for instance <Generate_RO1[15].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y18" for instance <Generate_RO1[16].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y19" for instance <Generate_RO1[17].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y20" for instance <Generate_RO1[18].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y21" for instance <Generate_RO1[19].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y22" for instance <Generate_RO1[20].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y23" for instance <Generate_RO1[21].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y24" for instance <Generate_RO1[22].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y25" for instance <Generate_RO1[23].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y26" for instance <Generate_RO1[24].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y27" for instance <Generate_RO1[25].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y28" for instance <Generate_RO1[26].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y29" for instance <Generate_RO1[27].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y30" for instance <Generate_RO1[28].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y31" for instance <Generate_RO1[29].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y32" for instance <Generate_RO1[30].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y33" for instance <Generate_RO1[31].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y34" for instance <Generate_RO1[32].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y35" for instance <Generate_RO1[33].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y36" for instance <Generate_RO1[34].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y37" for instance <Generate_RO1[35].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y38" for instance <Generate_RO1[36].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y39" for instance <Generate_RO1[37].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y40" for instance <Generate_RO1[38].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y41" for instance <Generate_RO1[39].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y42" for instance <Generate_RO1[40].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y43" for instance <Generate_RO1[41].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y44" for instance <Generate_RO1[42].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y45" for instance <Generate_RO1[43].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y46" for instance <Generate_RO1[44].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y47" for instance <Generate_RO1[45].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y48" for instance <Generate_RO1[46].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y49" for instance <Generate_RO1[47].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y50" for instance <Generate_RO1[48].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y51" for instance <Generate_RO1[49].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X2Y52" for instance <Generate_RO1[50].inst_RO_HardMACRO1>.
+    Set property "LOC = SLICE_X4Y2" for instance <Generate_RO2[51].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y3" for instance <Generate_RO2[52].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y4" for instance <Generate_RO2[53].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y5" for instance <Generate_RO2[54].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y6" for instance <Generate_RO2[55].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y7" for instance <Generate_RO2[56].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y8" for instance <Generate_RO2[57].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y9" for instance <Generate_RO2[58].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y10" for instance <Generate_RO2[59].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y11" for instance <Generate_RO2[60].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y12" for instance <Generate_RO2[61].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y13" for instance <Generate_RO2[62].inst_RO_HardMACRO2>.
+    Set property "LOC = SLICE_X4Y14" for instance <Generate_RO2[63].inst_RO_HardMACRO2>.
+    Summary:
+Unit <PUF1> synthesized.
+
+Synthesizing Unit <Decoder_D>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\Decoder_D.vhd".
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <Decoder_D> synthesized.
+
+Synthesizing Unit <Multiplexer_D>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\Multiplexer_D.vhd".
+    Found 1-bit 64-to-1 multiplexer for signal <dato> created at line 44.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Multiplexer_D> synthesized.
+
+Synthesizing Unit <my_counter>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\my_counter.vhd".
+    Found 1-bit register for signal <previous_value>.
+    Found 1-bit register for signal <previous_value2>.
+    Found 32-bit register for signal <COUNT>.
+    Found 32-bit adder for signal <COUNT[31]_GND_29_o_add_0_OUT> created at line 58.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <my_counter> synthesized.
+
+Synthesizing Unit <my_COMPARE>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\my_compare.vhd".
+    Found 32-bit subtractor for signal <temp> created at line 35.
+    Found 32-bit comparator greater for signal <GTh> created at line 38
+    Found 32-bit comparator greater for signal <diff> created at line 40
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <my_COMPARE> synthesized.
+
+Synthesizing Unit <D_latch>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\D_Latch.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <D_latch> synthesized.
+
+Synthesizing Unit <Multiplexer_2to1>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\Multiplexer_2to1.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Multiplexer_2to1> synthesized.
+
+Synthesizing Unit <PUF_OUT_REGISTER>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\PUF_OUT_REGISTER.vhd".
+    Found 1-bit register for signal <shift>.
+    Found 64-bit register for signal <TEMP>.
+    Summary:
+	inferred  65 D-type flip-flop(s).
+Unit <PUF_OUT_REGISTER> synthesized.
+
+Synthesizing Unit <SEVEN_SEGMENT_4>.
+    Related source file is "E:\payan name\Sent\puf_4_3_version4\SEVEN_SEGENT_4.v".
+        NUM_0 = 7'b0111111
+        NUM_1 = 7'b0000110
+        NUM_2 = 7'b1011011
+        NUM_3 = 7'b1001111
+        NUM_4 = 7'b1100110
+        NUM_5 = 7'b1101101
+        NUM_6 = 7'b1111101
+        NUM_7 = 7'b0000111
+        NUM_8 = 7'b1111111
+        NUM_9 = 7'b1101111
+        NUM_A = 7'b1110111
+        NUM_B = 7'b1111100
+        NUM_C = 7'b1011000
+        NUM_D = 7'b1011110
+        NUM_E = 7'b1111001
+        NUM_F = 7'b1110001
+        NUM_BLK = 7'b0000000
+        EN_1 = 4'b1110
+        EN_2 = 4'b1101
+        EN_3 = 4'b1011
+        EN_4 = 4'b0111
+        EN_A = 4'b0000
+    Found 7-bit register for signal <ds_reg>.
+    Found 4-bit register for signal <ds_en>.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt[31]_GND_36_o_add_1_OUT> created at line 59.
+    Found 4x4-bit Read Only RAM for signal <ds_en[3]_num4[3]_mux_23_OUT>
+    Found 7-bit 4-to-1 multiplexer for signal <ds_reg[6]_num4[3]_mux_22_OUT> created at line 124.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <SEVEN_SEGMENT_4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 4x2-bit single-port Read Only RAM                     : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+ 8x6-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 7
+ 17-bit adder                                          : 1
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 19
+ 1-bit register                                        : 8
+ 16-bit register                                       : 2
+ 17-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 3
+ 4-bit register                                        : 2
+ 64-bit register                                       : 1
+ 7-bit register                                        : 1
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+# Comparators                                          : 3
+ 17-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 86
+ 1-bit 2-to-1 multiplexer                              : 82
+ 1-bit 64-to-1 multiplexer                             : 2
+ 3-bit 6-to-1 multiplexer                              : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <s_Reg_13> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <s_Reg_14> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <s_Reg_15> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_6> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_14> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+WARNING:Xst:2677 - Node <o_Data_15> of sequential type is unconnected in block <Inst_SIPO_DIP>.
+
+Synthesizing (advanced) Unit <CONTROLLER>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0106> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <current_state> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0120> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <current_state<1:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <CONTROLLER> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SEVEN_SEGMENT_4>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+INFO:Xst:3231 - The small RAM <Mram_ds_en[3]_num4[3]_mux_23_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cnt>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SEVEN_SEGMENT_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SIPO>.
+The following registers are absorbed into counter <s_Counter>: 1 register on signal <s_Counter>.
+Unit <SIPO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <my_counter>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <my_counter> synthesized (advanced).
+WARNING:Xst:2677 - Node <s_Reg_15> of sequential type is unconnected in block <SIPO>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 4x2-bit single-port distributed Read Only RAM         : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 8x6-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit subtractor                                     : 1
+ 6-bit adder                                           : 1
+# Counters                                             : 5
+ 17-bit up counter                                     : 1
+ 32-bit up counter                                     : 3
+ 4-bit up counter                                      : 1
+# Registers                                            : 117
+ Flip-Flops                                            : 117
+# Comparators                                          : 3
+ 17-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 86
+ 1-bit 2-to-1 multiplexer                              : 82
+ 1-bit 64-to-1 multiplexer                             : 2
+ 3-bit 6-to-1 multiplexer                              : 1
+ 7-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <cnt_17> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_18> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_19> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_20> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_21> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_22> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_23> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_24> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_25> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_26> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_27> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_28> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_29> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_30> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+WARNING:Xst:2677 - Node <cnt_31> of sequential type is unconnected in block <SEVEN_SEGMENT_4>.
+INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+
+Optimizing unit <DCM2> ...
+
+Optimizing unit <PUF_TOP> ...
+
+Optimizing unit <PUF1> ...
+
+Optimizing unit <PUF_OUT_REGISTER> ...
+
+Optimizing unit <CONTROLLER> ...
+
+Optimizing unit <SIPO> ...
+
+Optimizing unit <SEVEN_SEGMENT_4> ...
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_15> of sequential type is unconnected in block <PUF_TOP>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_14> of sequential type is unconnected in block <PUF_TOP>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/o_Data_6> of sequential type is unconnected in block <PUF_TOP>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/s_Reg_14> of sequential type is unconnected in block <PUF_TOP>.
+WARNING:Xst:2677 - Node <Inst_SIPO_DIP/s_Reg_13> of sequential type is unconnected in block <PUF_TOP>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PUF_TOP, actual ratio is 8.
+Forward register balancing over carry chain Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/Mcount_COUNT_cy<0>
+Forward register balancing over carry chain Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter2/Mcount_COUNT_cy<0>
+
+Final Macro Processing ...
+
+Processing Unit <PUF_TOP> :
+	Found 2-bit shift register for signal <Inst_SIPO_DIP/s_Reg_6>.
+INFO:Xst:741 - HDL ADVISOR - A 48-bit shift register was found for signal <Inst_PUF_and_CONTROL/Inst_PUF/Inst_PUF_OUT_REGISTER/TEMP_15> and currently occupies 48 logic cells (24 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <PUF_TOP> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 276
+ Flip-Flops                                            : 276
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PUF_TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 692
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 94
+#      LUT2                        : 44
+#      LUT3                        : 34
+#      LUT4                        : 58
+#      LUT5                        : 21
+#      LUT6                        : 144
+#      MUXCY                       : 150
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 130
+# FlipFlops/Latches                : 287
+#      FD                          : 33
+#      FDC                         : 3
+#      FDCE                        : 17
+#      FDE                         : 27
+#      FDR                         : 5
+#      FDRE                        : 190
+#      FDSE                        : 2
+#      LD                          : 10
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 18
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 15
+# Others                           : 65
+#      PLL_ADV                     : 1
+#      SCRO_HARDMACRO              : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             273  out of  11440     2%  
+ Number of Slice LUTs:                  404  out of   5720     7%  
+    Number used as Logic:               403  out of   5720     7%  
+    Number used as Memory:                1  out of   1440     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    485
+   Number with an unused Flip Flop:     212  out of    485    43%  
+   Number with an unused LUT:            81  out of    485    16%  
+   Number of fully used LUT-FF pairs:   192  out of    485    39%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    102    17%  
+    IOB Flip Flops/Latches:              14
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+Clock Signal                                                                                                                                           | Clock buffer(FF name)                                   | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+second_DCM_unit/pll_base_inst/CLKOUT3                                                                                                                  | BUFG                                                    | 247   |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_15_o_Mux_28_o(Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_15_o_Mux_28_o2:O)    | NONE(*)(Inst_PUF_and_CONTROL/Inst_CONTROLLER/latch_en)  | 1     |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o(Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o2:O)    | NONE(*)(Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_0)      | 6     |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n0106(Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01061:O)                                                  | NONE(*)(Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_en)     | 1     |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_30_o(Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_30_o1:O)| NONE(*)(Inst_PUF_and_CONTROL/Inst_CONTROLLER/S_MUX_SEL) | 1     |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01201(Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n012011:O)                                                | NONE(*)(Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt)| 1     |
+second_DCM_unit/pll_base_inst/CLKOUT0                                                                                                                  | BUFG                                                    | 31    |
+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.612ns (Maximum Frequency: 216.837MHz)
+   Minimum input arrival time before clock: 3.229ns
+   Maximum output required time after clock: 7.905ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'second_DCM_unit/pll_base_inst/CLKOUT3'
+  Clock period: 4.612ns (frequency: 216.837MHz)
+  Total number of paths / destination ports: 8541 / 663
+-------------------------------------------------------------------------
+Delay:               4.612ns (Levels of Logic = 31)
+  Source:            Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0 (FF)
+  Destination:       Inst_PUF_and_CONTROL/Inst_PUF/Inst_PUF_OUT_REGISTER/TEMP_63 (FF)
+  Source Clock:      second_DCM_unit/pll_base_inst/CLKOUT3 rising
+  Destination Clock: second_DCM_unit/pll_base_inst/CLKOUT3 rising
+
+  Data Path: Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0 to Inst_PUF_and_CONTROL/Inst_PUF/Inst_PUF_OUT_REGISTER/TEMP_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.447   0.755  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0 (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0)
+     LUT2:I0->O            1   0.203   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_lut<0> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<0> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<1> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<2> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<3> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<4> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<5> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<6> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<7> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<8> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<9> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<10> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<11> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<12> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<13> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<14> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<15> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<16> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<17> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<18> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<19> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<20> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<21> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<22> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<23> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<24> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<24>)
+     XORCY:CI->O           1   0.180   0.924  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_xor<25> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/temp<25>)
+     LUT5:I0->O            1   0.203   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_lut<5> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_lut<5>)
+     MUXCY:S->O            1   0.172   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<5> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<5>)
+     MUXCY:CI->O           7   0.019   0.774  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<6> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<6>)
+     LUT4:I3->O            1   0.205   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_Multiplexer_2to1_2/Mmux_dato11 (s_PUF)
+     FDRE:D                    0.102          Inst_PUF_and_CONTROL/Inst_PUF/Inst_PUF_OUT_REGISTER/TEMP_63
+    ----------------------------------------
+    Total                      4.612ns (2.159ns logic, 2.453ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o'
+  Clock period: 2.372ns (frequency: 421.656MHz)
+  Total number of paths / destination ports: 21 / 6
+-------------------------------------------------------------------------
+Delay:               2.372ns (Levels of Logic = 2)
+  Source:            Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_1 (LATCH)
+  Destination:       Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_5 (LATCH)
+  Source Clock:      Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o falling
+  Destination Clock: Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o falling
+
+  Data Path: Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_1 to Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               6   0.498   0.849  Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_1 (Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_1)
+     LUT2:I0->O            1   0.203   0.580  Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mmux_current_state[2]_X_11_o_Mux_33_o1_SW0 (N20)
+     LUT6:I5->O            1   0.205   0.000  Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mmux_current_state[2]_X_11_o_Mux_33_o1 (Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_X_11_o_Mux_33_o)
+     LD:D                      0.037          Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_5
+    ----------------------------------------
+    Total                      2.372ns (0.943ns logic, 1.429ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01201'
+  Clock period: 1.526ns (frequency: 655.501MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.526ns (Levels of Logic = 1)
+  Source:            Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt (LATCH)
+  Destination:       Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt (LATCH)
+  Source Clock:      Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01201 falling
+  Destination Clock: Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01201 falling
+
+  Data Path: Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt to Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.498   0.788  Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt (Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt)
+     LUT2:I0->O            1   0.203   0.000  Inst_PUF_and_CONTROL/Inst_CONTROLLER/next_state[2]_GND_12_o_MUX_62_o1 (Inst_PUF_and_CONTROL/Inst_CONTROLLER/next_state[2]_GND_12_o_MUX_62_o)
+     LD:D                      0.037          Inst_PUF_and_CONTROL/Inst_CONTROLLER/repeat_cnt
+    ----------------------------------------
+    Total                      1.526ns (0.738ns logic, 0.788ns route)
+                                       (48.4% logic, 51.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'second_DCM_unit/pll_base_inst/CLKOUT0'
+  Clock period: 3.121ns (frequency: 320.446MHz)
+  Total number of paths / destination ports: 158 / 59
+-------------------------------------------------------------------------
+Delay:               3.121ns (Levels of Logic = 1)
+  Source:            Inst_SIPO_DIP/s_Counter_0 (FF)
+  Destination:       Inst_SIPO_DIP/s_Counter_3 (FF)
+  Source Clock:      second_DCM_unit/pll_base_inst/CLKOUT0 rising
+  Destination Clock: second_DCM_unit/pll_base_inst/CLKOUT0 rising
+
+  Data Path: Inst_SIPO_DIP/s_Counter_0 to Inst_SIPO_DIP/s_Counter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.992  Inst_SIPO_DIP/s_Counter_0 (Inst_SIPO_DIP/s_Counter_0)
+     LUT4:I0->O           18   0.203   1.049  Inst_SIPO_DIP/PWR_9_o_s_Counter[3]_equal_1_o1 (Inst_SIPO_DIP/PWR_9_o_s_Counter[3]_equal_1_o)
+     FDR:R                     0.430          Inst_SIPO_DIP/o_Latch
+    ----------------------------------------
+    Total                      3.121ns (1.080ns logic, 2.041ns route)
+                                       (34.6% logic, 65.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'second_DCM_unit/pll_base_inst/CLKOUT3'
+  Total number of paths / destination ports: 131 / 5
+-------------------------------------------------------------------------
+Offset:              3.229ns (Levels of Logic = 3)
+  Source:            Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1:RO_F (PAD)
+  Destination:       Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/previous_value (FF)
+  Destination Clock: second_DCM_unit/pll_base_inst/CLKOUT3 rising
+
+  Data Path: Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1:RO_F to Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/previous_value
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    SCRO_HARDMACRO:RO_F    2   0.000   0.864  Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1 (Inst_PUF_and_CONTROL/Inst_PUF/RO_F<26>)
+     LUT6:I2->O            1   0.203   0.827  Inst_PUF_and_CONTROL/Inst_PUF/Inst_Multiplexer_D_2/Mmux_dato_122 (Inst_PUF_and_CONTROL/Inst_PUF/Inst_Multiplexer_D_2/Mmux_dato_122)
+     LUT6:I2->O            1   0.203   0.827  Inst_PUF_and_CONTROL/Inst_PUF/Inst_Multiplexer_D_2/Mmux_dato_7 (Inst_PUF_and_CONTROL/Inst_PUF/Inst_Multiplexer_D_2/Mmux_dato_7)
+     LUT6:I2->O            1   0.203   0.000  Inst_PUF_and_CONTROL/Inst_PUF/ChallengeB<5>1 (Inst_PUF_and_CONTROL/Inst_PUF/muxB)
+     FD:D                      0.102          Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter2/previous_value
+    ----------------------------------------
+    Total                      3.229ns (0.711ns logic, 2.518ns route)
+                                       (22.0% logic, 78.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'second_DCM_unit/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.940ns (Levels of Logic = 1)
+  Source:            i_DIPData (PAD)
+  Destination:       Inst_SIPO_DIP/o_Data_0 (FF)
+  Destination Clock: second_DCM_unit/pll_base_inst/CLKOUT0 rising
+
+  Data Path: i_DIPData to Inst_SIPO_DIP/o_Data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  i_DIPData_IBUF (i_DIPData_IBUF)
+     FDE:D                     0.102          Inst_SIPO_DIP/s_Reg_0
+    ----------------------------------------
+    Total                      1.940ns (1.324ns logic, 0.616ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'second_DCM_unit/pll_base_inst/CLKOUT3'
+  Total number of paths / destination ports: 118376 / 76
+-------------------------------------------------------------------------
+Offset:              7.905ns (Levels of Logic = 32)
+  Source:            Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0 (FF)
+  Destination:       PUF_OUT1 (PAD)
+  Source Clock:      second_DCM_unit/pll_base_inst/CLKOUT3 rising
+
+  Data Path: Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0 to PUF_OUT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.447   0.755  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0 (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_counter1/COUNT_0)
+     LUT2:I0->O            1   0.203   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_lut<0> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<0> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<1> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<2> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<3> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<4> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<5> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<6> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<7> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<8> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<9> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<10> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<11> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<12> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<13> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<14> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<15> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<16> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<17> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<18> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<19> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<20> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<21> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<22> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<23> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<24> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_cy<24>)
+     XORCY:CI->O           1   0.180   0.924  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Msub_temp_xor<25> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/temp<25>)
+     LUT5:I0->O            1   0.203   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_lut<5> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_lut<5>)
+     MUXCY:S->O            1   0.172   0.000  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<5> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<5>)
+     MUXCY:CI->O           7   0.019   1.021  Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<6> (Inst_PUF_and_CONTROL/Inst_PUF/Inst_my_COMPARE/Mcompar_diff_cy<6>)
+     LUT4:I0->O            1   0.203   0.579  PUF_OUT11 (PUF_OUT1_OBUF)
+     OBUF:I->O                 2.571          PUF_OUT1_OBUF (PUF_OUT1)
+    ----------------------------------------
+    Total                      7.905ns (4.626ns logic, 3.279ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'second_DCM_unit/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 769 / 65
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            Inst_SIPO_DIP/o_Latch (FF)
+  Destination:       o_DIPLatch (PAD)
+  Source Clock:      second_DCM_unit/pll_base_inst/CLKOUT0 rising
+
+  Data Path: Inst_SIPO_DIP/o_Latch to o_DIPLatch
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  Inst_SIPO_DIP/o_Latch (Inst_SIPO_DIP/o_Latch)
+     OBUF:I->O                 2.571          o_DIPLatch_OBUF (o_DIPLatch)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_30_o'
+  Total number of paths / destination ports: 65 / 65
+-------------------------------------------------------------------------
+Offset:              4.698ns (Levels of Logic = 2)
+  Source:            Inst_PUF_and_CONTROL/Inst_CONTROLLER/S_MUX_SEL (LATCH)
+  Destination:       PUF_OUT1 (PAD)
+  Source Clock:      Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_30_o falling
+
+  Data Path: Inst_PUF_and_CONTROL/Inst_CONTROLLER/S_MUX_SEL to PUF_OUT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.845  Inst_PUF_and_CONTROL/Inst_CONTROLLER/S_MUX_SEL (Inst_PUF_and_CONTROL/Inst_CONTROLLER/S_MUX_SEL)
+     LUT4:I1->O            1   0.205   0.579  PUF_OUT11 (PUF_OUT1_OBUF)
+     OBUF:I->O                 2.571          PUF_OUT1_OBUF (PUF_OUT1)
+    ----------------------------------------
+    Total                      4.698ns (3.274ns logic, 1.424ns route)
+                                       (69.7% logic, 30.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o'
+  Total number of paths / destination ports: 384 / 384
+-------------------------------------------------------------------------
+Offset:              1.271ns (Levels of Logic = 0)
+  Source:            Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_0 (LATCH)
+  Destination:       Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2:CI<0> (PAD)
+  Source Clock:      Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o falling
+
+  Data Path: Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_0 to Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2:CI<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               7   0.498   0.773  Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_0 (Inst_PUF_and_CONTROL/Inst_CONTROLLER/CI_0)
+    SCRO_HARDMACRO:CI<0>        0.000          Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1
+    ----------------------------------------
+    Total                      1.271ns (0.498ns logic, 0.773ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n0106
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+second_DCM_unit/pll_base_inst/CLKOUT3|         |         |    2.110|         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01201
+-------------------------------------------------+---------+---------+---------+---------+
+                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------+---------+---------+---------+---------+
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01201|         |         |    1.526|         |
+second_DCM_unit/pll_base_inst/CLKOUT3            |         |         |    4.547|         |
+-------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_30_o
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+second_DCM_unit/pll_base_inst/CLKOUT3|         |         |    4.775|         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_15_o_Mux_28_o
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+second_DCM_unit/pll_base_inst/CLKOUT3|         |         |    2.223|         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o
+-----------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------------------------------+---------+---------+---------+---------+
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o|         |         |    2.372|         |
+second_DCM_unit/pll_base_inst/CLKOUT3                                  |         |         |    2.244|         |
+-----------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock second_DCM_unit/pll_base_inst/CLKOUT0
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+second_DCM_unit/pll_base_inst/CLKOUT0|    3.121|         |         |         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock second_DCM_unit/pll_base_inst/CLKOUT3
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n0106                         |         |    3.282|         |         |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n01201                        |         |    1.919|         |         |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_30_o|         |    1.667|         |         |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_15_o_Mux_28_o  |         |    1.436|         |         |
+Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[2]_PWR_18_o_Mux_34_o  |         |    3.818|         |         |
+second_DCM_unit/pll_base_inst/CLKOUT0                                    |    4.922|         |         |         |
+second_DCM_unit/pll_base_inst/CLKOUT3                                    |    4.612|         |         |         |
+-------------------------------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.32 secs
+ 
+--> 
+
+Total memory usage is 4526384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

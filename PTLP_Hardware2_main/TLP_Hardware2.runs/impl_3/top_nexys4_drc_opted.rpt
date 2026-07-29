@@ -1,0 +1,232 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Oct  7 14:00:25 2025
+| Host         : timid running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_nexys4_drc_opted.rpt -pb top_nexys4_drc_opted.pb -rpx top_nexys4_drc_opted.rpx
+| Design       : top_nexys4
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 11
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| LUTLP-2   | Warning  | Combinatorial Loop Allowed | 10         |
+| REQP-1839 | Warning  | RAMB36 async control check | 1          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTLP-2#1 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_0/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_0/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_0/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_0/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_0/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_0/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_0/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_0/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_0/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_0/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_0/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_0/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_0/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_0/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_0/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#2 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_1/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_1/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_1/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_1/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_1/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_1/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_1/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_1/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_1/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_1/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_1/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_1/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_1/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_1/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_1/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#3 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_2/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_2/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_2/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_2/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_2/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_2/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_2/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_2/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_2/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_2/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_2/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_2/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_2/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_2/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_2/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#4 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_3/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_3/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_3/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_3/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_3/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_3/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_3/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_3/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_3/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_3/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_3/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_3/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_3/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_3/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_3/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#5 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_4/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_4/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_4/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_4/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_4/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_4/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_4/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_4/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_4/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_4/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_4/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_4/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_4/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_4/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_4/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#6 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_5/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_5/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_5/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_5/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_5/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_5/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_5/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_5/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_5/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_5/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_5/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_5/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_5/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_5/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_5/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#7 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_6/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_6/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_6/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_6/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_6/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_6/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_6/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_6/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_6/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_6/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_6/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_6/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_6/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_6/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_6/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#8 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_7/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_7/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_7/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_7/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_7/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_7/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_7/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_7/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_7/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_7/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_7/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_7/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_7/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_7/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_7/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#9 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_8/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_8/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_8/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_8/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_8/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_8/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_8/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_8/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_8/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_8/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_8/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_8/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_8/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_8/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_8/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+LUTLP-2#10 Warning
+Combinatorial Loop Allowed  
+129 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: u_puf/RODCU_9/Generate_RO1[0].inst_and_DCU1,
+u_puf/RODCU_9/Generate_RO1[0].inst_and_DCU2,
+u_puf/RODCU_9/Generate_RO1[0].inst_and_DCU4,
+u_puf/RODCU_9/Generate_RO1[0].inst_nand_DCU3,
+u_puf/RODCU_9/Generate_RO1[0].inst_nor_DCU1,
+u_puf/RODCU_9/Generate_RO1[0].inst_or_DCU2,
+u_puf/RODCU_9/Generate_RO1[0].inst_or_DCU3,
+u_puf/RODCU_9/Generate_RO1[0].inst_or_DCU4,
+u_puf/RODCU_9/Generate_RO1[1].inst_and_DCU1,
+u_puf/RODCU_9/Generate_RO1[1].inst_and_DCU2,
+u_puf/RODCU_9/Generate_RO1[1].inst_and_DCU4,
+u_puf/RODCU_9/Generate_RO1[1].inst_nand_DCU3,
+u_puf/RODCU_9/Generate_RO1[1].inst_nor_DCU1,
+u_puf/RODCU_9/Generate_RO1[1].inst_or_DCU2,
+u_puf/RODCU_9/Generate_RO1[1].inst_or_DCU3 (the first 15 of 129 listed).
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 u_uart/u_egress_cdc/u_fifo/mem_reg has an input control pin u_uart/u_egress_cdc/u_fifo/mem_reg/ENARDEN (net: u_uart/u_egress_cdc/u_fifo/wr_en) which is driven by a register (u_bridge/tx_wr_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

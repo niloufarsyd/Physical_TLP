@@ -1,0 +1,22 @@
+
+
+INST "Inst_nand"  LOC=SLICE_X2Y2;
+
+INST "inst_or_DCU3"    LOC=SLICE_X3Y2;
+INST "inst_nand_DCU3"  LOC=SLICE_X3Y2;
+
+INST "inst_and_DCU2_1" LOC=SLICE_X3Y2;
+INST "inst_or_DCU2_1"  LOC=SLICE_X3Y2;
+
+INST "inst_and_DCU1"   LOC=SLICE_X3Y2;
+INST "inst_nor_DCU1"   LOC=SLICE_X3Y2;
+
+INST "inst_or_DCU4_1"  LOC=SLICE_X2Y2;
+INST "inst_and_DCU4_1" LOC=SLICE_X2Y2;
+
+INST "inst_and_DCU2_2" LOC=SLICE_X2Y2;
+INST "inst_or_DCU2_2"  LOC=SLICE_X2Y2;
+
+INST "inst_or_DCU4_2"  LOC=SLICE_X2Y2;
+INST "inst_and_DCU4_2" LOC=SLICE_X2Y2;
+#INST "Inst_MUX"  LOC=SLICE_X3Y2;

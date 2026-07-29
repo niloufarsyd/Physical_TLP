@@ -1,0 +1,49 @@
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 "test_shiftREG_DIP.ngc" test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 "test_shiftREG_DIP.ngc" test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 "test_shiftREG_DIP.ngc" test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 "test_shiftREG_DIP.ngc" test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 test_shiftREG_DIP_cs.ngc test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+bitgen -intstyle ise -f test_shiftREG_DIP.ut test_shiftREG_DIP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 test_shiftREG_DIP_cs.ngc test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+bitgen -intstyle ise -f test_shiftREG_DIP.ut test_shiftREG_DIP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 test_shiftREG_DIP_cs.ngc test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+bitgen -intstyle ise -f test_shiftREG_DIP.ut test_shiftREG_DIP.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 "test_shiftREG_DIP.ngc" test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+bitgen -intstyle ise -f test_shiftREG_DIP.ut test_shiftREG_DIP.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 "test_shiftREG_DIP.ngc" test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+bitgen -intstyle ise -f test_shiftREG_DIP.ut test_shiftREG_DIP.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/test_shiftREG_DIP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_test_SHR_dip.ucf -p xc6slx9-tqg144-3 "test_shiftREG_DIP.ngc" test_shiftREG_DIP.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ngd test_shiftREG_DIP.pcf 
+par -w -intstyle ise -ol high -mt off test_shiftREG_DIP_map.ncd test_shiftREG_DIP.ncd test_shiftREG_DIP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_shiftREG_DIP.twx test_shiftREG_DIP.ncd -o test_shiftREG_DIP.twr test_shiftREG_DIP.pcf -ucf UCFof_test_SHR_dip.ucf 
+bitgen -intstyle ise -f test_shiftREG_DIP.ut test_shiftREG_DIP.ncd 

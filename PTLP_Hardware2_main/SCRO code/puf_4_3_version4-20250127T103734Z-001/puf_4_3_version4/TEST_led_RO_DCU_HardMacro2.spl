@@ -1,0 +1,6 @@
+[Inputs]
+=i_CI[4:0]=
+[Outputs]
+LED1
+LED2
+[BiDir]

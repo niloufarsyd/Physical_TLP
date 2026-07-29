@@ -1,0 +1,140 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Oct  7 14:00:53 2025
+| Host         : timid running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_nexys4_control_sets_placed.rpt
+| Design       : top_nexys4
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    62 |
+|    Minimum number of control sets                        |    62 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    62 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    13 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    41 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              27 |           14 |
+| No           | No                    | Yes                    |              27 |           17 |
+| No           | Yes                   | No                     |             187 |           70 |
+| Yes          | No                    | No                     |             656 |          145 |
+| Yes          | No                    | Yes                    |             186 |           45 |
+| Yes          | Yes                   | No                     |            1231 |          309 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                      Enable Signal                      |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | u_uart/u_ingress_buffer/u_fifo/rd_count                 | u_uart/rst0                                              |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_buffer/u_fifo/dout[7]_i_1_n_0          | u_uart/rst0                                              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_buffer/u_fifo/ram_reg_0_31_0_5_i_1_n_0 | u_uart/rst0                                              |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_cdc/wr_en0                             | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_cdc/fifo_rd_en                         | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_cdc/fifo_rd_en                         |                                                          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG |                                                         | u_bridge/puf_reset                                       |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | u_uart/u_egress_cdc/will_update_dout                    | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_buffer/u_fifo/dout[7]_i_1_n_0          |                                                          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_buffer/will_update_middle              | u_uart/rst0                                              |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_buffer/will_update_dout                | u_uart/rst0                                              |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_cdc/will_update_middle                 | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_cdc/will_update_dout                   | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | u_bridge/state                                          | nrst                                                     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | u_bridge/tx_data_reg[7]_i_1_n_0                         | nrst                                                     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | u_bridge/byte_latch                                     | nrst                                                     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | u_uart/u_egress_cdc/will_update_middle                  | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | u_uart/g_tx_bypass.tx_data_r[7]_i_1_n_0                 | nrst                                                     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/control_inst/FSM_onehot_state[5]_i_1_n_0          | u_bridge/puf_reset                                       |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_buffer/u_fifo/ram_reg_0_31_0_5_i_1_n_0 |                                                          |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG | u_uart/u_ingress_cdc/wr_en0                             |                                                          |                2 |             12 |         6.00 |
+|  clk_IBUF_BUFG | u_puf/control_inst/next_bit_cnt                         | u_bridge/puf_reset                                       |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | u_uart/u_egress_cdc/wr_en0                              | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG |                                                         |                                                          |               14 |             27 |         1.93 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[4].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[4].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[6].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[6].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[9].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[9].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[1].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[1].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[3].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[3].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[2].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[2].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[0].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[0].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[5].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[5].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[7].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[7].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[8].COUNTER_i/active_reg_n_0     | u_puf/COUNTER_Instances[8].COUNTER_i/count_r[63]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | u_uart/u_egress_cdc/fifo_rd_en                          | u_uart/fifo_rst_logic_reg_n_0_[0]                        |                9 |             35 |         3.89 |
+|  clk_IBUF_BUFG |                                                         | u_puf/control_inst/shift_clr                             |               20 |             40 |         2.00 |
+|  clk_IBUF_BUFG | u_bridge/led10_i_1_n_0                                  | nrst                                                     |               13 |             64 |         4.92 |
+|  clk_IBUF_BUFG | u_bridge/chal_reg[63]_i_1_n_0                           | nrst                                                     |               11 |             64 |         5.82 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[0].COUNTER_i/count_r            | u_puf/COUNTER_Instances[0].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[0].COUNTER_i/done               |                                                          |               17 |             64 |         3.76 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[1].COUNTER_i/count_r            | u_puf/COUNTER_Instances[1].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[1].COUNTER_i/done               |                                                          |               11 |             64 |         5.82 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[2].COUNTER_i/count_r            | u_puf/COUNTER_Instances[2].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[2].COUNTER_i/done               |                                                          |               13 |             64 |         4.92 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[3].COUNTER_i/count_r            | u_puf/COUNTER_Instances[3].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[3].COUNTER_i/done               |                                                          |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[4].COUNTER_i/done               |                                                          |               12 |             64 |         5.33 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[9].COUNTER_i/count_r            | u_puf/COUNTER_Instances[9].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[5].COUNTER_i/count_r            | u_puf/COUNTER_Instances[5].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[5].COUNTER_i/done               |                                                          |               14 |             64 |         4.57 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[6].COUNTER_i/count_r            | u_puf/COUNTER_Instances[6].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[4].COUNTER_i/count_r            | u_puf/COUNTER_Instances[4].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[6].COUNTER_i/done               |                                                          |               12 |             64 |         5.33 |
+|  clk_IBUF_BUFG | u_puf/control_inst/lfsrEN                               | u_bridge/puf_reset                                       |               15 |             64 |         4.27 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[7].COUNTER_i/count_r            | u_puf/COUNTER_Instances[7].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[7].COUNTER_i/done               |                                                          |               18 |             64 |         3.56 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[8].COUNTER_i/count_r            | u_puf/COUNTER_Instances[8].COUNTER_i/count_r[63]_i_1_n_0 |               16 |             64 |         4.00 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[9].COUNTER_i/done               |                                                          |               14 |             64 |         4.57 |
+|  clk_IBUF_BUFG | u_puf/COUNTER_Instances[8].COUNTER_i/done               |                                                          |               14 |             64 |         4.57 |
+|  clk_IBUF_BUFG | u_puf/control_inst/srEN                                 | u_puf/control_inst/shift_clr                             |               16 |             71 |         4.44 |
+|  clk_IBUF_BUFG |                                                         | u_uart/fifo_rst_logic_reg_n_0_[0]                        |               23 |             74 |         3.22 |
+|  clk_IBUF_BUFG |                                                         | nrst                                                     |               40 |             92 |         2.30 |
++----------------+---------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+D:/projects/TLP_Hardware2/TLP_Hardware2.sim/sim_1/impl/func/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.sim/sim_1/impl/func/xsim/tb_GenSol9_func_impl.vhd,1729521551,vhdl,,,,clk_wiz_0;clk_wiz_0_clk_wiz;compare_solutions;gen_sol;sha_256_core;top_gen_sol,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSol9.vhd,1729521515,vhdl,,,,tb_gensol9,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/new/my_constants.vhd,1727430733,vhdl,D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSol9.vhd,,,my_constants,,,,,,,,

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../TLP_Hardware2.srcs/sources_1/imports/new/my_constants.vhd" \
+"../../../../../TLP_Hardware2.srcs/sim_1/new/tb_GenSolTw.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,30 @@
+Release 14.7 ngcbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngcbuild.exe -dd E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/_ngo
+-sd ipcore_dir -p xc6slx9-tqg144-3 -i E:\new
+codes\SCRO_DCU_(4_3)\puf_4_3_version4\PUF_TOP.ngc E:\new
+codes\SCRO_DCU_(4_3)\puf_4_3_version4\PUF_TOP_cs.ngc
+
+Reading NGO file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 4405100 kilobytes
+
+Writing NGC file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP_cs.ngc"
+...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "E:/new
+codes/SCRO_DCU_(4_3)/puf_4_3_version4/PUF_TOP_cs.blc"...

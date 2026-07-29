@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/TLP_Hardware2/TLP_Hardware2.sim/sim_1/synth/timing/xsim/tb_GenSol9_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Gen_Sol
+INFO: [VRFC 10-311] analyzing module Top_Gen_Sol
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module compare_solutions
+INFO: [VRFC 10-311] analyzing module sha_256_core
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/new/my_constants.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSol9.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_GenSol9'

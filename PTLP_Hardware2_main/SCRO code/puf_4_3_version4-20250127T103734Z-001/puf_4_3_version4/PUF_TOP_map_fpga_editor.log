@@ -1,0 +1,253 @@
+#:C109   
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\payan name\Sent\puf_4_3_version4
+#Date/Time:
+#:T   Wed Dec 08 22:46:57 2021
+#------------------------------
+	#Reading PUF_TOP_map.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "PUF_TOP" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#   "SCRO_HARDMACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.12.08.19.15.18
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'DS_EN<0>'
+	#3
+unselect comp 'DS_EN<0>'
+	#4
+select -k comp 'DS_EN<1>'
+	#5
+unselect comp 'DS_EN<1>'
+	#6
+select -k comp 'DS_EN<2>'
+	#7
+unselect comp 'DS_EN<2>'
+	#8
+select -k comp 'DS_EN<3>'
+	#9
+unselect comp 'DS_EN<3>'
+	#10
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1'
+	#11
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1'
+	#12
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1'
+	#13
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1'
+	#14
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1'
+	#15
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1'
+	#16
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1'
+	#17
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1'
+	#18
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1'
+	#19
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1'
+	#20
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1'
+	#21
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1'
+	#22
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1'
+	#23
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1'
+	#24
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1'
+	#25
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1'
+	#26
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1'
+	#27
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1'
+	#28
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1'
+	#29
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1'
+	#30
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1'
+	#31
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1'
+	#32
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1'
+	#33
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1'
+	#34
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1'
+	#35
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1'
+	#36
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1'
+	#37
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1'
+	#38
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1'
+	#39
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1'
+	#40
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1'
+	#41
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1'
+	#42
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1'
+	#43
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1'
+	#44
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2'
+	#45
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2'
+	#46
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2'
+	#47
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2'
+	#48
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2'
+	#49
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2'
+	#50
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2'
+	#51
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2'
+	#52
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2'
+	#53
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2'
+	#54
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2'
+	#55
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2'
+	#56
+select -k hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2'
+	#57
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1'
+	#58
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1'
+	#59
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1'
+	#60
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1'
+	#61
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1'
+	#62
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1'
+	#63
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1'
+	#64
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1'
+	#65
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1'
+	#66
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1'
+	#67
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1'
+	#68
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1'
+	#69
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1'
+	#70
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1'
+	#71
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1'
+	#72
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1'
+	#73
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1'
+	#74
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1'
+	#75
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1'
+	#76
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1'
+	#77
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1'
+	#78
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1'
+	#79
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1'
+	#80
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1'
+	#81
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1'
+	#82
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1'
+	#83
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1'
+	#84
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1'
+	#85
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1'
+	#86
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1'
+	#87
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2'
+	#88
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2'
+	#89
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2'
+	#90
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2'
+	#91
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2'
+	#92
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2'
+	#93
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2'
+	#94
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2'
+	#95
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2'
+	#96
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2'
+	#97
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2'
+	#98
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2'
+	#99
+unselect hm 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2'
+	#100
+select -k comp 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<1>'
+	#101
+unselect comp 'Inst_PUF_and_CONTROL/Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<1>'
+	#102
+select -k comp 'DS_DP'
+	#103
+select comp 'SP6_INS_BUFIO2FB_PLL_ML_BUFIO2FB_1'
+	#104
+unselect comp 'DS_DP'
+	#105
+unselect comp 'SP6_INS_BUFIO2FB_PLL_ML_BUFIO2FB_1'
+	#106
+select -k comp 'second_DCM_unit/clkout4_buf'
+	#107
+select comp 'second_DCM_unit/clkout1_buf'
+	#108
+select comp 'SP6_INS_BUFIO2FB_PLL_ML_BUFIO2FB_1'
+	#109
+unselect comp 'second_DCM_unit/clkout4_buf'
+	#110
+unselect comp 'second_DCM_unit/clkout1_buf'
+	#111
+unselect comp 'SP6_INS_BUFIO2FB_PLL_ML_BUFIO2FB_1'
+	#112
+select -k comp 'PUF_OUT1'
+	#113
+unselect comp 'PUF_OUT1'
+	#114
+select -k comp 'DS_DP'
+	#115
+select comp 'SP6_INS_BUFIO2FB_PLL_ML_BUFIO2FB_1'
+	#116
+unselect comp 'DS_DP'
+	#117
+unselect -all
+	#118
+select site 'BUFIO2_X1Y9'
+	#site "BUFIO2_X1Y9",  type = BUFIO2  (RPM grid X0Y121)

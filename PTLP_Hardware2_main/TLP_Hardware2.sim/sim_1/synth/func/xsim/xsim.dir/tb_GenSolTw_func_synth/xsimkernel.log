@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_GenSolTw_func_synth/xsimk.exe -simmode gui -wdb tb_GenSolTw_func_synth.wdb -simrunnum 0 -socket 63192
+Design successfully loaded
+Design Loading Memory Usage: 49424 KB (Peak: 49424 KB)
+Design Loading CPU Usage: 578 ms
+Simulation completed
+Simulation Memory Usage: 77580 KB (Peak: 77580 KB)
+Simulation CPU Usage: 441374 ms

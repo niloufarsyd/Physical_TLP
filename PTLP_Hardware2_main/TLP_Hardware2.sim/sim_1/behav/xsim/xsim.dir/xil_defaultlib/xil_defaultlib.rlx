@@ -1,0 +1,14 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+D:/projects/TLP_Hardware2/TLP_Hardware2.gen/sources_1/ip/clk_wiz_0_2/clk_wiz_0.v,1728398031,verilog,,,,clk_wiz_0,,,../../../../TLP_Hardware2.ip_user_files/ipstatic,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.gen/sources_1/ip/clk_wiz_0_2/clk_wiz_0_clk_wiz.v,1728398030,verilog,,D:/projects/TLP_Hardware2/TLP_Hardware2.gen/sources_1/ip/clk_wiz_0_2/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../TLP_Hardware2.ip_user_files/ipstatic,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSolTw.vhd,1730116445,vhdl,,,,tb_gensoltw,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/SHA-256-master/sha_256_core.vhdl,1728683495,vhdl,D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/new/Gen_Sol_withTW.vhd,,,sha_256_core,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/SHA-256-master/sha_256_pkg.vhdl,1576032036,vhdl,D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/SHA-256-master/sha_256_core.vhdl,,,sha_256_pkg,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/new/compare_solutions.vhd,1728688031,vhdl,,,,compare_solutions,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/new/my_constants.vhd,1727430733,vhdl,D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSolTw.vhd;D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/new/Gen_Sol_withTW.vhd;D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/new/Top_Gen_Sol_Tw.vhd,,,my_constants,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/new/Gen_Sol_withTW.vhd,1730734683,vhdl,,,,gen_sol_withtw,,,,,,,,
+D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/new/Top_Gen_Sol_Tw.vhd,1730106966,vhdl,,,,top_gen_sol_tw,,,,,,,,

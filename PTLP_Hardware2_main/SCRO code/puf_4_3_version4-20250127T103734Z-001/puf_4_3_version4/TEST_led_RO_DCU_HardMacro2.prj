@@ -1,0 +1,8 @@
+vhdl work "my_or.vhd"
+vhdl work "my_nor.vhd"
+vhdl work "my_nand.vhd"
+vhdl work "my_and.vhd"
+vhdl work "RingOscillator_DCU.vhd"
+vhdl work "COUNTER_OF_TEST.vhd"
+vhdl work "TEST_led_RO_DCU_HardMacro2.vhd"
+vhdl work "ipcore_dir/DCM1/example_design/DCM1_exdes.vhd"

@@ -1,0 +1,31 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\new codes\PUF
+#Date/Time:
+#:T   Tue Nov 24 00:35:01 2020
+#------------------------------
+	#Reading RO_DCU_map.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "RO_DCU" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2020.11.23.21.04.39
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'S<0>'
+	#3
+unselect -all
+	#4
+select rpm 'hset'
+	#RPM hset, type RPM, refcomp "S<0>"
+	#5
+unselect -all
+	#6
+select comp 'S<0>'
+	#comp "S<0>",  site "SLICE_X0Y2",  type = SLICEX  (RPM grid X5Y8)
+	#7
+post block

@@ -1,0 +1,587 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 ----------------------------------------------------------------------------------\par
+-- Company: \par
+-- Engineer: \par
+-- \par
+-- Create Date: 10/08/2024 12:56:28 PM\par
+-- Design Name: \par
+-- Module Name: Gen_Sol - Behavioral\par
+-- Project Name: \par
+-- Target Devices: \par
+-- Tool Versions: \par
+-- Description: \par
+-- \par
+-- Dependencies: \par
+-- \par
+-- Revision:\par
+-- Revision 0.01 - File Created\par
+-- Additional Comments:\par
+-- \par
+----------------------------------------------------------------------------------\par
+\par
+\par
+library IEEE;\par
+use IEEE.STD_LOGIC_1164.ALL;\par
+\par
+-- Uncomment the following library declaration if using\par
+-- arithmetic functions with Signed or Unsigned values\par
+use IEEE.NUMERIC_STD.ALL;\par
+use work.my_constants.all;  -- Import the package\par
+-- Uncomment the following library declaration if instantiating\par
+-- any Xilinx leaf cells in this code.\par
+--library UNISIM;\par
+--use UNISIM.VComponents.all;\par
+\par
+entity Gen_Sol is\par
+    generic (\par
+        L : integer := 1;  -- Number of vectors --- WAS 16\par
+        MAX_N :integer := 300;\par
+        lambda : integer := 256  -- Default value or specify as needed\par
+        \par
+    );\par
+    Port ( start_gen : in STD_LOGIC;\par
+           start_sol : in STD_LOGIC;\par
+           clk   : in STD_LOGIC;\par
+           reset : in STD_LOGIC;\par
+--           t : in STD_LOGIC_VECTOR (31 downto 0);\par
+--           --s : in STD_LOGIC_VECTOR ((L * lambda) - 1 downto 0);\par
+--           e : in STD_LOGIC_VECTOR(31 downto 0);  -- Example bit width\par
+--           tc: in STD_LOGIC_VECTOR(31 downto 0);\par
+--           h : in STD_LOGIC_VECTOR (7 downto 0);\par
+           N : in STD_LOGIC_VECTOR(31 downto 0);\par
+           B : in STD_LOGIC_VECTOR(31 downto 0);\par
+           s_solution : out STD_LOGIC_VECTOR ((L * lambda) - 1 downto 0);\par
+           s_solved : out STD_LOGIC_VECTOR ((L * lambda) - 1 downto 0);\par
+           gen_done : out STD_LOGIC;\par
+           sol_done : out STD_LOGIC);\par
+end Gen_Sol;\par
+\par
+architecture Behavioral of Gen_Sol is\par
+    \par
+    signal s        : std_logic_vector((L*lambda)-1 downto 0):= (others => '1');\par
+\par
+    signal lib            : bram_type;\par
+    signal r_n, r_b, r_n2 : integer:= 0;\par
+    signal hash_output    : std_logic_vector(lambda-1 downto 0); -- Assuming 256-bit hash output\par
+    signal counter        : integer := 0;\par
+    signal h_int          : integer := 0;\par
+    signal tc_int         : integer := 0;\par
+    signal e_int          : integer := 0;\par
+    signal t_int          : integer := 0;\par
+    signal c0             : STD_LOGIC_VECTOR (lambda-1 downto 0):= x"0D0000000000000000000000000000000000000000000000000000000000ACE3";\par
+    constant scaleT       : integer := 1000; --scale tc from ps to ns\par
+\par
+    type state_type1 is (reset1, idle1,initial_NB, computeP1, store_lib,computeK, counting, computeCi, checkN1, computeRn, computeP3, computeXOR, checkL, done1);\par
+    signal current_state1, next_state1 : state_type1 := reset1;  -- Initialize to idle state   \par
+    type state_type2 is (reset2, idle2, computeP0, checkN2, checkB, computeCi2, wait2, checkHelper, checkL,computeXOR2,done2);\par
+    signal current_state2, next_state2 : state_type2 := reset2;  -- Initialize to idle state \par
+--    attribute enum_encoding: string;\par
+--    attribute enum_encoding of state_type1: type is "0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 10001";\par
+    \par
+    signal Zi                 : std_logic_vector(lambda-1 downto 0):= (others => '0');--related to decoder\par
+    signal hash_output_signal : std_logic_vector(lambda-1 downto 0):= (others => '0'); -- 256-bit output for hash\par
+    signal lib_input          : std_logic_vector(lambda-1 downto 0):= (others => '0');\par
+    signal lib_index1          : integer:=0;\par
+    signal lib_index2          : integer:=0;\par
+    signal write_lib          : std_logic:= '0';\par
+    signal hash_finished      : std_logic:= '0';                      -- Indicates when hashing is done\par
+    signal data_ready         : std_logic := '0';                      -- Trigger for starting the hashing\par
+    signal data_ready_signal1  : std_logic := '0';\par
+    signal data_ready_signal2  : std_logic := '0';               -- \par
+    signal n_blocks_signal    : natural := 1;                   -- Assuming 1 block of data, adjust as needed\par
+    signal msg_block          : std_logic_vector(2*lambda-1 downto 0):= (others => '0'); -- Message input for SHA-256, 512 bits\par
+    signal msg_block_signal1   : std_logic_vector(2*lambda-1 downto 0):= (others => '0'); -- Message input for SHA-256, 512 bits\par
+    signal msg_block_signal2   : std_logic_vector(2*lambda-1 downto 0):= (others => '0'); -- Message input for SHA-256, 512 bits\par
+    \par
+    signal rst_signal         : std_logic := '0';               -- Reset signal for the core\par
+    signal H_data : std_logic_vector(lambda-1 downto 0):= (others => '0'); -- Helper\par
+    signal rst_n  : std_logic;\par
+    signal lfsr         : std_logic_vector(31 downto 0) := x"0000ACE1";  -- Initial seed for the LFSR\par
+    signal random_val   : integer:= 0;\par
+    signal k            : integer:= 0;\par
+    signal ci           : STD_LOGIC_VECTOR (lambda-1 downto 0):=(others => '0');\par
+    signal Helper_index : integer;\par
+    signal counter2     : integer := 0;\par
+    signal L_bound      : integer := 0;\par
+    signal r            : unsigned(lambda-1 downto 0);\par
+    signal L_check      : std_logic := '0';\par
+    signal ready_Gen    : std_logic := '0';\par
+    signal pass_idle    : std_logic := '0';\par
+    signal Z            : STD_LOGIC_VECTOR (L*lambda-1 downto 0);\par
+--    signal N :  STD_LOGIC_VECTOR (7 downto 0);\par
+--    signal B :  STD_LOGIC_VECTOR (7 downto 0);\par
+    signal lib_output : std_logic_vector(lambda-1 downto 0):= (others => '0');   \par
+    signal lib_read   : std_logic:= '0';    \par
+    signal ri        : std_logic_vector(lambda-1 downto 0):= (others => '0'); -- 256-bit output for hash\par
+    signal ri_1        : std_logic_vector(lambda-1 downto 0):= (others => '0'); -- 256-bit output for hash\par
+    \par
+    signal Si         : std_logic_vector(lambda-1 downto 0):= (others => '0'); -- 256-bit output for hash    \par
+    signal counterN   : integer :=1;\par
+    signal counterB   : integer :=0;\par
+    signal counterL   : integer :=0;\par
+    signal rN_i       : unsigned(lambda-1 downto 0);\par
+    signal N_int      : integer :=0;\par
+    signal B_int      : integer :=0;\par
+    signal match_lib  : std_logic := '0';\par
+    signal checkPass  : std_logic := '0';\par
+    signal start_sol_confirmed: std_logic := '0';\par
+    signal sol_done2  : STD_LOGIC :='0';\par
+    signal ci_s       : unsigned  (lambda-1 downto 0):= (others => '0');\par
+    signal checkk_c0   : STD_LOGIC :='0';\par
+    signal lib_output_flag : STD_LOGIC :='0'; \par
+    --signal s_solved   : STD_LOGIC_VECTOR ((L * lambda) - 1 downto 0):=(others => '0');\par
+    signal ready_in_NB, ready_out_NB:std_logic:='0'; \par
+    \par
+--    component Compute_NB is\par
+--    Port ( clk : std_logic;\par
+--           ready_in : std_logic;\par
+--           t : in integer;\par
+--           tc : in integer;\par
+--           h : in integer;\par
+--           e : in integer;\par
+--           N : out integer;\par
+--           B : out integer;\par
+--           ready_out : out STD_LOGIC);\par
+--    end component;\par
+\par
+\par
+begin\par
+\par
+P1: process(clk, reset)\par
+    begin\par
+        if(reset='1') then\par
+            current_state1 <= reset1;\par
+        elsif(clk'event and clk='1') then\par
+            current_state1 <= next_state1;\par
+        end if;\par
+    end process;\par
+    \par
+  -- LFSR process to generate random numbers\par
+P2: process(clk, reset)\par
+    begin\par
+        if reset = '1' then\par
+            lfsr <= x"BBBBACE1";  -- Reset the LFSR to its seed value\par
+        elsif rising_edge(clk) then\par
+            -- Update the LFSR using XOR feedback (example for a 32-bit LFSR)\par
+            lfsr <= lfsr(30 downto 0) & (lfsr(31) xor lfsr(21) xor lfsr(1) xor lfsr(0));  \par
+        end if;\par
+    end process;\par
+pB:\par
+    process(clk,write_lib)\par
+    begin\par
+      if rising_edge(clk) then\par
+        if (write_lib = '1') then\par
+          lib(lib_index1) <= lib_input;\par
+        end if;\par
+      end if;\par
+    end process;\par
+ pBs:\par
+    process(clk,lib_read)\par
+    begin\par
+      if rising_edge(clk) then\par
+        if (lib_read = '1') then\par
+           lib_output<= lib(lib_index2);\par
+           lib_output_flag<= '1';\par
+        else\par
+            lib_output_flag<= '0';\par
+        end if;\par
+      end if;\par
+    end process;\par
+    \par
+P3: process(clk, reset, current_state1, start_gen)\par
+    begin\par
+        if reset = '1' then\par
+            counter <= 0;\par
+            ready_Gen <= '0';\par
+            data_ready_signal1 <= '0'; --related to sha256\par
+        elsif rising_edge(clk) then\par
+            case current_state1 is\par
+                when reset1 =>\par
+                    data_ready_signal1 <= '0';\par
+                    counter <= 0;\par
+                    counter2<= 0;\par
+                    ready_Gen<='0';\par
+                    write_lib <='0';\par
+--                when initial1 =>\par
+--                    h_int <= to_integer(unsigned(h));\par
+--                    tc_int<= to_integer(unsigned(tc));\par
+--                    t_int <= to_integer(unsigned(t));\par
+--                    e_int <= to_integer(unsigned(e));\par
+\par
+                when idle1 =>\par
+                    if start_gen = '1' then\par
+                    --if start_gen = '1' and e_int /= 0 and h_int/=0 and t_int/=0 and tc_int/=0 then\par
+--                        r_n <= (4 * (h_int**2) * (t_int**2)) / (3 * (e_int)**2);                       \par
+--                        r_b <= (3 * (e_int**2)*scaleT) / (2 * (h_int**2) * t_int * tc_int);\par
+                        data_ready_signal1 <= '1';  -- Trigger the hashing process                        \par
+                       \par
+                        msg_block_signal1(lambda-1 downto 0) <= c0;  -- Assume c0 is provided externally or generated\par
+                        pass_idle<='1';\par
+                    else\par
+                        pass_idle<='0';\par
+                    end if;\par
+\par
+                    write_lib <='0';\par
+                when initial_NB =>\par
+                    r_n <=to_integer(unsigned(N));\par
+                    r_b <=to_integer(unsigned(B));\par
+                when computeP1 =>\par
+                    if hash_finished = '1' then                                             \par
+                        hash_output <= hash_output_signal;  -- Capture the hash output when finished                      \par
+--                        write_lib <='1';\par
+--                        lib_input<=hash_output_signal;\par
+--                        lib_index1<=counter;\par
+--                        k <= to_integer(unsigned(lfsr(7 downto 0))) mod (r_b);  -- Scale the LFSR output\par
+--                        counter <= counter + 1;\par
+--                        data_ready_signal1<= '1';\par
+                    else\par
+                        data_ready_signal1<= '0';\par
+                        pass_idle<='0';\par
+                        write_lib <='0';\par
+                    end if;\par
+               when store_lib =>\par
+                    lib_input<=hash_output;                    \par
+                    lib_index1<=counter;\par
+                    write_lib <='1';\par
+                    data_ready_signal1<= '1';\par
+                when computeK =>\par
+                       k <= to_integer(unsigned(lfsr(7 downto 0))) mod (r_b);\par
+                when counting =>\par
+                    counter <= counter + 1;\par
+                    --data_ready_signal1<= '1';\par
+                when computeCi =>\par
+                    write_lib <='0';\par
+                    ci<= std_logic_vector(to_unsigned(k, lambda)+unsigned(hash_output));\par
+                when CheckN1 =>\par
+                    if counter < (r_n)+1 then                     \par
+                        msg_block_signal1(lambda-1 downto 0) <= ci;                        \par
+                        data_ready_signal1<= '1';                        \par
+                     else                        \par
+                        data_ready_signal1<= '0';\par
+                        Helper_index<=counter;\par
+                        counter<=0;\par
+                  \par
+                     end if;\par
+                when computeRn =>                   \par
+                    r<=to_unsigned(counter2, lambda)+unsigned(hash_output);\par
+           \par
+                when computeP3 =>\par
+    \par
+                    msg_block_signal1(lambda-1 downto 0)<=std_logic_vector(r);\par
+                    data_ready_signal1<= '1';\par
+                 when computeXOR =>\par
+                    if hash_finished = '1' then\par
+                        Z((counter2+1)*(lambda)-1 downto (counter2)*(lambda))<=hash_output_signal xor s((counter2+1)*(lambda)-1 downto (counter2)*(lambda));\par
+                        L_bound<=L-1;\par
+                        data_ready_signal1<= '1';                              \par
+                    end if;\par
+                 when checkL =>\par
+                    if counter2 < L_bound then\par
+                        L_check<='0';\par
+                        counter2<=counter2+1;\par
+                    else\par
+                        L_check<='1';\par
+                    end if;\par
+                    data_ready_signal1<= '0';\par
+                when done1 =>\par
+                    ready_Gen <= '1'; -- Indicate computation is done\par
+                    data_ready_signal1<= '0';\par
+                    msg_block_signal1<=(others=>'0');\par
+            end case;\par
+        end if;\par
+    end process;\par
+ -- State machine for managing the hashing process\par
+P4: process(current_state1, reset, start_Gen, hash_finished, counter, pass_idle, ready_out_NB)\par
+    begin\par
+            case current_state1 is\par
+                when reset1 =>\par
+                    if(reset='1') then\par
+                        next_state1 <= reset1;\par
+                    else\par
+                        next_state1 <= idle1;\par
+                    end if;\par
+--                when initial1 =>\par
+--                    next_state1<= idle1;\par
+                \par
+                when idle1 =>\par
+                    --if start_Gen = '1' and pass_idle='1' then\par
+                    if start_Gen = '1' and data_ready_signal1='1' then\par
+                        next_state1 <= initial_NB;\par
+                    else\par
+                        next_state1<= idle1;\par
+                    end if;\par
+                when initial_NB =>\par
+                    next_state1 <= computeP1;\par
+                when computeP1 =>\par
+                    if hash_finished = '1' then                       \par
+--                        next_state1 <= computeCi;\par
+                        next_state1 <=store_lib;\par
+                    else\par
+                        next_state1 <= computeP1;\par
+                    end if;  \par
+                when store_lib =>\par
+                    if data_ready_signal1='1' then\par
+                        next_state1 <=computeK;\par
+                    else\par
+                        next_state1 <=store_lib;\par
+                    end if;\par
+                when computeK =>\par
+                    next_state1 <=counting;\par
+                    \par
+                when counting =>\par
+                    next_state1 <= computeCi;\par
+                when computeCi => \par
+                        next_state1 <= CheckN1;\par
+                when CheckN1 =>\par
+                    if counter < (r_n)+1 and data_ready_signal1='1' then                       \par
+                        next_state1 <= computeP1;\par
+                     elsif counter < (r_n)+1 and data_ready_signal1='0' then\par
+                        next_state1 <= CheckN1;\par
+                     else\par
+                        next_state1<=computeRn; \par
+                     end if;\par
+                when computeRn =>\par
+                    next_state1<=computeP3;\par
+                when computeP3 =>                  \par
+                    next_state1<= computeXOR;                    \par
+                when computeXOR =>\par
+                    if hash_finished = '1' then\par
+                        next_state1<=checkL;\par
+                    else\par
+                        next_state1 <= computeXOR;\par
+                    end if;\par
+                 when checkL =>\par
+                    if counter2 < (L-1) then\par
+                        next_state1 <=computeRn;\par
+                    else\par
+                        next_state1 <= done1;\par
+                    end if;              \par
+                when done1 =>\par
+                    next_state1 <=done1;\par
+                when others =>\par
+                    next_state1 <= idle1;\par
+            end case;\par
+\par
+    end process;\par
+P5: process(clk, reset)\par
+    begin\par
+        if(reset='1') then\par
+            current_state2 <= reset2;          \par
+        elsif(clk'event and clk='1') then\par
+            current_state2 <= next_state2;\par
+        end if;\par
+    end process;\par
+\par
+-----------Solve the puzzle:--------------\par
+P6: process(clk, reset, current_state2, start_sol)\par
+    begin\par
+        if reset = '1' then\par
+            counterN<=0;\par
+            match_lib<='0';\par
+            checkPass <='0';\par
+            sol_done2<='0';\par
+        elsif rising_edge(clk) then\par
+            case current_state2 is\par
+                when reset2 =>\par
+                    data_ready_signal2 <= '0';\par
+                    sol_done2<='0';\par
+                    counterN<=0;\par
+                    counterB<=0;\par
+                    lib_read<='0';\par
+\par
+                when idle2 =>\par
+                    if start_sol_confirmed = '1' then\par
+                        msg_block_signal2(lambda-1 downto 0) <= c0;  -- Assume c0 is provided externally or generated\par
+                        data_ready_signal2 <= '1';\par
+                        sol_done2<='0';\par
+                    else\par
+                        data_ready_signal2 <= '0';\par
+                        sol_done2<='0';\par
+                    end if;\par
+                    checkk_c0<='0';\par
+                    \par
+                when computeP0 =>\par
+                    if hash_finished='1' then\par
+                        ri_1<=hash_output_signal;\par
+                        ri <=hash_output_signal;\par
+                        data_ready_signal2 <= '1';\par
+                        lib_index2<=counterN;\par
+                        lib_read<='1';\par
+                        checkk_c0<='1';\par
+                    end if;\par
+                when checkN2 =>\par
+                    if counterN< (N_int ) then\par
+                        counterN<=counterN+1;\par
+                        lib_index2<=counterN+1;\par
+                        --lib_read<='1';                   \par
+                    end if;\par
+                    counterB<=0;\par
+                    checkPass <='0';\par
+                    checkk_c0<='0';\par
+                when checkB =>\par
+                    if counterB< (B_int +1) then                        \par
+                        ci_s <= to_unsigned(counterB,lambda)+unsigned(ri_1);\par
+                        --lib_index2<=counterB;\par
+\par
+                        counterB<=counterB+1;--counterB is corresponding to 'k' in puzzle generation process\par
+                    end if;\par
+                    checkPass <='0';\par
+                    lib_read<='0';\par
+                when computeCi2 =>                 \par
+                    msg_block_signal2(lambda-1 downto 0)<= std_logic_vector(ci_s);                     \par
+                    data_ready_signal2 <= '1';\par
+                    match_lib<='0';\par
+                    \par
+                when wait2 =>\par
+                    if hash_finished='1' then\par
+                        ri<=hash_output_signal;\par
+                        data_ready_signal2 <= '1';\par
+                        \par
+                        lib_read<='1';\par
+                        checkk_c0<='1';\par
+                    else\par
+                        data_ready_signal2 <= '0';\par
+                        \par
+                    end if;\par
+                when checkHelper =>\par
+                    data_ready_signal2 <= '0';\par
+\par
+                    if ri=lib_output and lib_output_flag= '1' then\par
+                        match_lib<='1';\par
+                        checkPass <='1';\par
+                        ri_1<=ri;\par
+                    elsif lib_output_flag= '1' then --then, update r_i again\par
+                        match_lib<='0';\par
+                        checkPass <='1';\par
+                    end if;\par
+                    lib_read<='0';\par
+                    \par
+                when checkL =>\par
+                    rN_i<=to_unsigned(counterL, lambda)+unsigned(ri_1);\par
+                    msg_block_signal2(lambda-1 downto 0)<=std_logic_vector(rN_i);\par
+                    data_ready_signal2<= '1';\par
+                    lib_read<='0';    \par
+                when computeXOR2 =>\par
+                    if hash_finished = '1' then                        \par
+                        --Si<=hash_output_signal xor Z((counterL+1)*(lambda)-1 downto (counterL)*(lambda));\par
+                        s_solved((counterL+1)*(lambda)-1 downto (counterL)*(lambda))<= hash_output_signal xor Z((counterL+1)*(lambda)-1 downto (counterL)*(lambda));\par
+                        counterL<=counterL+1;\par
+                    end if;\par
+                    \par
+                when done2 =>\par
+                    sol_done2<='1';\par
+                    data_ready_signal2<= '0';\par
+             end case;\par
+        end if;\par
+    end process;\par
+    \par
+ P7: process(current_state2, reset, start_sol, ready_gen , hash_finished, counterN, counterB, match_lib, checkPass, ready_gen)\par
+    begin\par
+            case current_state2 is\par
+                when reset2 =>\par
+                    if(reset='1') then\par
+                        next_state2 <= reset2;\par
+                    elsif ready_gen='1' then\par
+                        next_state2 <= idle2;\par
+                    else\par
+                        next_state2 <= reset2;\par
+                    end if;\par
+\par
+                when idle2 =>\par
+                    if start_sol_confirmed = '1' then\par
+                        next_state2 <= computeP0;\par
+                    else\par
+                        next_state2<= idle2;\par
+                    end if;\par
+                when computeP0 =>\par
+                    if hash_finished='1' then\par
+                        next_state2 <= checkHelper;\par
+                    else\par
+                        next_state2 <= computeP0;\par
+                    end if;\par
+                    \par
+                when checkN2 =>\par
+                    if counterN< (N_int ) then\par
+                        next_state2 <=checkB;\par
+                    else\par
+                        next_state2 <=checkL;\par
+                    end if;\par
+\par
+                when checkB =>\par
+                    if counterB< (B_int +1) then\par
+                        next_state2 <=computeCi2;\par
+                    else\par
+                        next_state2 <=checkN2;\par
+                    end if;\par
+                \par
+                when computeCi2 =>\par
+                    next_state2<= wait2;\par
+                when wait2 =>\par
+                    if hash_finished='1' then\par
+                        next_state2 <= checkHelper;\par
+                    else\par
+                        next_state2<= wait2;\par
+                    end if;  \par
+\par
+                 when checkHelper =>\par
+                    if    match_lib='1' and checkPass='1' then\par
+                        next_state2 <= checkN2;\par
+                    elsif match_lib='0' and checkPass='1' then\par
+                        next_state2 <= checkB;\par
+                    else\par
+                        next_state2 <= checkHelper;\par
+                    end if; \par
+                                  \par
+                when checkL =>\par
+                    if counterL<L and data_ready_signal2='1' then\par
+                        next_state2 <=computeXOR2;\par
+                    elsif counterL<L and data_ready_signal2='0' then \par
+                        next_state2 <=checkL;\par
+                    else\par
+                        next_state2 <=done2;\par
+                    end if;\par
+                    \par
+                when computeXOR2 =>\par
+                    if hash_finished = '1' then\par
+                        next_state2 <=checkL;\par
+                    else\par
+                        next_state2 <=computeXOR2;\par
+                    end if;\par
+                    \par
+                when done2 =>\par
+                     next_state2 <=done2;\par
+                     \par
+                when others =>\par
+                    next_state2 <= idle2;\par
+            end case;\par
+\par
+    end process;\par
+ s_solution<=s;   \par
+ gen_done<=ready_gen;\par
+ sol_done<=sol_done2;\par
+ N_int<=r_n;\par
+ B_int<=r_b;        \par
+ start_sol_confirmed<=ready_Gen and start_sol; \par
+ data_ready<=data_ready_signal1 xor data_ready_signal2;  \par
+ msg_block <=msg_block_signal1 xor msg_block_signal2;\par
+ rst_n     <= (not reset)  ;\par
+     --c0_seed <= c0; --uncomment it later\par
+     \par
+-- Instantiate the SHA-256 core\par
+sha256_core_inst : entity work.sha_256_core\par
+    generic map (\par
+        RESET_VALUE => '0'\par
+    )\par
+    port map (\par
+        clk           => clk,                  -- Clock signal\par
+        rst           => rst_n,           -- Reset signal\par
+        data_ready    => data_ready,    -- Start the hashing process\par
+        n_blocks      => n_blocks_signal,      -- Number of 512-bit blocks\par
+        msg_block_in  => msg_block,     -- 512-bit input message\par
+        finished      => hash_finished,        -- Indication that the hash is complete\par
+        data_out      => hash_output_signal    -- 256-bit hash output\par
+    );\par
+end Behavioral;\par
+}
+ 

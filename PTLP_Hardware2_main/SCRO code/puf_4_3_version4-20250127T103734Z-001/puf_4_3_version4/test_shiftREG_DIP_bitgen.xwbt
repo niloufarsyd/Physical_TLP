@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\iot\puf\saeid fpga board\code\ex2_puf\PUF\test_shiftREG_DIP.ncd
+OUTFILE=E:\iot\puf\saeid fpga board\code\ex2_puf\PUF\test_shiftREG_DIP.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\iot\puf\saeid fpga board\code\ex2_puf\PUF
+LICENSE=WebPack
+USER_INFO=__0_0_0

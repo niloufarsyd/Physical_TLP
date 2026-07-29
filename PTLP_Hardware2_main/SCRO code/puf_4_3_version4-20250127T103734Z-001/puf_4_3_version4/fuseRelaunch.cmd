@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/testbench_puf_and_control_isim_beh.exe" -prj "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/testbench_puf_and_control_beh.prj" "work.testbench_puf_and_control" 

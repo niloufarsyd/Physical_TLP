@@ -1,0 +1,60 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir
+#Date/Time:
+#:T   Thu Jun 25 01:19:54 2020
+#------------------------------
+	#Reading puf_bit_map.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "puf_bit" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#   "ROMACRO1" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2020.06.24.20.33.51
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select hm 'ro_Ar/GEN_RO1[0].inst_RO_MACRO1'
+	#3
+select hm 'ro_Ar/GEN_RO5[255].inst_RO_MACRO5'
+	#4
+unselect hm 'ro_Ar/GEN_RO1[0].inst_RO_MACRO1'
+	#5
+unselect hm 'ro_Ar/GEN_RO5[255].inst_RO_MACRO5'
+	#6
+select -k hm 'ro_Ar/GEN_RO1[0].inst_RO_MACRO1'
+	#7
+unselect -all
+	#8
+select comp 'Inst_my_counter2/COUNT<7>'
+	#comp "Inst_my_counter2/COUNT<7>",  site "SLICE_X1Y3",  type = SLICEX  (RPM grid X7Y12)
+	#9
+unselect comp 'Inst_my_counter2/COUNT<7>'
+	#10
+select -k hm 'ro_Ar/GEN_RO1[0].inst_RO_MACRO1'
+	#11
+unselect -all
+	#12
+select hm 'ro_Ar/GEN_RO1[0].inst_RO_MACRO1'
+	#Hard Macro Inst "ro_Ar/GEN_RO1[0].inst_RO_MACRO1", type "ROMACRO1", refcomp "ro_Ar/GEN_RO1[0].inst_RO_MACRO1/c<3>"
+	#13
+unselect -all
+	#14
+select hm 'ro_Ar/GEN_RO1[0].inst_RO_MACRO1'
+	#Hard Macro Inst "ro_Ar/GEN_RO1[0].inst_RO_MACRO1", type "ROMACRO1", refcomp "ro_Ar/GEN_RO1[0].inst_RO_MACRO1/c<3>"
+	#15
+post attr
+	#16
+unpost hm "ro_Ar/GEN_RO1[0].inst_RO_MACRO1"
+	#17
+unselect -all
+	#18
+select rpm 'Shape_0'
+	#RPM Shape_0, type CARRY
+	#19
+post attr
+	#20
+unpost rpm "Shape_0"

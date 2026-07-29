@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_TopModule.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/PUF_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc U.ucf -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TopModule_map.ncd PUF_TopModule.ncd PUF_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TopModule.twx PUF_TopModule.ncd -o PUF_TopModule.twr PUF_TopModule.pcf -ucf U.ucf 
+xst -intstyle ise -ifn "E:/code/mine/ex29/eshghi/PUF_TopModule.xst" -ofn "E:/code/mine/ex29/eshghi/PUF_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfFile.ucf -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TopModule_map.ncd PUF_TopModule.ncd PUF_TopModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PUF_TopModule.twx PUF_TopModule.ncd -o PUF_TopModule.twr PUF_TopModule.pcf -ucf ucfFile.ucf 
+xst -intstyle ise -ifn "E:/REPORT3/REPORT_Sayadi/REPORT_Sayadii/code/PUF/PUF_TopModule.xst" -ofn "E:/REPORT3/REPORT_Sayadi/REPORT_Sayadii/code/PUF/PUF_TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfFile.ucf -p xc6slx9-tqg144-3 PUF_TopModule.ngc PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+par -w -intstyle ise -ol high -mt off PUF_TopModule_map.ncd PUF_TopModule.ncd PUF_TopModule.pcf 
+bitgen -intstyle ise -f PUF_TopModule.ut PUF_TopModule.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "PUF_TopModule.ngc" PUF_TopModule.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PUF_TopModule_map.ncd PUF_TopModule.ngd PUF_TopModule.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/PUF_TopModule.xst" -ofn "E:/new codes/PUF/PUF_TopModule.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/PUF_TopModule.xst" -ofn "E:/new codes/PUF/PUF_TopModule.syr" 

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/TLP_Hardware2/TLP_Hardware2.sim/sim_1/synth/func/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.sim/sim_1/synth/func/xsim/tb_GenSolTw_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'compare_solutions'
+INFO: [VRFC 10-3107] analyzing entity 'sha_256_core'
+INFO: [VRFC 10-3107] analyzing entity 'Gen_Sol_withTw'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0'
+INFO: [VRFC 10-3107] analyzing entity 'Top_Gen_Sol_Tw'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sources_1/imports/new/my_constants.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSolTw.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_GenSolTw'

@@ -1,0 +1,454 @@
+#:C179   
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\new codes\SCRO_DCU\PUF
+#Date/Time:
+#:T   Tue Jan 19 06:42:41 2021
+#------------------------------
+	#Reading SCRO2_map.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "SCRO2" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.01.19.03.12.32
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'CI<0>'
+	#3
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#4
+unselect comp 'CI<0>'
+	#5
+select -k comp 'CI<1>'
+	#6
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#7
+post attr main
+	#Getting available speed grades of the device...
+	#8
+setattr main edit-mode Read-Write
+	#9
+setattr main case_sensitive off
+	#10
+unpost main
+	#11
+unselect comp 'CI<1>'
+	#12
+select -k comp 'CI<0>'
+	#13
+delete
+	#WARNING:FPGAEditor:170 - Net "CI_0_IBUF" now has no driver pin.
+	#14
+select -k comp 'CI<1>'
+	#15
+delete
+	#WARNING:FPGAEditor:170 - Net "CI_1_IBUF" now has no driver pin.
+	#16
+select -k comp 'CI<2>'
+	#17
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#18
+delete
+	#WARNING:FPGAEditor:170 - Net "CI_2_IBUF" now has no driver pin.
+	#19
+select -k comp 'CI<3>'
+	#20
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#21
+delete
+	#WARNING:FPGAEditor:170 - Net "CI_3_IBUF" now has no driver pin.
+	#22
+select -k comp 'CI<4>'
+	#23
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#24
+delete
+	#WARNING:FPGAEditor:170 - Net "CI_4_IBUF" now has no driver pin.
+	#25
+select -k comp 'CI<5>'
+	#26
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#27
+delete
+	#WARNING:FPGAEditor:170 - Net "CI_5_IBUF" now has no driver pin.
+	#28
+select -k comp 'RO_EN'
+	#29
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#30
+delete
+	#WARNING:FPGAEditor:170 - Net "RO_EN_IBUF" now has no driver pin.
+	#31
+select -k comp 'RO_F'
+	#32
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#33
+delete
+	#34
+select -k comp 'SEL'
+	#35
+unplace
+	#Unplacing selected components and macros...
+	#Unplacing selected components and macros completed.
+	#36
+delete
+	#WARNING:FPGAEditor:170 - Net "SEL_IBUF" now has no driver pin.
+	#37
+select -k comp 'S<0>'
+	#38
+unselect -all
+	#39
+unselect -all
+	#40
+select net 'S<0>'
+	#net "S<0>"
+	#41
+unselect -all
+	#42
+select net 'GLOBAL_LOGIC1'
+	#net "GLOBAL_LOGIC1"
+	#43
+delete
+	#44
+unselect -all
+	#45
+select site 'SLICE_X2Y2'
+	#site "SLICE_X2Y2",  type = SLICEL  (RPM grid X9Y8)
+	#46
+unselect -all
+	#47
+select site 'SLICE_X2Y2'
+	#site "SLICE_X2Y2",  type = SLICEL  (RPM grid X9Y8)
+	#48
+post block
+	#49
+setattr comp S<0> Config "A5LUT:#LUT:O5=(A3*A5) A6LUT:#LUT:O6=((A4+A5)) AOUTMUX:O5 AUSED:0 B5LUT:#LUT:O5=(A3*A5) B6LUT:#LUT:O6=((A4+A5)) BOUTMUX:O5 BUSED:0 C5LUT:#LUT:O5=(A3*A5) C6LUT:#LUT:O6=((A4+A5)) COUTMUX:O5 CUSED:0 D5LUT:#LUT:O5=((~A1*A2)+(A1*A3)) D6LUT:#LUT:O6=((~A4+~A5)) DOUTMUX:O5 DUSED:0"
+	#0 DRC errors and 4 DRC warnings.
+	#50
+setattr comp S<0> Config "A5LUT:#LUT:O5=(A3*A5) A6LUT:#LUT:O6=((A4+A5)) AOUTMUX:O5 AUSED:0 B5LUT:#LUT:O5=(A3*A5) B6LUT:#LUT:O6=((A4+A5)) BOUTMUX:O5 BUSED:0 C5LUT:#LUT:O5=(A3*A5) C6LUT:#LUT:O6=((A4+A5)) COUTMUX:O5 CUSED:0 D5LUT:#LUT:O5=((~A1*A2)+(A1*A3)) D6LUT:#LUT:O6=((~A4+~A5)) DOUTMUX:O5 DUSED:0"
+	#51
+block apply
+	#52
+end block
+	#53
+unselect -all
+	#54
+select site 'SLICE_X3Y2'
+	#site "SLICE_X3Y2",  type = SLICEX  (RPM grid X11Y8)
+	#55
+post block
+	#56
+setattr comp S<1> Config "B5LUT:#LUT:O5=(~A3*~A5) B6LUT:#LUT:O6=((A4*A5)) BOUTMUX:O5 BUSED:0 C5LUT:#LUT:O5=(A3*A5) C6LUT:#LUT:O6=((A4+A5)) COUTMUX:O5 CUSED:0 D5LUT:#LUT:O5=(A3+A5) D6LUT:#LUT:O6=((~A4+~A5)) DOUTMUX:O5 DUSED:0"
+	#0 DRC errors and 3 DRC warnings.
+	#57
+setattr comp S<1> Config "B5LUT:#LUT:O5=(~A3*~A5) B6LUT:#LUT:O6=((A4*A5)) BOUTMUX:O5 BUSED:0 C5LUT:#LUT:O5=(A3*A5) C6LUT:#LUT:O6=((A4+A5)) COUTMUX:O5 CUSED:0 D5LUT:#LUT:O5=(A3+A5) D6LUT:#LUT:O6=((~A4+~A5)) DOUTMUX:O5 DUSED:0"
+	#58
+block apply
+	#59
+end block
+	#60
+post saveas
+	#61
+unpost saveas
+	#62
+echo "save -w hm "SCRO2_HARDMACRO.nmc""
+	#63
+save -w hm "SCRO2_HARDMACRO.nmc"
+	#64
+unselect -all
+	#65
+select site 'SLICE_X3Y2'
+	#site "SLICE_X3Y2",  type = SLICEX  (RPM grid X11Y8)
+	#66
+post block
+	#67
+unselect -all
+	#68
+unselect -all
+	#69
+select pin 'SLICE_X3Y2.D6'
+	#site.pin = SLICE_X3Y2.D6, comp.pin = S<1>.D6
+	#70
+unselect -all
+	#71
+select pin 'SLICE_X3Y2.D5'
+	#site.pin = SLICE_X3Y2.D5, comp.pin = S<1>.D5, delay = ~0.377ns on net "S<0>"
+	#72
+unselect -all
+	#73
+select pin 'SLICE_X3Y2.D5'
+	#site.pin = SLICE_X3Y2.D5, comp.pin = S<1>.D5, delay = ~0.377ns on net "S<0>"
+	#74
+unselect -all
+	#75
+select pin 'SLICE_X3Y2.D4'
+	#site.pin = SLICE_X3Y2.D4, comp.pin = S<1>.D4, delay = ~0.563ns on net "D<0>"
+	#76
+unselect -all
+	#77
+select pin 'SLICE_X3Y2.D3'
+	#site.pin = SLICE_X3Y2.D3, comp.pin = S<1>.D3, delay = ~0.000ns on net "CI_0_IBUF"
+	#78
+add extpin
+	#79
+post attr pin SLICE_X3Y2.D3
+	#80
+setattr pin SLICE_X3Y2.D3  external_name CI(0)
+	#81
+unpost pin "SLICE_X3Y2.D3"
+	#82
+unselect -all
+	#83
+select pin 'SLICE_X3Y2.D2'
+	#site.pin = SLICE_X3Y2.D2
+	#84
+unselect -all
+	#85
+select pin 'SLICE_X3Y2.D1'
+	#site.pin = SLICE_X3Y2.D1
+	#86
+unselect -all
+	#87
+select pin 'SLICE_X3Y2.C'
+	#site.pin = SLICE_X3Y2.C, comp.pin = S<1>.C, delay = driver on net "S<2>"
+	#88
+unselect -all
+	#89
+select pin 'SLICE_X3Y2.C6'
+	#site.pin = SLICE_X3Y2.C6, comp.pin = S<1>.C6
+	#90
+unselect -all
+	#91
+select pin 'SLICE_X3Y2.C5'
+	#site.pin = SLICE_X3Y2.C5, comp.pin = S<1>.C5, delay = ~0.332ns on net "S<1>"
+	#92
+unselect -all
+	#93
+select pin 'SLICE_X3Y2.C4'
+	#site.pin = SLICE_X3Y2.C4, comp.pin = S<1>.C4, delay = ~0.715ns on net "D<1>"
+	#94
+unselect -all
+	#95
+select pin 'SLICE_X3Y2.C3'
+	#site.pin = SLICE_X3Y2.C3, comp.pin = S<1>.C3, delay = ~0.000ns on net "CI_1_IBUF"
+	#96
+add extpin
+	#97
+post attr pin SLICE_X3Y2.C3
+	#98
+setattr pin SLICE_X3Y2.C3  external_name CI(1)
+	#99
+unpost pin "SLICE_X3Y2.C3"
+	#100
+unselect -all
+	#101
+select pin 'SLICE_X3Y2.B6'
+	#site.pin = SLICE_X3Y2.B6, comp.pin = S<1>.B6
+	#102
+unselect -all
+	#103
+select pin 'SLICE_X3Y2.B5'
+	#site.pin = SLICE_X3Y2.B5, comp.pin = S<1>.B5, delay = ~0.359ns on net "S<2>"
+	#104
+unselect -all
+	#105
+select pin 'SLICE_X3Y2.B4'
+	#site.pin = SLICE_X3Y2.B4, comp.pin = S<1>.B4, delay = ~0.000ns on net "CI_2_IBUF"
+	#106
+unselect -all
+	#107
+select -k comp 'S<1>'
+	#108
+unselect -all
+	#109
+select pin 'SLICE_X3Y2.B4'
+	#site.pin = SLICE_X3Y2.B4, comp.pin = S<1>.B4, delay = ~0.000ns on net "CI_2_IBUF"
+	#110
+add extpin
+	#111
+post attr pin SLICE_X3Y2.B4
+	#112
+setattr pin SLICE_X3Y2.B4  external_name CI(2)
+	#113
+unpost pin "SLICE_X3Y2.B4"
+	#114
+unselect -all
+	#115
+select pin 'SLICE_X3Y2.B3'
+	#site.pin = SLICE_X3Y2.B3, comp.pin = S<1>.B3, delay = ~0.460ns on net "D<2>"
+	#116
+unselect -all
+	#117
+select pin 'SLICE_X2Y2.D6'
+	#site.pin = SLICE_X2Y2.D6, comp.pin = S<0>.D6
+	#118
+unselect -all
+	#119
+select pin 'SLICE_X2Y2.D5'
+	#site.pin = SLICE_X2Y2.D5, comp.pin = S<0>.D5, delay = ~0.615ns on net "S<7>"
+	#120
+unselect -all
+	#121
+select pin 'SLICE_X2Y2.D4'
+	#site.pin = SLICE_X2Y2.D4, comp.pin = S<0>.D4, delay = ~0.000ns on net "RO_EN_IBUF"
+	#122
+add extpin
+	#123
+post attr pin SLICE_X2Y2.D4
+	#124
+setattr pin SLICE_X2Y2.D4  external_name RO_EN
+	#125
+unpost pin "SLICE_X2Y2.D4"
+	#126
+unselect -all
+	#127
+select pin 'SLICE_X2Y2.D3'
+	#site.pin = SLICE_X2Y2.D3, comp.pin = S<0>.D3, delay = ~0.688ns on net "S<6>"
+	#128
+unselect -all
+	#129
+select pin 'SLICE_X2Y2.D2'
+	#site.pin = SLICE_X2Y2.D2, comp.pin = S<0>.D2, delay = ~0.865ns on net "S<3>"
+	#130
+unselect -all
+	#131
+select pin 'SLICE_X2Y2.C'
+	#site.pin = SLICE_X2Y2.C, comp.pin = S<0>.C, delay = driver on net "S<5>"
+	#132
+unselect -all
+	#133
+select pin 'SLICE_X2Y2.CMUX'
+	#site.pin = SLICE_X2Y2.CMUX, comp.pin = S<0>.CMUX, delay = driver on net "D<4>"
+	#134
+unselect -all
+	#135
+select pin 'SLICE_X2Y2.C6'
+	#site.pin = SLICE_X2Y2.C6, comp.pin = S<0>.C6
+	#136
+unselect -all
+	#137
+select pin 'SLICE_X2Y2.C4'
+	#site.pin = SLICE_X2Y2.C4, comp.pin = S<0>.C4, delay = ~0.794ns on net "D<4>"
+	#138
+unselect -all
+	#139
+select pin 'SLICE_X2Y2.C5'
+	#site.pin = SLICE_X2Y2.C5, comp.pin = S<0>.C5, delay = ~0.599ns on net "S<4>"
+	#140
+unselect -all
+	#141
+select pin 'SLICE_X2Y2.C4'
+	#site.pin = SLICE_X2Y2.C4, comp.pin = S<0>.C4, delay = ~0.794ns on net "D<4>"
+	#142
+unselect -all
+	#143
+select pin 'SLICE_X2Y2.C3'
+	#site.pin = SLICE_X2Y2.C3, comp.pin = S<0>.C3, delay = ~0.000ns on net "CI_4_IBUF"
+	#144
+add extpin
+	#145
+post attr pin SLICE_X2Y2.C3
+	#146
+setattr pin SLICE_X2Y2.C3  external_name CI(4)
+	#147
+unpost pin "SLICE_X2Y2.C3"
+	#148
+unselect -all
+	#149
+select pin 'SLICE_X2Y2.B'
+	#site.pin = SLICE_X2Y2.B, comp.pin = S<0>.B, delay = driver on net "D<5>"
+	#150
+unselect -all
+	#151
+select pin 'SLICE_X2Y2.BMUX'
+	#site.pin = SLICE_X2Y2.BMUX, comp.pin = S<0>.BMUX, delay = driver on net "S<6>"
+	#152
+add extpin
+	#153
+post attr pin SLICE_X2Y2.BMUX
+	#154
+setattr pin SLICE_X2Y2.BMUX  external_name RO_F
+	#155
+unpost pin "SLICE_X2Y2.BMUX"
+	#156
+unselect -all
+	#157
+select pin 'SLICE_X2Y2.B6'
+	#site.pin = SLICE_X2Y2.B6, comp.pin = S<0>.B6
+	#158
+unselect -all
+	#159
+select pin 'SLICE_X2Y2.B5'
+	#site.pin = SLICE_X2Y2.B5, comp.pin = S<0>.B5, delay = ~0.359ns on net "S<5>"
+	#160
+unselect -all
+	#161
+select pin 'SLICE_X2Y2.B4'
+	#site.pin = SLICE_X2Y2.B4, comp.pin = S<0>.B4, delay = ~0.000ns on net "CI_5_IBUF"
+	#162
+add extpin
+	#163
+post attr pin SLICE_X2Y2.B4
+	#164
+setattr pin SLICE_X2Y2.B4  external_name CI(5)
+	#165
+unpost pin "SLICE_X2Y2.B4"
+	#166
+unselect -all
+	#167
+select pin 'SLICE_X2Y2.B3'
+	#site.pin = SLICE_X2Y2.B3, comp.pin = S<0>.B3, delay = ~0.708ns on net "D<5>"
+	#168
+unselect -all
+	#169
+select pin 'SLICE_X2Y2.A6'
+	#site.pin = SLICE_X2Y2.A6, comp.pin = S<0>.A6
+	#170
+unselect -all
+	#171
+select pin 'SLICE_X2Y2.A5'
+	#site.pin = SLICE_X2Y2.A5, comp.pin = S<0>.A5, delay = ~0.552ns on net "S<3>"
+	#172
+unselect -all
+	#173
+select pin 'SLICE_X2Y2.A4'
+	#site.pin = SLICE_X2Y2.A4, comp.pin = S<0>.A4, delay = ~0.000ns on net "CI_3_IBUF"
+	#174
+add extpin
+	#175
+post attr pin SLICE_X2Y2.A4
+	#176
+setattr pin SLICE_X2Y2.A4  external_name CI(3)
+	#177
+unpost pin "SLICE_X2Y2.A4"
+	#178
+unselect -all
+	#179
+select pin 'SLICE_X2Y2.BMUX'
+	#site.pin = SLICE_X2Y2.BMUX, comp.pin = S<0>.BMUX, hard macro.pin = RO_F, delay = driver on net "S<6>"
+	#180
+unselect -all
+	#181
+select pin 'SLICE_X2Y2.D4'
+	#site.pin = SLICE_X2Y2.D4, comp.pin = S<0>.D4, hard macro.pin = RO_EN, delay = ~0.000ns on net "RO_EN_IBUF"
+	#182
+save

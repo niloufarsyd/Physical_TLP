@@ -1,0 +1,34 @@
+write_checkpoint -cell RO1 RO_DCU_macro.dcp
+
+launch_runs synth_1
+wait_on_run synth_1
+
+write_checkpoint -cell SCRO_1 RO_DCU_macro.dcp
+read_checkpoint -cell SCRO_1 RO_DCU_macro.dcp
+read_checkpoint -cell SCRO_2 RO_DCU_macro.dcp
+read_checkpoint -cell SCRO_3 RO_DCU_macro.dcp
+launch_runs impl_1
+
+
+write_checkpoint -cell RO1 -force RO_DCU_macro.dcp
+
+
+report_utilization -pblock ro_group
+
+
+For xdc file:
+
+create_pblock ro_group0
+add_cells_to_pblock [get_pblocks ro_group0] [get_cells -hierarchical SCRO_0]
+resize_pblock [get_pblocks ro_group0] -add {SLICE_X10Y100:SLICE_X12Y120}
+
+create_pblock ro_group1
+add_cells_to_pblock [get_pblocks ro_group1] [get_cells -hierarchical SCRO_1]
+resize_pblock [get_pblocks ro_group1] -add {SLICE_X13Y100:SLICE_X15Y120}
+...
+----
+#This lists all cells in the first RO_DCU instance (SCRO_0):
+get_cells -hierarchical -filter {NAME =~ *SCRO_0*}
+
+
+

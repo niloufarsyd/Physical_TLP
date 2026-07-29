@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\new codes\puf_saeidboard_new design\PUF\TEST_PUF1.ncd
+OUTFILE=E:\new codes\puf_saeidboard_new design\PUF\TEST_PUF1.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\new codes\puf_saeidboard_new design\PUF
+LICENSE=WebPack
+USER_INFO=__0_0_0

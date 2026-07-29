@@ -1,0 +1,1644 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'PUF_and_CONTROL'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
+high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir
+off -pr off -lc off -power off -o PUF_and_CONTROL_map.ncd PUF_and_CONTROL.ngd
+PUF_and_CONTROL.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu Dec 02 18:25:12 2021
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  453
+Slice Logic Utilization:
+  Number of Slice Registers:                   228 out of  11,440    1%
+    Number used as Flip Flops:                 218
+    Number used as Latches:                     10
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        785 out of   5,720   13%
+    Number used as logic:                      748 out of   5,720   13%
+      Number using O6 output only:             175
+      Number using O5 output only:              75
+      Number using O5 and O6:                  498
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   1,440    0%
+    Number used exclusively as route-thrus:     37
+      Number with same-slice register load:     34
+      Number with same-slice carry load:         3
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   297 out of   1,430   20%
+  Number of MUXCYs used:                       140 out of   2,860    4%
+  Number of LUT Flip Flop pairs used:          834
+    Number with an unused Flip Flop:           641 out of     834   76%
+    Number with an unused LUT:                  49 out of     834    5%
+    Number of fully used LUT-FF pairs:         144 out of     834   17%
+    Number of unique control sets:              12
+    Number of slice register sites lost
+      to control set restrictions:              52 out of  11,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        81 out of     102   79%
+    IOB Flip Flops:                             64
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        2
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                  64 out of     200   32%
+    Number used as OLOGIC2s:                    64
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+  Number of hard macros:          64
+Average Fanout of Non-Clock Nets:                2.39
+
+Peak Memory Usage:  4532 MB
+Total REAL time to MAP completion:  1 mins 
+Total CPU time to MAP completion:   52 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Inst_CONTROLLER/current_state[2]_PWR_15_o_Mux_34_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Inst_CONTROLLER/current_state[1]_Difference_Mux_30_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net Inst_CONTROLLER/Mram__n0106
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Inst_CONTROLLER/Mram__n01141 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Inst_CONTROLLER/current_state[2]_PWR_12_o_Mux_28_o is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[1].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[1].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[1].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[1].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[1].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[1].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[1].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[48].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[10].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[10].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[10].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[10].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[10].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[10].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[10].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[57].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[19].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[19].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[19].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[19].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[19].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[19].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[19].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[27].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[35].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[43].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[5].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[5].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[5].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[5].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[5].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[5].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[5].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[52].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[60].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[14].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[14].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[14].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[14].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[14].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[14].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[14].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[22].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[30].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[0].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[39].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[47].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[9].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[9].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[9].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[9].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[9].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[9].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[9].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[56].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[18].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[18].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[18].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[18].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[18].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[18].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[18].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[26].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[34].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[42].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[50].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[4].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[4].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[4].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[4].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[4].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[4].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[4].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[51].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[13].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[13].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[13].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[13].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[13].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[13].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[13].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[21].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[38].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[46].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[8].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[8].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[8].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[8].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[8].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[8].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[8].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[55].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[63].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[17].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[17].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[17].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[17].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[17].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[17].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[17].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[25].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[33].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[41].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[3].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[3].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[3].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[3].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[3].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[3].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[3].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[12].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[20].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[20].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[20].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[20].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[20].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[20].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[20].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[59].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[29].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[37].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[45].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[7].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[7].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[7].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[7].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[7].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[7].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[7].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[54].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[62].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[16].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[16].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[16].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[16].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[16].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[16].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[16].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[24].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[32].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[40].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[2].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[2].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[2].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[2].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[2].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[2].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[2].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[49].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[11].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[11].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[11].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[11].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[11].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[11].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[11].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[58].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[28].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[36].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[44].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[6].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[6].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[6].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[6].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[6].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[6].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[6].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[53].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO2[61].inst_RO_HardMACRO2/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[15].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[15].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[15].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[15].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[15].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[15].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[15].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[23].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1/S<0> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   Inst_PUF/Generate_RO1[31].inst_RO_HardMACRO1/S<1> with different equations
+   without A6 pin connected to Global Logic High.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:564 - The following environment variables are currently set:
+INFO:MapLib:591 - XIL_MAP_LOCWARN 	Value: 1
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK_CONTROLLER                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CLK_PUF                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeA<0>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeA<1>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeA<2>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeA<3>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeA<4>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeA<5>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeB<0>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeB<1>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeB<2>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeB<3>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeB<4>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ChallengeB<5>                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| PUF                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| PUF_OUT64<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<3>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<4>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<6>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<7>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<8>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<9>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<10>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<11>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<12>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<13>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<14>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<15>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<16>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<17>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<18>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<19>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<20>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<21>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<22>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<23>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<24>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<25>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<26>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<27>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<28>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<29>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<30>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<31>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<32>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<33>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<34>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<35>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<36>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<37>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<38>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<39>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<40>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<41>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<42>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<43>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<44>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<45>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<46>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<47>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<48>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<49>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<50>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<51>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<52>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<53>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<54>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<55>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<56>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<57>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<58>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<59>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<60>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<61>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<62>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| PUF_OUT64<63>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| Reset                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| w                                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

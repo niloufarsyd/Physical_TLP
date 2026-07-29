@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\REPORT3\REPORT_Sayadi\REPORT_Sayadii\code\PUF\PUF_TopModule.ncd
+OUTFILE=E:\REPORT3\REPORT_Sayadi\REPORT_Sayadii\code\PUF\PUF_TopModule.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\REPORT3\REPORT_Sayadi\REPORT_Sayadii\code\PUF
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,47 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Xilinx\14.7\ISE_DS\ISE
+#Date/Time:
+#:T   Sat Jan 23 23:54:05 2021
+#------------------------------
+	#Reading E:\new codes\SCRO_DCU\PUF\SCRO_HARDMACRO.nmc...
+	#   "SCRO_HARDMACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.01.23.20.24.06
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+select -k comp 'S<1>'
+	#2
+unselect comp 'S<1>'
+	#3
+select -k comp 'S<0>'
+	#4
+unselect -all
+	#5
+select site 'SLICE_X2Y2'
+	#site "SLICE_X2Y2",  type = SLICEL  (RPM grid X9Y8)
+	#6
+unselect -all
+	#7
+select net 'S<3>'
+	#net "S<3>"
+	#8
+post block
+	#ERROR:FPGAEditor:79 - The "post block" command without any other arguments cannot
+	#be performed unless the selection contains only a single site
+	#or single component.  Change the selection and try again.
+	#9
+unselect -all
+	#10
+select site 'SLICE_X2Y2'
+	#site "SLICE_X2Y2",  type = SLICEL  (RPM grid X9Y8)
+	#11
+unselect -all
+	#12
+select site 'SLICE_X2Y2'
+	#site "SLICE_X2Y2",  type = SLICEL  (RPM grid X9Y8)
+	#13
+post block

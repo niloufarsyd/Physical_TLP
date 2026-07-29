@@ -1,0 +1,59 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   E:\iot\puf\saeid fpga board\code\ex2_puf\PUF
+#Date/Time:
+#:T   Sun Jan 03 17:29:11 2021
+#------------------------------
+	#Reading TEST_RO_DCU_HardMacro_map.ncd...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "TEST_RO_DCU_HardMacro" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#   "RO_DCU_HardMacro1" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.01.03.13.58.30
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'Inst_RO_DCU_MACRO_3/S<1>'
+	#3
+unselect -all
+	#4
+select site 'SLICE_X4Y4'
+	#site "SLICE_X4Y4",  type = SLICEM  (RPM grid X17Y16)
+	#5
+unselect -all
+	#6
+select site 'SLICE_X4Y4'
+	#site "SLICE_X4Y4",  type = SLICEM  (RPM grid X17Y16)
+	#7
+post block
+	#<D5LUT>=(A3*A5); bel <Inst_RO_DCU_MACRO_3/inst_and_DCU2_2>.
+	#<D5LUT>=(A3*A5); bel <Inst_RO_DCU_MACRO_3/inst_and_DCU2_2>.
+	#8
+unselect -all
+	#9
+select site 'SLICE_X5Y4'
+	#site "SLICE_X5Y4",  type = SLICEX  (RPM grid X19Y16)
+	#10
+post block
+	#<C5LUT>=(A3*A5); bel <Inst_RO_DCU_MACRO_3/inst_and_DCU2_1>.
+	#<C5LUT>=(A3*A5); bel <Inst_RO_DCU_MACRO_3/inst_and_DCU2_1>.
+	#WARNING:FPGAEditor:3 - You cannot make logic changes in the current edit mode.
+	#11
+post attr main
+	#Getting available speed grades of the device...
+	#12
+setattr main edit-mode Read-Write
+	#13
+setattr main case_sensitive off
+	#14
+unpost main
+	#WARNING:FPGAEditor:101 - The component "Inst_RO_DCU_MACRO_3/S<1>" is part of a hard macro
+	#You must edit the hard macro definition itself.
+	#<C5LUT>=(A3*A5); bel <Inst_RO_DCU_MACRO_3/inst_and_DCU2_1>.
+	#<C5LUT>=(A3*A5); bel <Inst_RO_DCU_MACRO_3/inst_and_DCU2_1>.
+	#<C>; net <Inst_RO_DCU_MACRO_3/S<2>>.
+	#<A5LUT>=(~A3*~A5); bel <Inst_RO_DCU_MACRO_3/inst_nor_DCU1>.

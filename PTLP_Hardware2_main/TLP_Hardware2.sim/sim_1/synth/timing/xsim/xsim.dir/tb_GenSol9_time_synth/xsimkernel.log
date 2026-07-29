@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_GenSol9_time_synth/xsimk.exe -simmode gui -wdb tb_GenSol9_time_synth.wdb -simrunnum 0 -socket 61761
+Design successfully loaded
+Design Loading Memory Usage: 277408 KB (Peak: 277408 KB)
+Design Loading CPU Usage: 1046 ms
+Simulation completed
+Simulation Memory Usage: 328928 KB (Peak: 328928 KB)
+Simulation CPU Usage: 5788546 ms

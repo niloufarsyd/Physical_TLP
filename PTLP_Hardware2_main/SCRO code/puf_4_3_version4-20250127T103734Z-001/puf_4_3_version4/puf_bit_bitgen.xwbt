@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\puf_bit.ncd
+OUTFILE=E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir\puf_bit.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=E:\code\mine\ex29\ex28_pufbit&SIPO&PISO_OK\ex26\ex24_baTaghyir
+LICENSE=WebPack
+USER_INFO=__0_0_0

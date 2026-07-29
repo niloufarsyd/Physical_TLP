@@ -1,0 +1,108 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/testbench_puf_and_control_isim_beh.exe -prj E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/testbench_puf_and_control_beh.prj work.testbench_puf_and_control 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/PUF_OUT_REGISTER.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/my_counter.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/my_compare.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/Multiplexer_D.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/Multiplexer_2to1.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/D_Latch.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/Decoder_D.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/CONTROLLER.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/TOP_D.vhd" into library work
+Parsing VHDL file "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/testbench_puf_and_control.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157: <scro_hardmacro> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166: <scro_hardmacro> remains a black-box since it has no binding entity.
+Completed static elaboration
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 157. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+WARNING:Simulator:648 - "E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/RO_DCU_MACRO_instantiate.vhd" Line 166. Instance scro_hardmacro is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling architecture behavior of entity CONTROLLER [\CONTROLLER(10000000,63)\]
+Compiling package numeric_std
+Compiling architecture block_diagram of entity Decoder_D [decoder_d_default]
+Compiling architecture behavioral of entity Multiplexer_D [multiplexer_d_default]
+Compiling architecture arch_count of entity my_counter [my_counter_default]
+Compiling architecture arch_comp of entity my_COMPARE [my_compare_default]
+Compiling architecture behavioral of entity D_latch [d_latch_default]
+Compiling architecture behavioral of entity Multiplexer_2to1 [multiplexer_2to1_default]
+Compiling architecture behavioral of entity PUF_OUT_REGISTER [puf_out_register_default]
+Compiling architecture behavioral of entity PUF1 [puf1_default]
+Compiling architecture behavioral of entity PUF_and_CONTROL [puf_and_control_default]
+Compiling architecture behavior of entity testbench_puf_and_control
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\testbench_puf_and_control_isim_beh.exe.sim\libPortability.dll".
+Compiled 27 VHDL Units
+Built simulation executable E:/new codes/SCRO_DCU_(4_3)/puf_4_3_version2/testbench_puf_and_control_isim_beh.exe
+Fuse Memory Usage: 52048 KB
+Fuse CPU Usage: 23265 ms

@@ -1,0 +1,94 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+par -w -intstyle ise -ol high -mt off SCRO_map.ncd SCRO.ncd SCRO.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+par -w -intstyle ise -ol high -mt off SCRO_map.ncd SCRO.ncd SCRO.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SCRO.twx SCRO.ncd -o SCRO.twr SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+par -w -intstyle ise -ol high -mt off SCRO_map.ncd SCRO.ncd SCRO.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SCRO.twx SCRO.ncd -o SCRO.twr SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+par -w -intstyle ise -ol high -mt off SCRO_map.ncd SCRO.ncd SCRO.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SCRO.twx SCRO.ncd -o SCRO.twr SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/SCRO.xst" -ofn "E:/new codes/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/new codes/SCRO_DCU/PUF/SCRO.xst" -ofn "E:/new codes/SCRO_DCU/PUF/SCRO.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucfscro.ucf -p xc6slx9-tqg144-3 "SCRO.ngc" SCRO.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SCRO_map.ncd SCRO.ngd SCRO.pcf 
+xst -intstyle ise -ifn "E:/payan name/Sent/puf_4_3_version4/SCRO.xst" -ofn "E:/payan name/Sent/puf_4_3_version4/SCRO.syr" 

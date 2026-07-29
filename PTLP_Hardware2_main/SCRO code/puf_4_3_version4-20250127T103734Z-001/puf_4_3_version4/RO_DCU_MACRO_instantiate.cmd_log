@@ -1,0 +1,173 @@
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+par -w -intstyle ise -ol high -mt off RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ncd RO_DCU_MACRO_instantiate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RO_DCU_MACRO_instantiate.twx RO_DCU_MACRO_instantiate.ncd -o RO_DCU_MACRO_instantiate.twr RO_DCU_MACRO_instantiate.pcf -ucf RO_DCU_MACRO_LOCACTION.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/RO_DCU_MACRO_instantiate.vhi" -module RO_DCU_MACRO_instantiate -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RO_DCU_MACRO_instantiate.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/PUF_TopModule.xst" -ofn "E:/new codes/PUF/PUF_TopModule.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+par -w -intstyle ise -ol high -mt off RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ncd RO_DCU_MACRO_instantiate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RO_DCU_MACRO_instantiate.twx RO_DCU_MACRO_instantiate.ncd -o RO_DCU_MACRO_instantiate.twr RO_DCU_MACRO_instantiate.pcf -ucf RO_DCU_MACRO_LOCACTION.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+par -w -intstyle ise -ol high -mt off RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ncd RO_DCU_MACRO_instantiate.pcf 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/RO_DCU_MACRO_instantiate.vhi" -module RO_DCU_MACRO_instantiate -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_counter.vhd -lib work my_compare.vhd -lib work Multiplexer_D.vhd -lib work Decoder_D.vhd -lib work RO_DCU_MACRO_instantiate.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+par -w -intstyle ise -ol high -mt off RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ncd RO_DCU_MACRO_instantiate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RO_DCU_MACRO_instantiate.twx RO_DCU_MACRO_instantiate.ncd -o RO_DCU_MACRO_instantiate.twr RO_DCU_MACRO_instantiate.pcf -ucf RO_DCU_MACRO_LOCACTION.ucf 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+par -w -intstyle ise -ol high -mt off RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ncd RO_DCU_MACRO_instantiate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RO_DCU_MACRO_instantiate.twx RO_DCU_MACRO_instantiate.ncd -o RO_DCU_MACRO_instantiate.twr RO_DCU_MACRO_instantiate.pcf -ucf RO_DCU_MACRO_LOCACTION.ucf 
+vhdtdtfi -prj AVA6STest -o "E:/new codes/PUF/RO_DCU_MACRO_instantiate.vhi" -module RO_DCU_MACRO_instantiate -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_counter.vhd -lib work my_compare.vhd -lib work Multiplexer_D.vhd -lib work Multiplexer_2to1.vhd -lib work D_Latch.vhd -lib work Decoder_D.vhd -lib work RO_DCU_MACRO_instantiate.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+xst -intstyle ise -ifn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.xst" -ofn "E:/new codes/PUF/RO_DCU_MACRO_instantiate.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc RO_DCU_MACRO_LOCACTION.ucf -p xc6slx9-tqg144-3 "RO_DCU_MACRO_instantiate.ngc" RO_DCU_MACRO_instantiate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+par -w -intstyle ise -ol high -mt off RO_DCU_MACRO_instantiate_map.ncd RO_DCU_MACRO_instantiate.ncd RO_DCU_MACRO_instantiate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RO_DCU_MACRO_instantiate.twx RO_DCU_MACRO_instantiate.ncd -o RO_DCU_MACRO_instantiate.twr RO_DCU_MACRO_instantiate.pcf -ucf RO_DCU_MACRO_LOCACTION.ucf 

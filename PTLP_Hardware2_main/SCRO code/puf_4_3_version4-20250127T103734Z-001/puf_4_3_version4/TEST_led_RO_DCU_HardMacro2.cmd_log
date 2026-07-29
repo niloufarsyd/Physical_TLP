@@ -1,0 +1,155 @@
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 TEST_led_RO_DCU_HardMacro2_cs.ngc TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 TEST_led_RO_DCU_HardMacro2_cs.ngc TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+vhdtdtfi -lib work COUNTER_OF_TEST.vhd -lib work TEST_led_RO_DCU_HardMacro2.vhd -prj AVA6STest -o TEST_led_RO_DCU_HardMacro2.spl -module TEST_led_RO_DCU_HardMacro2 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 TEST_led_RO_DCU_HardMacro2.spl {E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.sym} 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/TEST_led_RO_DCU_HardMacro2.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf -p xc6slx9-tqg144-3 "TEST_led_RO_DCU_HardMacro2.ngc" TEST_led_RO_DCU_HardMacro2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ngd TEST_led_RO_DCU_HardMacro2.pcf 
+par -w -intstyle ise -ol high -mt off TEST_led_RO_DCU_HardMacro2_map.ncd TEST_led_RO_DCU_HardMacro2.ncd TEST_led_RO_DCU_HardMacro2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_led_RO_DCU_HardMacro2.twx TEST_led_RO_DCU_HardMacro2.ncd -o TEST_led_RO_DCU_HardMacro2.twr TEST_led_RO_DCU_HardMacro2.pcf -ucf UCFof_TEST_LED_RO_DCU_HARDMACRO2.ucf 
+bitgen -intstyle ise -f TEST_led_RO_DCU_HardMacro2.ut TEST_led_RO_DCU_HardMacro2.ncd 

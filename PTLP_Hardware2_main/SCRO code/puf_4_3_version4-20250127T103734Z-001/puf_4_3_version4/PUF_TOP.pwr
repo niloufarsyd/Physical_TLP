@@ -1,0 +1,240 @@
+------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                            Xilinx XPower Analyzer                                                            |
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Release                | 14.7 - P.20131013 (nt64)                                                                                            |
+| Command Line           | C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\xpwr.exe -intstyle ise -ol std PUF_TOP.ncd PUF_TOP.pcf -o PUF_TOP.pwr  |
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------
+|      Table of Contents       |
+--------------------------------
+| 1.  Settings                 |
+| 1.1.  Project                |
+| 1.2.  Device                 |
+| 1.3.  Environment            |
+| 1.4.  Default Activity Rates |
+| 2.  Summary                  |
+| 2.1.  On-Chip Power Summary  |
+| 2.2.  Thermal Summary        |
+| 2.3.  Power Supply Summary   |
+| 2.4.  Confidence Level       |
+| 3.  Detailed Reports         |
+| 3.1.  By Hierarchy           |
+| 4.  Warnings                 |
+--------------------------------
+
+1.  Settings
+1.1.  Project
+-------------------------------------------
+|                 Project                 |
+-------------------------------------------
+| Design File               | PUF_TOP.ncd |
+| Settings File             | NA          |
+| Physical Constraints File | PUF_TOP.pcf |
+| Simulation Activity File  | NA          |
+| Design Nets Matched       | NA          |
+| Simulation Nets Matched   | NA          |
+-------------------------------------------
+
+1.2.  Device
+-------------------------------------------------
+|                    Device                     |
+-------------------------------------------------
+| Family           | Spartan6                   |
+| Part             | xc6slx9                    |
+| Package          | tqg144                     |
+| Temp Grade       | C-Grade                    |
+| Process          | Typical                    |
+| Speed Grade      | -3                         |
+| Characterization | Production,v1.3,2011-05-04 |
+-------------------------------------------------
+
+1.3.  Environment
+---------------------------
+|       Environment       |
+---------------------------
+| Ambient Temp (C) | 25.0 |
+| Use custom TJA?  | No   |
+| Custom TJA (C/W) | NA   |
+| Airflow (LFM)    | 0    |
+| Heat Sink        | None |
+| Custom TSA (C/W) | NA   |
+---------------------------
+
+1.4.  Default Activity Rates
+----------------------------------
+|     Default Activity Rates     |
+----------------------------------
+| FF Toggle Rate (%)     | 12.5  |
+| I/O Toggle Rate (%)    | 12.5  |
+| Output Load (pF)       | 5.0   |
+| I/O Enable Rate (%)    | 100.0 |
+| BRAM Write Rate (%)    | 50.0  |
+| BRAM Enable Rate (%)   | 50.0  |
+| DSP Toggle Rate (%)    | 12.5  |
+----------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       3.68 |      4 |    ---    |       ---       |
+| Logic                 |       0.97 |    762 |      5720 |              13 |
+| Signals               |       0.91 |   1278 |    ---    |       ---       |
+| IOs                   |       0.92 |     12 |       102 |              12 |
+| PLLs                  |      81.73 |      1 |         2 |              50 |
+| Static Power          |      14.59 |        |           |                 |
+| Total                 |     102.81 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.2.  Thermal Summary
+------------------------------
+|      Thermal Summary       |
+------------------------------
+| Effective TJA (C/W) | 38.4 |
+| Max Ambient (C)     | 81.1 |
+| Junction Temp (C)   | 28.9 |
+------------------------------
+
+2.3.  Power Supply Summary
+----------------------------------------------------------
+|                  Power Supply Summary                  |
+----------------------------------------------------------
+|                      | Total  | Dynamic | Static Power |
+----------------------------------------------------------
+| Supply Power (mW)    | 102.81 | 37.32   | 65.49        |
+----------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.200 |              10.90 |                 6.35 |                   4.55 |
+| Vccaux                |          2.500 |              34.58 |                11.57 |                  23.02 |
+| Vcco25                |          2.500 |               1.31 |                 0.31 |                   1.00 |
+---------------------------------------------------------------------------------------------------------------
+
+2.4.  Confidence Level
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                Confidence Level                                                                                                |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       User Input Data       | Confidence |                    Details                     |                                                       Action                                                       |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Design implementation state | High       | Design is completely routed                    |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks         | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | High       | User specified more than 95% of inputs         |                                                                                                                    |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                   |                                                                                                                    |
+|                             |            |                                                |                                                                                                                    |
+| Overall confidence level    | Low        |                                                |                                                                                                                    |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.  Details
+3.1.  By Hierarchy
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                By Hierarchy                 |   Power (mW)    | Logic Power (mW) | Signal Power (mW) |      # FFs      |     # LUTs      |    # SRLUTs     | # PLLs |    # CARRY4s    |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Hierarchy total                             |  83.61          |  82.70           |   0.91            |    130          |   1242          |      1          |      1 |     37          |
+|   PUF_TOP                                   |  81.98 /  83.61 |  81.73 /  82.70  |   0.25 /   0.91   |      0 /    130 |      2 /   1242 |      0 /      1 |      1 |      0 /     37 |
+|     Inst_SIPO_DIP                           |   0.01          |   0.00           |   0.01            |     28          |      6          |      1          |      0 |      0          |
+|     Inst_PUF_and_CONTROL                    |   0.00 /   1.62 |   0.00 /   0.97  |   0.00 /   0.65   |      0 /    102 |      0 /   1234 |      0          |      0 |      0 /     37 |
+|       Inst_PUF                              |   0.26 /   1.62 |   0.00 /   0.97  |   0.25 /   0.65   |      2 /     70 |      3 /   1170 |      0          |      0 |      0 /     31 |
+|         Inst_my_counter2                    |   0.00          |   0.00           |   0.00            |     34          |     32          |      0          |      0 |      8          |
+|         Inst_my_counter1                    |   0.00          |   0.00           |   0.00            |     34          |     32          |      0          |      0 |      8          |
+|         Inst_my_COMPARE                     |   0.00          |   0.00           |   0.00            |      0          |     72          |      0          |      0 |     15          |
+|         Inst_Multiplexer_D_2                |   0.08          |   0.05           |   0.03            |      0          |     20          |      0          |      0 |      0          |
+|         Inst_Multiplexer_D_1                |   0.07          |   0.05           |   0.02            |      0          |     20          |      0          |      0 |      0          |
+|         Inst_Decoder_D                      |   0.00          |   0.00           |   0.00            |      0          |     95          |      0          |      0 |      0          |
+|         Generate_RO2[63].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[62].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[61].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[60].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[59].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[58].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[57].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[56].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[55].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[54].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[53].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[52].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO2[51].inst_RO_HardMACRO2 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[9].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[8].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[7].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[6].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[5].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[50].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[4].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[49].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[48].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[47].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[46].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[45].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[44].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[43].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[42].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[41].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[40].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[3].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[39].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[38].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[37].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[36].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[35].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[34].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[33].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[32].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[31].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[30].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[2].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[29].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[28].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[27].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[26].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[25].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[24].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[23].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[22].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[21].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[20].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[1].inst_RO_HardMACRO1  |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[19].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[18].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[17].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[16].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[15].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[14].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[13].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.01            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[12].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[11].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[10].inst_RO_HardMACRO1 |   0.02          |   0.01           |   0.00            |      0          |     14          |      0          |      0 |      0          |
+|         Generate_RO1[0].inst_RO_HardMACRO1  |   0.06          |   0.04           |   0.02            |      0          |     14          |      0          |      0 |      0          |
+|       Inst_CONTROLLER                       |   0.00          |   0.00           |   0.00            |     32          |     64          |      0          |      0 |      6          |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4.  Warnings
+--------------------------------------------------------------------------------
+WARNING:PowerEstimator:270 - Power estimate is considered inaccurate. To see details, generate an advanced report with the "-v" switch.
+WARNING:Power:1337 - Clock frequency for clock net "Inst_PUF_and_CONTROL/Inst_CONTROLLER/Mram__n00692" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_15_o" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "Inst_PUF_and_CONTROL/Inst_CONTROLLER/current_state[1]_Difference_Mux_19_o" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+timing constraints (PCF file) or simulation data.  Without knowing the
+clock frequency of all clocks, dynamic power information for those clock
+domains will default to zero which may under-estimate the power for this
+design.  To avoid this warning, provide at least one of the following:
+  1. The proper timing constraints (PERIOD) for clocks (re-implement design
+     and load the newly generated PCF file into XPower Analyzer)
+  2. A post PAR simulation-generated VCD or SAIF file indicating clock
+     frequencies
+  3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+     XPower Analyzer GUI and then applying "Update Power Analysis"
+--------------------------------------------------------------------------------
+
+Analysis completed: Tue Jan 19 07:02:54 2021
+----------------------------------------------------------------

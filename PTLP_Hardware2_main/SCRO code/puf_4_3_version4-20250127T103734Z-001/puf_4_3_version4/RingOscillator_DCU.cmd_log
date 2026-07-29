@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+par -w -intstyle ise -ol high -mt off RingOscillator_DCU_map.ncd RingOscillator_DCU.ncd RingOscillator_DCU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RingOscillator_DCU.twx RingOscillator_DCU.ncd -o RingOscillator_DCU.twr RingOscillator_DCU.pcf 
+bitgen -intstyle ise -f RingOscillator_DCU.ut RingOscillator_DCU.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+par -w -intstyle ise -ol high -mt off RingOscillator_DCU_map.ncd RingOscillator_DCU.ncd RingOscillator_DCU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RingOscillator_DCU.twx RingOscillator_DCU.ncd -o RingOscillator_DCU.twr RingOscillator_DCU.pcf 
+bitgen -intstyle ise -f RingOscillator_DCU.ut RingOscillator_DCU.ncd 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RingOscillator_DCU_map.ncd RingOscillator_DCU.ngd RingOscillator_DCU.pcf 
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "RingOscillator_DCU.ngc" RingOscillator_DCU.ngd  
+xst -intstyle ise -ifn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.xst" -ofn "E:/iot/puf/saeid fpga board/code/ex2_puf/PUF/RingOscillator_DCU.syr" 

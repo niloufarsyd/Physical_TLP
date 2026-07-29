@@ -1,0 +1,20 @@
+Creating log file E:\new codes\SCRO_DCU_(4_3)\puf_4_3_version2\PUF_TOP_xpa.log.
+Loading device for application Rf_Device from file '6slx9.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\.
+   "PUF_TOP" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+   "SCRO_HARDMACRO" is an NCD, version 3.2, device xc6slx9, package tqg144,
+speed -3
+
+INFO:Power:1693 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using PRODUCTION
+   data.
+   --------------------------------------------------------------
+
+Design load 20% completeDesign load 25% completeDesign load 30% completeDesign load 60% completeDesign load 95% completeDesign load 100% completeRunning Vector-less Activity Propagation
+................
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+
+Design 'PUF_TOP.ncd' and constraints 'PUF_TOP.pcf' opened successfully
+

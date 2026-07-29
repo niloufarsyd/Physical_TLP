@@ -1,0 +1,28 @@
+Command line:
+   testbench_puf_and_control_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52121
+
+Mon Feb 08 11:56:18 2021
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5164.51 Meg
+
+ Total Signals          : 154
+ Total Nets             : 504
+ Total Signal Drivers   : 47
+ Total Blocks           : 84
+ Total Primitive Blocks : 81
+ Total Processes        : 29
+ Total Traceable Variables  : 83
+ Total Scalar Nets and Variables : 1073
+
+ Total Simulation Time: 0.359375 sec
+
+ Current Memory Usage: 4692.65 Meg
+
+Mon Feb 08 12:09:28 2021
+

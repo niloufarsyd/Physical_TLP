@@ -1,0 +1,2149 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'RO_DCU_MACRO_instantiate'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol
+high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir
+off -pr off -lc off -power off -o RO_DCU_MACRO_instantiate_map.ncd
+RO_DCU_MACRO_instantiate.ngd RO_DCU_MACRO_instantiate.pcf 
+Target Device  : xc6slx9
+Target Package : tqg144
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sat Dec 12 16:45:08 2020
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  640
+Slice Logic Utilization:
+  Number of Slice Registers:                    70 out of  11,440    1%
+    Number used as Flip Flops:                  68
+    Number used as Latches:                      2
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        691 out of   5,720   12%
+    Number used as logic:                      689 out of   5,720   12%
+      Number using O6 output only:             267
+      Number using O5 output only:              60
+      Number using O5 and O6:                  362
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   1,440    0%
+    Number used exclusively as route-thrus:      2
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         2
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   251 out of   1,430   17%
+  Number of MUXCYs used:                       120 out of   2,860    4%
+  Number of LUT Flip Flop pairs used:          693
+    Number with an unused Flip Flop:           623 out of     693   89%
+    Number with an unused LUT:                   2 out of     693    1%
+    Number of fully used LUT-FF pairs:          68 out of     693    9%
+    Number of unique control sets:               4
+    Number of slice register sites lost
+      to control set restrictions:              10 out of  11,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        25 out of     102   24%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        2
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     200    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      16    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+  Number of hard macros:          64
+Average Fanout of Non-Clock Nets:                2.25
+
+Peak Memory Usage:  4540 MB
+Total REAL time to MAP completion:  14 secs 
+Total CPU time to MAP completion:   9 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[49].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[49].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[49].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[49].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[49].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[2].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[2].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[2].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[2].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[2].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[40].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[40].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[40].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[40].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[40].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[32].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[32].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[32].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[32].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[32].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[24].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[24].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[24].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[24].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[24].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[16].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[16].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[16].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[16].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[16].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[51].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[51].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[51].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[51].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[51].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[4].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[4].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[4].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[4].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[4].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[50].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[50].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[50].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[50].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[50].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[42].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[42].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[42].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[42].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[42].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[34].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[34].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[34].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[34].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[34].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[26].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[26].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[26].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[26].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[26].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[18].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[18].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[18].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[18].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[18].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[61].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[61].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[61].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[61].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[61].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[53].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[53].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[53].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[53].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[53].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[6].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[6].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[6].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[6].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[6].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[44].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[44].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[44].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[44].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[44].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[36].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[36].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[36].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[36].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[36].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[28].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[28].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[28].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[28].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[28].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[63].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[63].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[63].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[63].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[63].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[55].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[55].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[55].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[55].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[55].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[11].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[11].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[11].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[11].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[11].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[8].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[8].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[8].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[8].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[8].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[46].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[46].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[46].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[46].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[46].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[38].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[38].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[38].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[38].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[38].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[57].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[57].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[57].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[57].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[57].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[21].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[21].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[21].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[21].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[21].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[13].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[13].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[13].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[13].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[13].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[48].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[48].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[48].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[48].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[48].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[1].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[1].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[1].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[1].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[1].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[59].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[59].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[59].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[59].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[59].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[31].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[31].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[31].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[31].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[31].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[23].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[23].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[23].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[23].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[23].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[15].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[15].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[15].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[15].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[15].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[3].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[3].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[3].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[3].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[3].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[41].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[41].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[41].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[41].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[41].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[33].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[33].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[33].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[33].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[33].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[25].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[25].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[25].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[25].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[25].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[17].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[17].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[17].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[17].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[17].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[60].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[60].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[60].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[60].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[60].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[52].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[52].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[52].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[52].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[52].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[5].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[5].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[5].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[5].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[5].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[43].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[43].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[43].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[43].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[43].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[35].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[35].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[35].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[35].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[35].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[27].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[27].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[27].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[27].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[27].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[19].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[19].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[19].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[19].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[19].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[62].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[62].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[62].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[62].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[62].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[54].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[54].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[54].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[54].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[54].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[10].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[10].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[10].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[10].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[10].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[7].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[7].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[7].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[7].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[7].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[45].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[45].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[45].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[45].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[45].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[37].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[37].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[37].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[37].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[37].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[29].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[29].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[29].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[29].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[29].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[56].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[56].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[56].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[56].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[56].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[20].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[20].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[20].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[20].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[20].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[12].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[12].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[12].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[12].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[12].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[9].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[9].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[9].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[9].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[9].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[47].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[47].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[47].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[47].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[47].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[39].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[39].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[39].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[39].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[39].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[0].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[0].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[0].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[0].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[0].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[58].inst_RO_MACRO2/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[58].inst_RO_MACRO2/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[58].inst_RO_MACRO2/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[58].inst_RO_MACRO2/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO2[58].inst_RO_MACRO2/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[30].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[30].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[30].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[30].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[30].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[22].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[22].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[22].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[22].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[22].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[14].inst_RO_MACRO1/inst_or_DCU2_2>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[14].inst_RO_MACRO1/inst_and_DCU1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[14].inst_RO_MACRO1/inst_or_DCU4>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[14].inst_RO_MACRO1/inst_or_DCU2_1>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1368 - Issue with pin connections and/or configuration
+   on block:<GEN_RO1[14].inst_RO_MACRO1/inst_nand_DCU3>:<LUT6>.  Dangling input
+   pin. This configuration requires a signal on the input equation pins.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[49].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[49].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[49].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[49].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[49].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[2].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[2].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[2].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[2].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[2].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[40].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[40].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[40].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[40].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[40].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[32].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[32].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[32].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[32].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[32].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[24].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[24].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[24].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[24].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[24].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[16].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[16].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[16].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[16].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[16].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[51].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[51].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[51].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[51].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[51].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[4].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[4].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[4].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[4].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[4].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[50].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[50].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[50].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[50].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[50].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[42].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[42].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[42].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[42].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[42].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[34].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[34].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[34].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[34].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[34].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[26].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[26].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[26].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[26].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[26].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[18].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[18].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[18].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[18].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[18].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[61].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[61].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[61].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[61].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[61].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[53].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[53].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[53].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[53].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[53].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[6].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[6].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[6].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[6].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[6].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[44].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[44].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[44].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[44].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[44].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[36].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[36].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[36].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[36].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[36].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[28].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[28].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[28].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[28].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[28].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[63].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[63].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[63].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[63].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[63].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[55].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[55].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[55].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[55].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[55].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[11].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[11].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[11].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[11].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[11].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[8].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[8].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[8].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[8].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[8].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[46].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[46].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[46].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[46].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[46].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[38].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[38].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[38].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[38].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[38].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[57].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[57].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[57].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[57].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[57].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[21].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[21].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[21].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[21].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[21].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[13].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[13].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[13].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[13].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[13].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[48].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[48].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[48].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[48].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[48].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[1].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[1].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[1].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[1].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[1].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[59].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[59].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[59].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[59].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[59].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[31].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[31].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[31].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[31].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[31].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[23].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[23].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[23].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[23].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[23].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[15].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[15].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[15].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[15].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[15].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[3].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[3].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[3].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[3].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[3].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[41].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[41].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[41].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[41].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[41].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[33].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[33].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[33].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[33].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[33].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[25].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[25].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[25].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[25].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[25].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[17].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[17].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[17].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[17].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[17].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[60].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[60].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[60].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[60].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[60].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[52].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[52].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[52].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[52].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[52].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[5].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[5].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[5].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[5].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[5].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[43].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[43].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[43].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[43].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[43].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[35].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[35].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[35].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[35].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[35].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[27].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[27].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[27].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[27].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[27].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[19].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[19].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[19].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[19].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[19].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[62].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[62].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[62].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[62].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[62].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[54].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[54].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[54].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[54].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[54].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[10].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[10].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[10].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[10].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[10].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[7].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[7].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[7].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[7].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[7].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[45].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[45].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[45].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[45].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[45].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[37].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[37].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[37].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[37].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[37].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[29].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[29].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[29].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[29].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[29].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[56].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[56].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[56].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[56].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[56].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[20].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[20].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[20].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[20].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[20].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[12].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[12].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[12].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[12].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[12].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[9].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[9].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[9].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[9].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[9].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[47].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[47].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[47].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[47].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[47].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[39].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[39].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[39].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[39].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[39].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[0].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[0].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[0].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[0].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[0].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[58].inst_RO_MACRO2/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO2[58].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO2[58].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO2[58].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO2[58].inst_RO_MACRO2/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[30].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[30].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[30].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[30].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[30].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[22].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[22].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[22].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[22].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[22].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[14].inst_RO_MACRO1/S<5> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts A5LUT and A6LUT in use in comp
+   GEN_RO1[14].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts B5LUT and B6LUT in use in comp
+   GEN_RO1[14].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts C5LUT and C6LUT in use in comp
+   GEN_RO1[14].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+WARNING:PhysDesignRules:1837 - Luts D5LUT and D6LUT in use in comp
+   GEN_RO1[14].inst_RO_MACRO1/S<1> with different equations without A6 pin
+   connected to Global Logic High.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network selA<7> has no load.
+INFO:LIT:395 - The above info message is repeated 3 more times for the following
+   (max. 5 shown):
+   selA<6>,
+   selb<7>,
+   selb<6>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:564 - The following environment variables are currently set:
+INFO:MapLib:591 - XIL_MAP_LOCWARN 	Value: 1
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CI<0>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CI<1>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CI<2>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CI<3>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CI<4>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| CLK                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Difference                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| PUF_OUT                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| XOR_OUT                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| aCLR                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| cnt_EN                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| en                                 | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| mux_sel                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selA<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selA<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selA<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selA<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selA<4>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selA<5>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selb<0>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selb<1>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selb<2>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selb<3>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selb<4>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| selb<5>                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

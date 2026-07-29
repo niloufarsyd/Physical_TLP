@@ -1,0 +1,7 @@
+vhdl work "RO_Array.vhd"
+vhdl work "my_counter.vhd"
+vhdl work "my_compare.vhd"
+vhdl work "mux_gen.vhd"
+vhdl work "decoder.vhd"
+vhdl work "puf_bit.vhd"
+vhdl work "ipcore_dir/DCM1/example_design/DCM1_exdes.vhd"

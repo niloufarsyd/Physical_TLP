@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "D:/darsi/iot/puf/PUF/code/mine/ex17_harmacro_board_64array/ex16_board_256arr/AVA6SV2_DIPLED/puf_bit.xst" -ofn "D:/darsi/iot/puf/PUF/code/mine/ex17_harmacro_board_64array/ex16_board_256arr/AVA6SV2_DIPLED/puf_bit.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 puf_bit.ngc puf_bit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o puf_bit_map.ncd puf_bit.ngd puf_bit.pcf 
+par -w -intstyle ise -ol high -mt off puf_bit_map.ncd puf_bit.ncd puf_bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml puf_bit.twx puf_bit.ncd -o puf_bit.twr puf_bit.pcf 
+vhdtdtfi -prj AVA6STest -o E:/code/mine/ex28/ex26/ex24_baTaghyir/puf_bit.vhi -module puf_bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RO_Array.vhd -lib work my_counter.vhd -lib work my_compare.vhd -lib work mux_gen.vhd -lib work decoder.vhd -lib work puf_bit.vhd -lib work ipcore_dir/DCM1/example_design/DCM1_exdes.vhd 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/puf_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 puf_bit.ngc puf_bit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o puf_bit_map.ncd puf_bit.ngd puf_bit.pcf 
+par -w -intstyle ise -ol high -mt off puf_bit_map.ncd puf_bit.ncd puf_bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml puf_bit.twx puf_bit.ncd -o puf_bit.twr puf_bit.pcf 
+bitgen -intstyle ise -f puf_bit.ut puf_bit.ncd 
+xst -intstyle ise -ifn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/puf_bit.syr" 
+xst -intstyle ise -ifn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/puf_bit.xst" -ofn "E:/code/mine/ex30/ex29/ex28_pufbit&SIPO&PISO_OK/ex26/ex24_baTaghyir/puf_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 puf_bit.ngc puf_bit.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -xe n -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o puf_bit_map.ncd puf_bit.ngd puf_bit.pcf 
+par -w -intstyle ise -ol high -mt off puf_bit_map.ncd puf_bit.ncd puf_bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml puf_bit.twx puf_bit.ncd -o puf_bit.twr puf_bit.pcf 

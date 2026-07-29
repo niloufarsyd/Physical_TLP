@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 19 06:20:36 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "i_CLK" LOCATE = SITE "P56" LEVEL 1;
+COMP "o_DIPLatch" LOCATE = SITE "P48" LEVEL 1;
+COMP "LED1" LOCATE = SITE "P95" LEVEL 1;
+COMP "o_PSCLK" LOCATE = SITE "P50" LEVEL 1;
+COMP "LED2" LOCATE = SITE "P94" LEVEL 1;
+COMP "LED3" LOCATE = SITE "P98" LEVEL 1;
+COMP "LED4" LOCATE = SITE "P97" LEVEL 1;
+COMP "i_DIPData" LOCATE = SITE "P51" LEVEL 1;
+PIN your_instance_name/clkout1_buf_pin<1> = BEL
+        "your_instance_name/clkout1_buf" PINNAME O;
+PIN "your_instance_name/clkout1_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

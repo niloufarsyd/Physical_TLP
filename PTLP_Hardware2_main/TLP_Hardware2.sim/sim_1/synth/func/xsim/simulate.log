@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Note: Simulation finished
+Time: 649610100 ps  Iteration: 0  Process: /tb_GenSolTw/stimulus_process  File: D:/projects/TLP_Hardware2/TLP_Hardware2.srcs/sim_1/new/tb_GenSolTw.vhd
+INFO: xsimkernel Simulation Memory Usage: 77580 KB (Peak: 77580 KB), Simulation CPU Usage: 441374 ms

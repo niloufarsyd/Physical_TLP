@@ -1,0 +1,31 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Xilinx\14.7\ISE_DS\ISE
+#Date/Time:
+#:T   Sat Jan 23 23:53:12 2021
+#------------------------------
+	#Reading E:\new codes\SCRO_DCU\PUF\SCRO2_HARDMACRO.nmc...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "SCRO2_HARDMACRO" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2021.01.23.20.23.15
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+select -k comp 'S<0>'
+	#2
+unselect -all
+	#3
+select site 'SLICE_X2Y2'
+	#site "SLICE_X2Y2",  type = SLICEL  (RPM grid X9Y8)
+	#4
+unselect -all
+	#5
+select site 'SLICE_X2Y2'
+	#site "SLICE_X2Y2",  type = SLICEL  (RPM grid X9Y8)
+	#6
+post block
+	#7
+post open

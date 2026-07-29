@@ -1,0 +1,41 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Xilinx\14.7\ISE_DS\ISE
+#Date/Time:
+#:T   Sun Dec 27 23:33:21 2020
+#------------------------------
+	#Reading E:\iot\puf\saeid fpga board\code\ex2_puf\PUF\RO_DCU_MACRO1.nmc...
+	#Loading device for application Rf_Device from file '6slx9.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "RO_DCU_MACRO1" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
+	#Design creation date: 2020.12.27.20.03.23
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode Read-Write
+	#2
+select -k comp 'S<5>'
+	#3
+unselect -all
+	#4
+unselect -all
+	#5
+select pin 'SLICE_X5Y2.A6'
+	#site.pin = SLICE_X5Y2.A6, comp.pin = S<1>.A6, hard macro.pin = VCCPIN(1), delay = ~0.000ns on net "$NET_1"
+	#6
+unselect -all
+	#7
+select comp 'S<1>'
+	#comp "S<1>",  site "SLICE_X5Y2",  type = SLICEX  (RPM grid X19Y8)
+	#8
+unselect -all
+	#9
+select comp 'S<1>'
+	#comp "S<1>",  site "SLICE_X5Y2",  type = SLICEX  (RPM grid X19Y8)
+	#10
+post block
+	#INTERNAL_ERROR:FPGAEditor:EnDesign.c:832:1.235 - Cannot get usage of a comp S<1>
+	#EXCEPTION:Pds:Pds_PihDeviceUsage.c:1151:1.63 - Detected a mismatch between the design and the device.
+	#FATAL_ERROR:GuiUtilities:WinApp.c:693:$Revision - This application has discovered an exceptional condition from which it cannot recover.  For technical support on this issue, please visit http://www.xilinx.com/support.
